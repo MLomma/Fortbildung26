@@ -1,0 +1,1200 @@
+<!--
+version: 0.1.0
+language: de
+narrator: Deutsch Female
+
+mode: Presentation
+
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-DynFlex/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-timer/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-marker/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-annotation/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-canvas-ocr/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-orthography/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-Mathe/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-kachel/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-navigation/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-mathpath/refs/heads/master/README.md
+
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-llm/refs/heads/main/README.md
+
+import: https://raw.githubusercontent.com/liaTemplates/algebrite/master/README.md
+import: https://raw.githubusercontent.com/liaTemplates/JSXGraph/main/README.md
+
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-resetter/main/README.md
+
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-coordinate/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-freeze-v2/main/README.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/main/imports/RedirecterREADME.md
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md
+
+
+tags: Wochenaufgabe, Mathematik, Klasse 5
+
+comment: Dies sind die Wochenaufgaben zum Einstieg für die 5. Klasse. 
+
+author: Martin Lommatzsch
+
+-->
+
+# LiaScript-Aufgaben für das "Digitale Lernen" zum Beginn der 5. Klasse - Mathematik
+
+
+@Ressourcen(50, 50, 150)
+@achievements
+@Highscore(10000, 100, 250, 20, 500)
+@Schatztruhe(toc)
+@Diamanttruhe(info)
+@Energiekiste(mode)
+
+> [!NOTE]
+> Willkommen in der 5. Klasse! In diesen Einstiegsaufgaben wiederholst du wichtige Grundlagen aus der Grundschule und lernst typische Aufgabenformen für den Mathematikunterricht kennen. Arbeite sorgfältig und möglichst ohne Taschenrechner. Nutze für Nebenrechnungen ein Blatt Papier oder nutzt die Schrifterkennung. Kontrolliere deine Eingaben, bevor du sie überprüfst. Viel Erfolg! <p align="right">– Martin Lommatzsch</p>
+
+> [!IMPORTANT]
+> <h3>Diese Wochenaufgabe kann abgegeben werden, richte dich nach deiner Lehrkraft. Am Ende des Kurses kannst du den Kurs einfrieren. Dabei entsteht ein Link, den du über LernSax an deine Lehrerin oder deinen Lehrer sendest.</h3>
+
+
+---
+
+---
+
+
+
+
+
+> [!CAUTION]
+> <h2>Gamifizierung</h2>
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+Du hast Ressourcen: 
+- `Energie` um den Prüfenbutton benutzen zu können
+- `Münzen` um den Hinweisbutton benutzen zu können
+- `Diamanten` um den Auflösenbutton benutzen zu können
+
+Außerdem kannst du `Truhen` finden mit den Ressourcen. Machne Inhalte sind aber verschlossen und du musst zuvor den `Schlüssel` finden. Andere Inhalte sind `versteckt`, dafür brauchst du die Lupe. Mache versteckte Inhalte kannst du schon erahnen anderen nicht. Und mit den Portalen kannst du in andere Folien wechseln. 
+
+Schau dich gut um, denn überall könnte etwas versteckt sein. Du bekommst Erfolge, wenn du besonders viel gefunden oder die Aufgaben besonders gut gemacht hast.
+
+</div>
+
+<div class="flex-child">
+
+<center>
+<div style="display: block; max-width:500px; margin-block-end: -2rem; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
+![Inhaltsverzeichnis](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/game.gif)
+
+</div>
+</center>
+$\,$
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+---
+
+---
+
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+Du kannst dir die Arbeitsbreite von einigen Aufgaben anpassen. Das erkannst du an der verschiebbaren Linie rechts: 
+
+Viele der Bediehnungsoptionen sind in kleinen gif-Animationen dargestellt.
+
+
+</div>
+
+<div class="flex-child">
+
+<center>
+<div style="display: block; max-width:500px; margin-block-end: -2rem; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
+![Inhaltsverzeichnis](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/flexchild.gif)
+
+</div>
+</center>
+$\,$
+
+
+
+
+</div>
+
+</section>
+
+
+---
+
+---
+
+
+> [!CAUTION]
+> <h2>Hier hast du nochmal eine Übersicht über die Menüleiste:</h2>
+> <center> ![Bediehnungsübersicht](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/tutorial.png) </center>
+$\,$
+
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+- 1. Inhaltsverzeichnis: Komme schnell zu deiner Aufgabe. \
+Du kannst die Folien auch wechseln, wenn du die Pfeiltasten nach links oder rechs drückst. \
+Unten links kannst du auch mit der Maus die Folie wechseln.\
+
+
+<center>
+<div style="display: block; margin-block-end: -2rem; max-width:100px; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=100px" -->
+![Seitenwechsel](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/seitenwechsel.PNG)
+
+</div>
+</center>
+$\,$
+
+</div>
+
+
+
+
+<div class="flex-child">
+
+<center>
+<div style="display: block; margin-block-end: -2rem; max-width:500px; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
+![Inhaltsverzeichnis](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/toc.gif)
+
+</div>
+</center>
+$\,$
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+
+- 2. Textmarker: Markiere dir wichtige Textpassagen
+
+
+</div>
+
+<div class="flex-child">
+
+<center>
+<div style="display: block; margin-block-end: -2rem; max-width:500px; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
+![Textmarker](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/marker.gif)
+
+</div>
+</center>
+$\,$
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+
+- 3. Schriftgrößenanpassung: Stelle dir die Schriftgröße für deinen optimalen Arbeitsmodus ein. \
+Du kannst auch noch dazu Zoomen, indem du die Taste `strg` gedrückt hälst und das Mausrad drehst.
+
+
+</div>
+
+<div class="flex-child">
+
+<center>
+<div style="display: block; margin-block-end: -2rem; max-width:500px; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
+![Schriftgröße](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/fontsize.gif)
+
+</div>
+</center>
+$\,$
+
+
+
+
+</div>
+
+</section>
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+
+- 4. Darstellungsbreite: Es wird "Präsentation" empfohlen, aber probiere ruhig mal "Lehrbuch" aus.
+
+
+</div>
+
+</section>
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+
+- 5. Aussehen von LiaScript: Hier kannst du in den Dunkelmodus wechseln oder die Themefarben anpassen. Auch kannst du die Vorlesegeschwindigkeit sowie Stimmhöhe anpassen.
+
+
+</div>
+
+<div class="flex-child">
+
+<center>
+<div style="display: block; margin-block-end: -2rem; max-width:500px; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
+![Modus](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/modetheme.gif)
+
+</div>
+</center>
+$\,$
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+
+- 6. Automatische Übersetzung in andere Sprachen. Diese Funktion kann aber auch durch die Lehrkraft blockiert sein.
+
+
+</div>
+
+<div class="flex-child">
+
+<center>
+<div style="display: block; margin-block-end: -2rem; max-width:500px; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
+![Sprache](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/language.gif)
+
+</div>
+</center>
+$\,$
+
+
+
+
+</div>
+
+</section>
+
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+
+- 7. Gruppenraum eröffnen: (Für dich wohl unwichtig, aber für Lehrkräfte eventuell interessanter)
+
+</div>
+
+</section>
+
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+
+- 8. Informationen zum Kurs: Hier steht welche Version das Arbeitsblatt besitzt und wer das Arbeitsblatt erstellt hat.
+
+
+</div>
+
+</section>
+
+
+
+
+---
+
+---
+
+> [!CAUTION]
+> <h2>**Schrifterkennung**</h2>
+
+
+Wenn du nicht weißt wie man eine Lösung eintippt, kannst du mit der mathematischen Schrifterkennung deine Lösungen übergeben. Wenn du die Lösung wie im Mathematikunterricht erlernt niederschreibst und dabei sauber schreibst, sollte die Schrifterkennung deine Lösungsvorschläge erkennen. Beim ersten Mal wird die Schrifterkennung etwas länger zum Laden brauchen, danach kann sie schneller aktiviert werden.
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+<center>
+<div style="display: block; margin-block-end: -2rem; max-width:400px; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=400px" -->
+![Canvas](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/canvas.png)
+
+</div>
+</center>
+$\,$
+
+
+
+
+</div>
+
+<div class="flex-child">
+
+
+<center>
+<div style="display: block; margin-block-end: -2rem; max-width:500px; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
+![Schrifterkennung](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/ocr.gif)
+
+</div>
+</center>
+$\,$
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+1. Öffnet oder schließt die Schreibfläche.
+
+2. Macht die letzte Änderung auf der Schreibfläche rückgängig.
+
+3. Stellt das letzte "Rückgängig machen" wieder her.
+
+4. Radierer mit Submenü für Radierergröße oder komplettes löschen.
+
+5. Stift mit Submenü für Farbauswahl, Stiftdicke und Transparenz.
+
+6. Legt ein Grid oder Linien in den Hintergrund.
+
+7. Lässt ein Feld ziehen, welches mittels Schrifterkennung an das Eingabefeld als Lösung übergibt.
+
+8. Unten rechs an der Ecke kann die Canvas verkleinert oder vergrößert werden.
+
+9. Das klassische Eingabefeld für ein Quiz, um die Lösung einzutragen oder zu bearbeiten.
+
+
+> **Steuerung mit Maus**
+
+- Linke Maustaste: Zeichnen, Radieren, Ziehen
+
+- Rechte Maustaste: Schreibfläche hin- und herziehen
+
+- Mausrad: Zoom
+
+
+> **Steuerung mit Touchscreen**
+
+- Ein Finger:  Zeichnen, Radieren, Ziehen
+
+- Zwei Finger (Abstand zwischen den Fingern gleichbleibend): Schreibfläche hin- und herziehen
+
+- Zwei Finger (Abstand zwischen den Fingern verändern): Zoom
+
+
+---
+
+---
+
+> [!CAUTION]
+> <h2>**Annotationen**</h2>
+
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+Mit der Annotationsbar am linken Rand kannst du überall hinschreiben und dir Notizen machen. Du kannst sie auch ein- und ausblenden. Auch die Schrifterkennung kann hier angewendet werden.
+
+</div>
+
+<div class="flex-child">
+
+<center>
+<div style="display: block; margin-block-end: -2rem; max-width:500px; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
+
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
+![Annotation](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/annotation.gif)
+
+</div>
+</center>
+$\,$
+
+
+</div>
+
+</section>
+
+
+---
+
+
+---
+
+
+
+> [!CAUTION]
+> Du wirst jede Woche andere Aufgaben und auch Aufgabentypen sehen, sodass du auch neue Funktionen benutzen musst. Mal musst du Antworten auswählen, mal sie als Kachel ins Ziel ziehen.
+
+
+
+**Wenn du mit den Aufgaben beginnen willst, dann swipe (wische) entweder weiter oder klicke unten neben der Seitenzahl auf den Pfeil nach rechts.**
+
+
+
+---
+
+
+---
+
+
+
+
+
+## Aufgabe 1: Stellenwert und Zahlwörter
+
+**Gib** die Zahl als Ziffernfolge **an**.
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+<!-- data-solution-timer="90s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$a)\;\;$__ dreitausendzweihundertachtzehn  \
+[[ 3218     ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Zahlwörter)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="90s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$b)\;\;$__ fünfundvierzigtausendsieben  \
+[[ 45007     ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Zahlwörter)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="90s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$c)\;\;$__ zweihundertsechstausendvierzig  \
+[[ 206040     ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Zahlwörter)
+
+</div>
+
+</section>
+
+
+---
+
+---
+
+
+__$d)\;\;$__ Die Zahl $583\,274$ besteht aus verschiedenen Stellenwerten. **Gib** die Stellen **an**.
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution 
+data-type="none" 
+data-sortable="false" 
+style="max-width:800px;"-->
+| Stelle | Hunderttausender | Zehntausender | Tausender | Hunderter | Zehner | Einer |
+|:------:|:----------------:|:-------------:|:---------:|:---------:|:------:|:------:|
+| Ziffer | [[ 5 ]] | [[ 8 ]] | [[ 3 ]] | [[ 2 ]] | [[ 7 ]] | [[ 4 ]] |
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=6;Stellenwerttafel)
+
+
+
+---
+
+---
+
+
+
+__$e)\;\;$__ **Ergänze** die Stellenwertzerlegung.
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution -->
+$ 407\,035 = 4\cdot$ [[100000]]$ + 7\cdot $[[ 1000 ]]$ + 3\cdot $[[  10  ]]$ + 5\cdot $[[   1  ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=4;Stellenwerttafel)
+
+
+## Aufgabe 2: Vergleichen und Ordnen
+
+
+**Wähle** jeweils das richtige Zeichen aus.
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$a)\;\;$__ $4\,508$ [[ ($<$) | $=$ | $>$ ]] $4\,580$ 
+[[?]] @Explain 
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+
+</div>
+<div class="flex-child">
+
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$b)\;\;$__ $32\,090$ [[ $<$ | $=$ | ($>$) ]] $32\,009$  
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+
+</div>
+<div class="flex-child">
+
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$c)\;\;$__ $76\,500$ [[ $<$ | ($=$) | $>$ ]] $76\,500$  
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+
+</div>
+<div class="flex-child">
+
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$d)\;\;$__ $9\,999$ [[ ($<$) | $=$ | $>$ ]] $10\,000$  
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+
+</div>
+<div class="flex-child">
+
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$e)\;\;$__ $105\,040$ [[ $<$ | $=$ | ($>$) ]] $105\,004$
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+</div>
+
+</section>
+
+@ADetails(BE=5;Zahlenverständnis)
+
+---
+
+---
+
+
+
+__$f)\;\;$__ **Sortiere** die Zahlen von klein nach groß.
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution 
+data-randomize="true" -->
+[->[(3 045)]] [->[(3 054)]] [->[(3 405)]] [->[(3 450)]] [->[(3 540)]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=5;Zahlenverständnis)
+
+## Aufgabe 3: Runden
+
+**Gib** gerundet den Wert wie angegeben **an**.
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$a)\;\;$__ Runde $347$ auf Zehner.  
+[[ 350 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Runden)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$b)\;\;$__ Runde $2\,849$ auf Hunderter.  
+[[ 2800 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Runden)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$c)\;\;$__ Runde $16\,501$ auf Tausender.  
+[[ 17000 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Runden)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$d)\;\;$__ Runde $74\,499$ auf Tausender.  
+[[ 74000 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Runden)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$e)\;\;$__ Runde $385\,270$ auf Zehntausender.  
+[[ 390000 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Runden)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$f)\;\;$__ Runde $949$ auf Hunderter.  
+[[ 900 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Runden)
+
+</div>
+
+</section>
+
+## Aufgabe 4: Addition und Subtraktion
+
+**Berechne**. Nutze bei Bedarf dein Blatt für die schriftliche Rechnung.
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$a)\;\;$__ $438+257=$ [[ 695 ]] @canvas
+[[?]] @Explain
+*****************
+$$
+\begin{array}{r}
+  438\\
++ 257\\
+\hline
+  695
+\end{array}
+$$
+@Lupe
+@Schatztruhe
+@Schluessel(rot)
+@Portal(1)
+@Schloss(portal, rot)
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Addition)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$b)\;\;$__ $2\,706+1\,895=$ [[ 4601 ]] @canvas
+[[?]] @Explain
+*****************
+$$
+\begin{array}{r}
+  2\,706\\
++ 1\,895\\
+\hline
+  4\,601
+\end{array}
+$$
+@Diamanttruhe
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Addition)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$c)\;\;$__ $13\,479+8\,536=$ [[ 22015 ]] @canvas
+[[?]] @Explain
+*****************
+$$
+\begin{array}{r}
+  13\,479\\
++  8\,536\\
+\hline
+  22\,015
+\end{array}
+$$
+@Energiekiste(zauberstaub)
+@Schluessel(blau; zauberstaub)
+@Portal(1)
+@Schloss(portal, blau)
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Addition)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$d)\;\;$__ $905-468=$ [[ 437 ]] @canvas
+[[?]] @Explain
+*****************
+$$
+\begin{array}{r}
+  905\\
+- 468\\
+\hline
+  437
+\end{array}
+$$
+@Schatztruhe(zauberstaub)
+@Schluessel(gelb)
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Subtraktion)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$e)\;\;$__ $6\,000-2\,748=$ [[ 3252 ]] @canvas
+[[?]] @Explain
+*****************
+$$
+\begin{array}{r}
+  6\,000\\
+- 2\,748\\
+\hline
+  3\,252
+\end{array}
+$$
+@Diamanttruhe
+@Portal(1)
+@Schloss(portal, gelb)
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Subtraktion)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$f)\;\;$__ $20\,304-7\,859=$ [[ 12445 ]] @canvas
+[[?]] @Explain
+*****************
+$$
+\begin{array}{r}
+  20\,304\\
+-  7\,859\\
+\hline
+  12\,445
+\end{array}
+$$
+@Energiekiste(zauberstaub)
+@Schluessel(lila; unsichtbar)
+@Portal(1)
+@Schloss(portal, lila)
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Subtraktion)
+
+</div>
+
+</section>
+
+
+
+---
+
+---
+
+
+## Aufgabe 5: Multiplikation und Division
+
+**Berechne** ohne Taschenrechner.
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$a)\;\;$__ $7\cdot 8=$ [[ 56 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Multiplikation)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$b)\;\;$__ $9\cdot 6=$ [[ 54 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Multiplikation)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$c)\;\;$__ $40\cdot 7=$ [[ 280 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Multiplikation)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$d)\;\;$__ $63:9=$ [[ 7 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Division)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$e)\;\;$__ $560:8=$ [[ 70 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Division)
+
+</div>
+
+<div class="flex-child">
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$f)\;\;$__ $720:9=$ [[ 80 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=1;Grundrechenarten, Division)
+
+</div>
+
+</section>
+
+
+
+---
+
+---
+
+
+**Berechne** den Wert des Terms.
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution -->
+__$a)\;\;$__ $6+4\cdot 5=$ [[ 26 ]]  \
+__$b)\;\;$__ $(6+4)\cdot 5=$ [[ 50 ]]  \
+__$c)\;\;$__ $72:8+17=$ [[ 26 ]]  \
+__$d)\;\;$__ $45-(18+7)=$ [[ 20 ]]
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=4;Terme, Vorrangregeln)
+
+## Aufgabe 6: Größen im Alltag
+
+
+**Wähle** die sinnvolle Einheit aus.
+
+<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+__$a)\;\;$__ Ein Bleistift ist ungefähr $15$ [[ mm | (cm) | m | km ]] lang.  \
+__$b)\;\;$__ Eine volle normalgroße Wasserflasche enthält ungefähr $1$ [[ ml | (l) | kg | h ]].  \
+__$c)\;\;$__ Ein Schulweg kann etwa $2$ [[ cm | m | (km) | g ]] lang sein.  \
+__$d)\;\;$__ Ein Apfel wiegt ungefähr $200$ [[ (g) | kg | t | l ]].  \
+__$e)\;\;$__ Eine Unterrichtsstunde dauert meist $45$ [[ s | (min) | h | d ]].
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=5;Größen, Einheiten)
+
+
+
+---
+
+---
+
+
+<!-- data-solution-timer="240s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution
+data-type="none" 
+data-sortable="false" 
+style="max-width:800px;" -->
+| Aufgabe | Ergebnis |
+|:-------:|:--------:|
+| $3\,\text{m}=\;$ | [[ 300 ]] $\,\text{cm}$ |
+| $450\,\text{cm}=\;$ | [[ 4 ]] $\,\text{m}$ [[ 50 ]] $\,\text{cm}$ |
+| $2\,\text{kg}=\;$ | [[ 2000 ]] $\,\text{g}$ |
+| $3\,\text{h}=\;$ | [[ 180 ]] $\,\text{min}$ |
+| $5\,\text{l}=\;$ | [[ 5000 ]] $\,\text{ml}$ |
+[[?]] @Explain
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=6;Größen, Einheiten)
+
+## Aufgabe 7: Sachaufgabe – Ausflug in den Tierpark
+
+Die Klasse 5a besucht mit ihrer Lehrerin und ihrem Lehrer einen Tierpark. In der Klasse sind $24$ Kinder. Eine Kinderkarte kostet $7\,€$, eine Erwachsenenkarte $12\,€$. Für die Busfahrt bezahlt die Klasse insgesamt $95\,€$.
+
+
+
+
+__$a)\;\;$__ **Berechne**, wie viel Euro die Eintrittskarten für alle Kinder zusammen kosten.
+
+
+<!-- data-solution-timer="240s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution -->
+Ergebnis: [[ 168 ]] $\,€$
+[[?]] @Explain
+@Algebrite.check(168)
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=2;Sachaufgaben, Multiplikation)
+
+
+
+__$b)\;\;$__ **Berechne** die Gesamtkosten für Kinder, Erwachsene und Busfahrt.
+
+
+
+
+<!-- data-solution-timer="300s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution -->
+Ergebnis: [[ 287 ]] $\,€$
+[[?]] @Explain
+@Algebrite.check(287)
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=3;Sachaufgaben, Grundrechenarten)
+
+
+
+__$c)\;\;$__ Die Lehrerin bezahlt mit drei $100$-Euro-Scheinen. **Berechne**, wie viel Rückgeld sie erhält.
+
+
+<!-- data-solution-timer="240s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution -->
+Antwort: Sie erhält [[ 13 ]] $\,€$ zurück.
+[[?]] @Explain
+@Algebrite.check(13)
+*****************
+@Energiekiste
+@Energiekiste
+*****************
+
+@ADetails(BE=2;Sachaufgaben, Subtraktion)
+
+## Abschluss: Selbsteinschätzung
+
+
+Wie sicher fühlst du dich bei der Bediehnung von LiaScript nach diesen Wochenaufgaben?
+
+[[ sehr sicher | meistens sicher | teilweise sicher | noch unsicher ]]
+
+
+Wie war der Anspruch der Mathematikaufgaben in diesen Wochenaufgaben für dich?
+
+[[ einfach | einige Schwierigkeiten | schwer ]]
+
+
+> Wenn du noch unsicher bist, notiere dir das Thema, bei dem du Hilfe brauchst. Fehler sind Hinweise darauf, was du als Nächstes üben kannst.
+
+# Abgabe
+
+> <h3>Kontrolliere noch einmal, ob du alle Aufgaben bearbeitet hast. Friere dann den Kurs ein und sende den entstandenen Link über LernSax an deine Lehrkraft.</h3>
+
+@Abgabe
+
+@Auswertung(F12;Tab;Time)

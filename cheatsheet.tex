@@ -1,0 +1,1151 @@
+% =====================================================================
+%  LiaScript / Markdown CheatSheet — A4, doppelseitig
+%  Fortbildung "Interaktive OER mit LiaScript erstellen", Freiberg 2026
+%  Compile:  pdflatex cheatsheet.tex   (zweimal für korrekte Boxen)
+% =====================================================================
+\documentclass[a4paper,landscape,9pt]{extarticle}
+
+% --- Layout ----------------------------------------------------------
+\usepackage[landscape,margin=0.9cm,top=1.0cm,bottom=0.7cm]{geometry}
+\usepackage{multicol}
+\setlength{\columnsep}{8pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% --- Sprache & Schrift ----------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{libertine}
+\usepackage[varqu,varl,scaled=0.92]{inconsolata}
+
+% --- Farben ----------------------------------------------------------
+\usepackage{xcolor}
+\definecolor{mdblue}{HTML}{1F4E79}
+\definecolor{mdblueLt}{HTML}{E8EEF5}
+\definecolor{liagreen}{HTML}{2E6B3D}
+\definecolor{liagreenLt}{HTML}{E8F0E9}
+\definecolor{schulred}{HTML}{A61E2D}
+\definecolor{schulredLt}{HTML}{F7E9EB}
+\definecolor{codebg}{HTML}{F6F6F4}
+\definecolor{rulegray}{HTML}{D0D0D0}
+\definecolor{muted}{HTML}{606060}
+
+% --- Pakete ----------------------------------------------------------
+\usepackage[most]{tcolorbox}
+\usepackage{listings}
+\usepackage{qrcode}
+\usepackage{fontawesome5}
+\usepackage{array}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+% --- Listings: Markdown/LiaScript-Quellcode --------------------------
+\lstdefinelanguage{lia}{
+  morecomment=[l]{\#},
+  morecomment=[s]{<!--}{-->},
+  sensitive=true
+}
+\lstset{
+  basicstyle=\ttfamily\scriptsize,
+  breaklines=true,
+  breakatwhitespace=true,
+  showstringspaces=false,
+  keepspaces=true,
+  columns=fullflexible,
+  upquote=true,
+  literate=%
+    {ä}{{\"a}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+    {Ä}{{\"A}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+    {ß}{{\ss}}1 {„}{{\glqq}}1 {“}{{\grqq}}1,
+  frame=none,
+  xleftmargin=0pt,
+  aboveskip=0pt,
+  belowskip=0pt
+}
+
+% --- Karten-Vorlage --------------------------------------------------
+%  Zwei Varianten: mdcard (blau, Markdown) und liacard (grün, LiaScript)
+%  Innen: links Quellcode, rechts Wirkung — getrennt durch \tcblower.
+\tcbset{
+  cheatbase/.style={
+    enhanced,
+    sidebyside,
+    sidebyside align=top,
+    lefthand width=0.46\linewidth,
+    segmentation style={solid, rulegray, line width=0.3pt},
+    colback=white,
+    boxrule=0.3pt,
+    arc=2pt,
+    left=4pt,right=4pt,top=2pt,bottom=2pt,middle=4pt,
+    before skip=3pt, after skip=3pt,
+    breakable=false,
+    fonttitle=\sffamily\bfseries\footnotesize,
+    coltitle=white
+  }
+}
+
+\newtcolorbox{mdcard}[1]{cheatbase, colframe=mdblue!75,  colbacktitle=mdblue,   title={#1}}
+\newtcolorbox{liacard}[1]{cheatbase, colframe=liagreen!75, colbacktitle=liagreen, title={#1}}
+\newtcolorbox{schulcard}[2]{
+  cheatbase,
+  colframe=schulred!75,
+  colbacktitle=schulred,
+  title={%
+    \parbox[c]{0.47\linewidth}{#1}\hfill%
+    \parbox[c]{0.50\linewidth}{\raggedleft\normalfont\ttfamily\bfseries\fontsize{6.8}{7.3}\selectfont #2}%
+  }
+}
+
+% Karte für die ganze Spaltenbreite (z. B. Mini-Kurs am Ende)
+\newtcolorbox{liawide}[1]{
+  enhanced,
+  colback=white,
+  colframe=liagreen!75,
+  boxrule=0.3pt, arc=2pt,
+  left=4pt,right=4pt,top=2pt,bottom=2pt,
+  before skip=3pt, after skip=0pt,
+  breakable=false,
+  fonttitle=\sffamily\bfseries\footnotesize,
+  coltitle=white, colbacktitle=liagreen, title=#1
+}
+
+% Info-Box ohne sidebyside (für Tools/Templates-Spalten unten)
+\tcbset{
+  infobase/.style={
+    enhanced, colback=white,
+    boxrule=0.3pt, arc=2pt,
+    left=5pt,right=5pt,top=3pt,bottom=3pt,
+    before skip=3pt, after skip=0pt,
+    breakable=false,
+    fonttitle=\sffamily\bfseries\footnotesize, coltitle=white
+  }
+}
+\newtcolorbox{mdinfo}[1]{infobase, colframe=mdblue!75,    colbacktitle=mdblue,   title={#1}}
+\newtcolorbox{liainfo}[1]{infobase, colframe=liagreen!75, colbacktitle=liagreen, title={#1}}
+\newtcolorbox{schulinfo}[1]{infobase, colframe=schulred!75, colbacktitle=schulred, title={#1}}
+
+% Kleine Hilfsmacros für die "Wirkung"-Spalte
+\newcommand{\prevtxt}[1]{{\small #1}}
+\newcommand{\prevsm}[1]{{\footnotesize\color{muted} #1}}
+\newcommand{\sheetfooter}{%
+  \vfill
+  {\sffamily\scriptsize\color{muted}
+  \faInfoCircle~Live-Editor: \href{https://liascript.github.io/LiveEditor/}{\textbf{liascript.github.io/LiveEditor}}\hfill
+  \faBook~Doku: \href{https://liascript.github.io}{\textbf{liascript.github.io}}\hfill
+  \faGithub~\href{https://mint-the-gap.github.io/Aufgabensammlung/}{\textbf{mint-the-gap.github.io/Aufgabensammlung/}} \quad
+  CC-BY-SA 4.0 — Martin Lommatzsch, Freiberg 2026}}
+
+\pagestyle{empty}
+\begin{document}
+
+% =====================================================================
+% SEITE 1 — MARKDOWN
+% =====================================================================
+\noindent\begin{tcolorbox}[
+  enhanced, frame hidden, sharp corners,
+  colback=mdblue, coltext=white,
+  left=12pt, right=8pt, top=4pt, bottom=4pt,
+  before skip=0pt, after skip=4pt,
+  width=\linewidth,
+  borderline west={4pt}{-4pt}{mdblue!55}
+]
+\begin{minipage}[c]{0.66\linewidth}
+  {\sffamily\fontsize{26}{28}\selectfont\bfseries Markdown}\hspace{0.4em}%
+  {\sffamily\large\color{white!75} — die Basis}\\[2pt]
+  {\sffamily\footnotesize\itshape\color{white!90} Was jeder Markdown-Editor versteht — Grundlage für alle LiaScript-Dokumente.}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.20\linewidth}\raggedright
+  {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
+  {\sffamily\bfseries\normalsize Seite 1\,/\,4}\\[1pt]
+  {\sffamily\scriptsize\color{white!75} Markdown-Grundlagen}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.10\linewidth}\centering
+  {\color{black}\colorbox{white}{\hspace{1pt}\qrcode[height=1.55cm,nolinks]{https://liascript.github.io/LiveEditor/}\hspace{1pt}}}\\[1pt]
+  {\sffamily\scriptsize\color{white!90}\faEdit~Live-Editor}
+\end{minipage}
+\end{tcolorbox}
+
+% --- Tag für Aufgabenbezug (klein, oben rechts in der Titelzeile) ---
+\newcommand{\aufg}[1]{\hfill{\sffamily\scriptsize\color{white!85}\faTasks~A#1}}
+
+\begingroup
+\tcbset{cheatbase/.append style={top=1pt,bottom=1pt,before skip=2pt,after skip=2pt}}
+\begin{multicols}{3}
+
+% =====================================================================
+% Block A — Textauszeichnung & Struktur (Aufgaben 2-4)
+% =====================================================================
+
+% --- YAML-Header -----------------------------------------------------
+\begin{mdcard}{YAML-Header}
+\begin{lstlisting}[language=lia,basicstyle=\ttfamily\tiny]
+<!--
+author:   Maria Muster
+version:  1.0.0
+language: de
+narrator: Deutsch Female
+mode:     Presentation
+edit:     true
+tags:     OER, LiaScript, Fach
+comment:  Interaktiver Kurs
+import:   ./template.md
+-->
+\end{lstlisting}
+\tcblower
+\prevsm{Steht ganz oben im Dokument.\\
+Definiert Version, Sprache, Startmodus,
+Bearbeitung, Tags und Beschreibung.\\[2pt]
+{\footnotesize \texttt{import:} mit lokalem Pfad oder URL für jeden Baustein wiederholen.}}
+\end{mdcard}
+
+% --- R3. Version & gespeicherte Eingaben ----------------------------
+\begin{mdcard}{Version \& gespeicherte Eingaben}
+\begin{lstlisting}[language=lia]
+<!-- version: 1.0.0 -->
+<!-- version: 0.1.0 -->
+<!-- version: 0.0.1 -->
+\end{lstlisting}
+\tcblower
+\prevsm{\textbf{1.0.0:} Release; Quiz- und Codezustände werden im Browser persistent gespeichert.\\[2pt]
+\textbf{0.1.0:} Entwicklungsstand; bei jedem Laden neu parsen, Eingaben nicht persistent speichern.\\[2pt]
+\textbf{0.0.1:} früher Debug-/Teststand; gleiches Speicherverhalten wie jede Hauptversion~0.}
+\end{mdcard}
+
+% --- A3. Überschriften ----------------------------------------------
+\begin{mdcard}{Überschriften}
+\begin{lstlisting}[language=lia]
+# Kapitel
+## Abschnitt
+### Unterabschnitt
+#### Detail
+\end{lstlisting}
+\tcblower
+{\large\bfseries Kapitel}\par\vspace{1pt}
+{\normalsize\bfseries Abschnitt}\par\vspace{1pt}
+{\small\bfseries Unterabschnitt}\par\vspace{1pt}
+{\footnotesize\bfseries Detail}
+\end{mdcard}
+
+% --- A2a. Textauszeichnung ------------------------------------------
+\begin{mdcard}{Textauszeichnung}
+\begin{lstlisting}[language=lia]
+**fett**, *kursiv*,
+~~durchgestrichen~~,
+`Quellcode`
+\end{lstlisting}
+\tcblower
+\prevtxt{\textbf{fett}, \textit{kursiv},
+\sout{durchgestrichen}, \texttt{Quellcode}}
+\end{mdcard}
+
+% --- A2b. Absätze & Trennlinie --------------------------------------
+\begin{mdcard}{Absätze \& Trennlinie}
+\begin{lstlisting}[language=lia]
+Erster Absatz.
+
+Zweiter Absatz nach
+einer Leerzeile.
+
+---
+\end{lstlisting}
+\tcblower
+\prevtxt{Erster Absatz.\\[3pt]
+Zweiter Absatz nach einer Leerzeile.\\[2pt]
+\textcolor{rulegray}{\hrulefill}}
+\end{mdcard}
+
+% --- A4. Listen -----------------------------------------------------
+\begin{mdcard}{Listen}
+\begin{lstlisting}[language=lia]
+- erstens
+- zweitens
+
+  - eingerückt
+
+- drittens
+
+1. eins
+2. zwei
+\end{lstlisting}
+\tcblower
+\prevtxt{%
+$\bullet$ erstens\\
+$\bullet$ zweitens\\[2pt]
+\hspace*{1em}$\circ$ eingerückt\\[2pt]
+$\bullet$ drittens\\[3pt]
+1. eins\\
+2. zwei\\[2pt]
+{\scriptsize\color{muted}Untergeordnete Listen um \textbf{2 Zeichen} einrücken.}}
+\end{mdcard}
+
+% --- R1. Aufgabenliste / Checkboxen ---------------------------------
+\begin{mdcard}{Aufgabenliste}
+\begin{lstlisting}[language=lia]
+- [x] erledigt
+- [ ] offen
+- [ ] noch offen
+\end{lstlisting}
+\tcblower
+\prevtxt{%
+\faCheckSquare~erledigt\\
+\faSquare~offen\\
+\faSquare~noch offen}
+\end{mdcard}
+
+% =====================================================================
+% Block B — Tabellen, Code & Gleichungen (Aufgaben 5-6)
+% =====================================================================
+
+% --- A5. Tabellen ---------------------------------------------------
+\begin{mdcard}{Tabellen}
+\begin{lstlisting}[language=lia]
+<!-- data-type="none"
+  data-sortable="false" -->
+| Operator | Wirkung      |
+|:---------|:------------:|
+| AND      | verkleinert  |
+| OR       | vergrößert |
+| NOT      | schließt aus|
+\end{lstlisting}
+\tcblower
+\prevtxt{%
+\renewcommand{\arraystretch}{1.05}%
+\begin{tabular}{|l|c|}\hline
+\textbf{Operator} & \textbf{Wirkung}\\\hline
+AND & verkleinert\\
+OR  & vergrößert\\
+NOT & schließt aus\\\hline
+\end{tabular}\\[2pt]
+{\scriptsize\color{muted}\texttt{:--} links, \texttt{:--:} zentriert, \texttt{--:} rechts.\\
+\texttt{data-type="none"}: keine Grafik; \texttt{data-sortable="false"}: feste Reihenfolge.}}
+\end{mdcard}
+
+% --- A6a. Inline-Code & Codeblock -----------------------------------
+\begin{mdcard}{Inline-Code \& Codeblock}
+\begin{lstlisting}[language=lia]
+Operatoren wie `AND`
+und `OR` als Code.
+
+```python
+print("Hallo")
+```
+\end{lstlisting}
+\tcblower
+\prevtxt{Operatoren wie \texttt{\small AND}
+und \texttt{\small OR} als Code.\\[3pt]
+\colorbox{codebg}{\parbox{0.85\linewidth}{\ttfamily\scriptsize print("Hallo")}}}
+\end{mdcard}
+
+% --- A6b. Mathematik ------------------------------------------------
+\begin{mdcard}{Mathematische Gleichungen}
+\begin{lstlisting}[language=lia]
+Inline: $A \cdot B$
+
+Block:
+$$\neg A \lor (B \land C)$$
+\end{lstlisting}
+\tcblower
+\prevtxt{Inline: $A \cdot B$\\[3pt]
+Block:\\
+$\displaystyle \neg A \lor (B \land C)$\\[3pt]
+{\scriptsize\color{muted}\texttt{\textbackslash land}~$\land$,\,
+\texttt{\textbackslash lor}~$\lor$,\,
+\texttt{\textbackslash neg}~$\neg$,\,
+\texttt{\textbackslash cdot}~$\cdot$}}
+\end{mdcard}
+
+% =====================================================================
+% Block C — Links, Bilder, Hinweise (Aufgaben 7-8)
+% =====================================================================
+
+% --- A7a. Links ------------------------------------------------------
+\begin{mdcard}{Links}
+\begin{lstlisting}[language=lia]
+[Beschreibung](https://...)
+
+<https://example.org>
+\end{lstlisting}
+\tcblower
+\prevtxt{\textcolor{mdblue}{\underline{Beschreibung}}\\[2pt]
+\textcolor{mdblue}{\underline{https://example.org}}\\[3pt]
+{\scriptsize\color{muted}Sprechende Beschreibung erleichtert die Orientierung.}}
+\end{mdcard}
+
+% --- R2. Fußnoten ---------------------------------------------------
+\begin{mdcard}{Fußnoten}
+\begin{lstlisting}[language=lia]
+Wichtig[^1] zum Lernen.
+
+[^1]: Quelle: ...
+\end{lstlisting}
+\tcblower
+\prevtxt{Wichtig\textsuperscript{\textcolor{mdblue}{1}} zum Lernen.\\[3pt]
+{\scriptsize \textsuperscript{1}~Quelle: \dots}}
+\end{mdcard}
+
+% --- A7b. Bilder -----------------------------------------------------
+\begin{mdcard}{Bilder}
+\begin{lstlisting}[language=lia]
+![Alt-Text](pfad/bild.png)
+
+![Venn-Diagramm AND/OR](
+  https://.../venn.svg)
+\end{lstlisting}
+\tcblower
+\prevtxt{\fbox{\rule{0pt}{1.2em}\hspace{1.2em}{\scriptsize\color{muted}Bild}\hspace{1.2em}}\\[2pt]
+{\scriptsize\color{muted}\textit{Alt-Text in eckigen Klammern — wichtig für Barrierefreiheit.}}}
+\end{mdcard}
+
+% --- R5. Audio ------------------------------------------------------
+\begin{mdcard}{Audio}
+\begin{lstlisting}[language=lia]
+?[Audio](datei.mp3)
+
+?[Hörbeispiel](https://...
+  /aufnahme.ogg)
+\end{lstlisting}
+\tcblower
+\prevsm{\faVolumeUp~MP3, OGG und SoundCloud als Audioplayer einbetten.\\[2pt]
+\textbf{?} vor dem Link kennzeichnet eine Audioressource.}
+\end{mdcard}
+
+% --- R4. Medien abspielbar ------------------------------------------
+\begin{mdcard}{Medien abspielbar}
+\begin{lstlisting}[language=lia]
+!?[Titel](https://www.youtube
+.com/watch?v=VIDEO_ID)
+
+!?[Video](datei.mp4)
+\end{lstlisting}
+\tcblower
+\prevsm{\faYoutube~YouTube, Vimeo und Videodateien werden direkt eingebettet.\\[2pt]
+\textbf{!?} kombiniert Bild und Ton zu einem abspielbaren Video.}
+\end{mdcard}
+
+% --- R6. Eingebettete Ressource -------------------------------------
+\begin{mdcard}{Eingebettete Ressource}
+\begin{lstlisting}[language=lia]
+??[Katalog](https://kxp.k10plus.de)
+
+??[Spezifikation](
+  https://dublincore.org/...)
+\end{lstlisting}
+\tcblower
+\prevsm{\faWindowMaximize~PDF, GeoGebra, 3D-Modelle und Webseiten direkt anzeigen.\\[2pt]
+\textbf{??} bettet die Ressource ein, statt sie nur zu verlinken.}
+\end{mdcard}
+
+% --- A8. Zitate & Hinweise -----------------------------------------
+\begin{mdcard}{Zitate \& Hinweise}
+\begin{lstlisting}[language=lia]
+> Ein einfaches Zitat.
+
+> [!NOTE]    blau
+> [!TIP]     grün
+> [!IMPORTANT] lila
+> [!WARNING] orange
+> [!CAUTION] rot
+\end{lstlisting}
+\tcblower
+\prevtxt{%
+\textcolor{rulegray}{\rule{1pt}{1.1em}}\hspace{4pt}\textit{Ein einfaches Zitat.}\\[2pt]
+\textcolor{mdblue}{\rule{1pt}{1.0em}}\hspace{3pt}{\scriptsize\textbf{NOTE}\,/\,\textbf{TIP}\,/\,\textbf{IMPORTANT}}\\
+\hspace*{8pt}{\scriptsize\textbf{WARNING}\,/\,\textbf{CAUTION}}\\
+\hspace*{8pt}{\scriptsize Folgezeilen = Inhalt der Box.}}
+\end{mdcard}
+
+% =====================================================================
+% Block D — Referenz-Karten (in den Aufgaben nicht zwingend gebraucht)
+% =====================================================================
+
+\end{multicols}
+\endgroup
+
+\sheetfooter
+
+\newpage
+
+% =====================================================================
+% SEITE 2 — LIASCRIPT
+% =====================================================================
+\noindent\begin{tcolorbox}[
+  enhanced, frame hidden, sharp corners,
+  colback=liagreen, coltext=white,
+  left=12pt, right=8pt, top=4pt, bottom=4pt,
+  before skip=0pt, after skip=4pt,
+  width=\linewidth,
+  borderline west={4pt}{-4pt}{liagreen!55}
+]
+\begin{minipage}[c]{0.66\linewidth}
+  {\sffamily\fontsize{26}{28}\selectfont\bfseries LiaScript}\hspace{0.4em}%
+  {\sffamily\large\color{white!75} — die Erweiterungen}\\[2pt]
+  {\sffamily\footnotesize\itshape\color{white!90} Alles, was Markdown allein nicht kann: Quiz, Animationen, ausführbarer Code, Sprache.}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.20\linewidth}\raggedright
+  {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
+  {\sffamily\bfseries\normalsize Seite 2\,/\,4}\\[1pt]
+  {\sffamily\scriptsize\color{white!75} Erweiterungen \& Interaktion}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.10\linewidth}\centering
+  {\color{black}\colorbox{white}{\hspace{1pt}\qrcode[height=1.55cm,nolinks]{https://github.com/MINT-the-GAP}\hspace{1pt}}}\\[1pt]
+  {\sffamily\scriptsize\color{white!90}\faGithub~MINT-the-GAP}
+\end{minipage}
+\end{tcolorbox}
+
+% --- Tag für Aufgabenbezug (grün, oben rechts im Karten-Titel) -----
+\newcommand{\aufglia}[1]{\hfill{\sffamily\scriptsize\color{white!85}\faTasks~A#1}}
+
+\begin{multicols}{3}
+
+% =====================================================================
+% Block B — LiaScript-Erweiterungen (Aufgaben 9-11)
+% =====================================================================
+
+% --- A10. Animation / Click-Reveal ----------------------------------
+\begin{liacard}{Animation \& Click-Reveal}
+\begin{lstlisting}[language=lia]
+Sofort sichtbar.
+
+{{1}}
+Erst nach einem Klick.
+
+{{2}}
+Nach dem zweiten Klick.
+\end{lstlisting}
+\tcblower
+\prevsm{Sofort sichtbar.\\
+{\color{rulegray}---}\\
+\faMousePointer~nach 1. Klick: \textit{\dots}\\
+\faMousePointer~nach 2. Klick: \textit{\dots}}
+\end{liacard}
+
+% --- A11. Sprecher-Text ---------------------------------------------
+\begin{liacard}{Sprecher-Text (TTS)}
+\begin{lstlisting}[language=lia]
+## Folie
+         --{{0}}--
+Dieser Text wird vorgelesen,
+sobald die Folie erscheint.
+\end{lstlisting}
+\tcblower
+\prevsm{\faVolumeUp~Wird automatisch
+gesprochen.\\
+\texttt{\{\{0\}\}}~=~beim Öffnen,
+\texttt{\{\{1\}\}}~=~nach 1.~Klick~\dots\\[2pt]
+{\footnotesize Stimme im Header: \texttt{narrator:}}}
+\end{liacard}
+
+% =====================================================================
+% Block C — Quizze (Aufgaben 12-13)
+% =====================================================================
+
+% --- A12. Freitext --------------------------------------------------
+\begin{liacard}{Quiz: Freitext}
+\begin{lstlisting}[language=lia]
+Welcher Operator verkleinert
+die Treffermenge?
+[[AND]]
+[[?]] Beide Begriffe müssen
+      vorkommen.
+\end{lstlisting}
+\tcblower
+\prevsm{Welcher Operator verkleinert die Treffermenge?\\[2pt]
+\fbox{\strut\hspace{6em}}\\[3pt]
+\faQuestionCircle~Hinweis (\texttt{[[?]]}, klappbar)\\[2pt]
+{\footnotesize Mehrere gültige Antworten: weitere \texttt{[[\dots]]} anhängen.}}
+\end{liacard}
+
+% --- A13a. Single-Choice --------------------------------------------
+\begin{liacard}{Quiz: Single-Choice}
+\begin{lstlisting}[language=lia]
+- [( )] falsch
+- [(X)] richtig
+- [[?]] Hinweis
+*******************
+
+Bravo, alles richtig!
+
+*******************
+\end{lstlisting}
+\tcblower
+\prevsm{$\circ$~falsch\\
+$\bullet$~\textbf{richtig}\\
+\faQuestionCircle~Hinweis (klappbar)\\[3pt]
+{\footnotesize\color{liagreen}\faCheck~\textit{Bravo, alles richtig!}}\\[2pt]
+{\footnotesize Lösungsblock nach \texttt{*****}\,---\,erscheint erst bei korrekter Antwort.}}
+\end{liacard}
+
+% --- A13b. Multiple-Choice ------------------------------------------
+\begin{liacard}{Quiz: Multiple-Choice}
+\begin{lstlisting}[language=lia]
+- [[X]] vergrößert Treffer
+- [[X]] verknüpft Synonyme
+- [[ ]] schließt Begriffe aus
+- [[X]] ist Vereinigungsmenge
+\end{lstlisting}
+\tcblower
+\prevsm{\faCheckSquare~vergrößert Treffer\\
+\faCheckSquare~verknüpft Synonyme\\
+\faSquare~schließt Begriffe aus\\
+\faCheckSquare~ist Vereinigungsmenge\\[2pt]
+{\footnotesize \texttt{[[X]]} = beliebig viele richtig.}}
+\end{liacard}
+
+% --- A13c. Kachelquiz -----------------------------------------------
+\begin{liacard}{Quiz: Kacheln}
+\begin{lstlisting}[language=lia]
+<!-- data-randomize="true" -->
+Himmel: [->[rot|(blau)|grün]]
+
+Gras: [->[(grün)|blau|rot]]
+\end{lstlisting}
+\tcblower
+\prevsm{\faTh~Antwortkacheln in die passenden Lücken ziehen.\\[2pt]
+Die richtige Lösung steht in \textbf{runden Klammern}; Alternativen trennt \texttt{|}.\\[2pt]
+{\footnotesize LiaScript-Standard, kein Import nötig.}}
+\end{liacard}
+
+% =====================================================================
+% Block D — Templates & Quiz-Kommentare
+% =====================================================================
+
+% --- JSXGraph --------------------------------------------------------
+\begin{liacard}{JSXGraph}
+\begin{lstlisting}[language=lia]
+```javascript @JSX.Graph
+board.create('point', [1, 2],
+  {name: 'A'});
+```
+\end{lstlisting}
+\tcblower
+\prevsm{\faProjectDiagram~Interaktive Geometrie, Funktionen und Datenvisualisierung.\\[2pt]
+Der JavaScript-Code erhält automatisch das Board \texttt{board}.}
+\end{liacard}
+
+% --- ABCjs -----------------------------------------------------------
+\begin{liacard}{ABCjs: Musiknotation}
+\begin{lstlisting}[language=lia]
+```abc @ABCJS.render
+X: 1
+M: 4/4
+L: 1/4
+K: C
+C D E F | G4 |
+```
+\end{lstlisting}
+\tcblower
+\prevsm{\faMusic~ABC-Notation als Noten darstellen und direkt abspielen.\\[2pt]
+\texttt{@ABCJS.eval} macht den Notentext zusätzlich editierbar.}
+\end{liacard}
+
+% --- Algebrite -------------------------------------------------------
+\begin{liacard}{Algebrite: Terme prüfen}
+\begin{lstlisting}[language=lia]
+Forme äquivalent um:
+[[(x - 2) * (x + 2)]]
+@Algebrite.check(`x^2 - 4`)
+
+Ableitung: [[-(K/2) * t^(-3/2)]]
+@Algebrite.check(`-(K/2) * t^(-3/2)`)
+
+Ergebnis: [[1/3]]
+@Algebrite.check2(1/3,0.01)
+
+Schätzung: [[1200]]
+@Algebrite.check_margin(1100,1400)
+\end{lstlisting}
+\tcblower
+\prevsm{\faCalculator~Komplexe Terme in Backticks schützen; äquivalente Schreibweisen werden akzeptiert.\\[2pt]
+Auch TeX-/LaTeX-Eingaben wie \texttt{\textbackslash frac\{1\}\{3\}} werden erkannt und vor der Prüfung umgewandelt.\\[2pt]
+\texttt{check2} ergänzt eine Toleranz; \texttt{check\_margin} prüft einen Wertebereich.}
+\end{liacard}
+
+% --- Speech Recognition ---------------------------------------------
+\begin{liacard}{Speech-Recognition-Quiz}
+\begin{lstlisting}[language=lia]
+<!-- data-solution-button="off" -->
+Sprich: Hallo.
+[[!]]
+@SpeechRecognition(de-DE,Hallo)
+\end{lstlisting}
+\tcblower
+\prevsm{\faMicrophone~Prüft eine gesprochene Phrase.\\[2pt]
+\texttt{.withFeedback(...)} zeigt bei Abweichung das erkannte Transkript.\\[2pt]
+{\footnotesize Benötigt Chrome, Edge oder Opera.}}
+\end{liacard}
+
+% --- Häufige Quiz-Kommentare ----------------------------------------
+\begin{liacard}{Häufige Quiz-Kommentare}
+\begin{lstlisting}[language=lia]
+<!-- data-solution-button="5"
+     data-hint-button="3"
+     data-randomize="true"
+     data-show-partial-solution=
+  "true" -->
+Frage ...
+[[Antwort]]
+\end{lstlisting}
+\tcblower
+\prevsm{\faSlidersH~In Aufgabensammlung und Wochenaufgaben regelmäßig genutzt.\\[2pt]
+Lösung nach 5, Hinweis nach 3 Versuchen; mischen, Teilergebnisse anzeigen und Lösung zeitverzögert freigeben.}
+\end{liacard}
+
+\end{multicols}
+
+% --- Untere Zeile: ausgewählte LiaScript-Templates (volle Breite) ---
+\noindent
+\begin{liainfo}{\faPuzzlePiece~~Vier LiaScript-Templates — jede benötigte Zeile in den Dokumentkopf schreiben}
+\scriptsize
+\begin{minipage}[t]{0.24\linewidth}
+\textbf{\color{liagreen}\faProjectDiagram~~JSXGraph}\\[1pt]
+\texttt{import:}\\[-1pt]
+{\tiny\url{https://raw.githubusercontent.com/liaTemplates/JSXGraph/main/README.md}}\\[1pt]
+Codeblock mit \texttt{@JSX.Graph}.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\linewidth}
+\textbf{\color{liagreen}\faMusic~~ABCjs}\\[1pt]
+\texttt{import:}\\[-1pt]
+{\tiny\url{https://raw.githubusercontent.com/liaTemplates/ABCjs/main/README.md}}\\[1pt]
+ABC-Block mit \texttt{@ABCJS.render}.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\linewidth}
+\textbf{\color{liagreen}\faCalculator~~Algebrite}\\[1pt]
+\texttt{import:}\\[-1pt]
+{\tiny\url{https://raw.githubusercontent.com/liaTemplates/algebrite/master/README.md}}\\[1pt]
+Nach Eingabe: \texttt{@Algebrite.check(...)}.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\linewidth}
+\textbf{\color{liagreen}\faMicrophone~~Speech Recognition}\\[1pt]
+\texttt{import:}\\[-1pt]
+{\tiny\url{https://raw.githubusercontent.com/LiaTemplates/Speech-Recognition-Quiz/refs/heads/main/README.md}}\\[1pt]
+Generisches \texttt{[[!]]}-Quiz + Makro.
+\end{minipage}
+\end{liainfo}
+
+\sheetfooter
+
+\newpage
+
+% =====================================================================
+% SEITE 3 — SCHULLIA: UNTERRICHT & INTERAKTION
+% =====================================================================
+\noindent\begin{tcolorbox}[
+  enhanced, frame hidden, sharp corners,
+  colback=schulred, coltext=white,
+  left=12pt, right=8pt, top=4pt, bottom=4pt,
+  before skip=0pt, after skip=4pt,
+  width=\linewidth,
+  borderline west={4pt}{-4pt}{schulred!55}
+]
+\begin{minipage}[c]{0.66\linewidth}
+  {\sffamily\fontsize{26}{28}\selectfont\bfseries SchulLia}\hspace{0.4em}%
+  {\sffamily\large\color{white!75} — Unterricht \& Interaktion}\\[2pt]
+  {\sffamily\footnotesize\itshape\color{white!90} Makros für Abgabe, Bewertung, Sprachaufgaben und lernförderliche Rückmeldung.}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.20\linewidth}\raggedright
+  {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
+  {\sffamily\bfseries\normalsize Seite 3\,/\,4}\\[1pt]
+  {\sffamily\scriptsize\color{white!75} stabile Makros + Hinweise}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.10\linewidth}\centering
+  {\color{black}\colorbox{white}{\hspace{1pt}\qrcode[height=1.55cm,nolinks]{https://mint-the-gap.github.io/Aufgabensammlung/}\hspace{1pt}}}\\[1pt]
+  {\sffamily\scriptsize\color{white!90}\faTasks~Aufgabensammlung}
+\end{minipage}
+\end{tcolorbox}
+
+\begin{multicols}{3}
+
+\begin{schulcard}{Abgabe \& Auswertung}{lia-freeze-v2/main/README.md}
+\begin{lstlisting}[language=lia]
+@Abgabe
+
+@Auswertung(F12;Tab;Time)
+\end{lstlisting}
+\tcblower
+\prevsm{\faShareSquare~Erzeugt den Abgabelink.\\[2pt]
+\faChartBar~Auswertung mit Formular-ID, Tabellenblatt und Zeitspalte.}
+\end{schulcard}
+
+\begin{schulcard}{Prüfung \& Bewertung}{lia-freeze-v2/main/README.md}
+\begin{lstlisting}[language=lia]
+@Exam(60min)
+
+3 + 4 = [[7]]
+
+@ADetails(2;Addition,
+          Grundrechenarten)
+\end{lstlisting}
+\tcblower
+\prevsm{\faClock~Prüfungsdauer: 60 Minuten.\\[2pt]
+\faTasks~\texttt{@ADetails} ordnet dem unmittelbar vorhergehenden Quiz 2 BE zu.\\[2pt]
+\faTags~Nach dem Semikolon folgen optionale, kommagetrennte Themen-Tags. \texttt{@Auswertung} berechnet damit Gesamtpunktzahl und Themenbereiche.\\[2pt]
+{\footnotesize Ohne Tags: \texttt{@ADetails(2)}; Standardwert: 1 BE. Leerzeile vor dem Makro.}}
+\end{schulcard}
+
+\begin{schulcard}{Text markieren}{lia-marker/main/README.md}
+\begin{lstlisting}[language=lia]
+<div class="markerquiz">
+@markred(Nomen)
+@markblue(Verb)
+@TextmarkerQuiz
+</div>
+
+@markedgreen(Beispiel)
+\end{lstlisting}
+\tcblower
+\prevsm{\textcolor{red}{\faHighlighter~Nomen}\quad
+\textcolor{blue}{\faHighlighter~Verb}\\[3pt]
+Zielwörter als Quiz in der erwarteten Farbe markieren; im Erklärmodus erscheint die Worterläuterung in der ausgewählten Sprache.\\[2pt]
+{\footnotesize \texttt{@mark(...)} akzeptiert jede Farbe; \texttt{@markedCOLOR(...)} zeigt eine fertige Markierung.}}
+\end{schulcard}
+
+\begin{schulcard}{Kachelfolgen}{lia-kachel/main/README.md}
+\begin{lstlisting}[language=lia]
+@Kachelfolge(`[->[(A)|B]]
+              [->[(C)|D]]`)
+
+@KachelfolgeN(`[->[(1)|2]]
+               [->[(2)|3]]`)
+\end{lstlisting}
+\tcblower
+\prevsm{\faTh~Kacheln zu passenden Zielen ziehen.\\[2pt]
+\texttt{@Kachelfolge}: Reihenfolge egal.\\
+\texttt{@KachelfolgeN}: Ziele schrittweise aufdecken.\\[2pt]
+{\footnotesize Backticks um die gesamte Folge.}}
+\end{schulcard}
+
+\begin{schulcard}{Flexible Spalten (DynFlex)}{lia-DynFlex/main/README.md}
+\begin{lstlisting}[language=lia]
+<section class="dynFlex">
+<div class="flex-child">Inhalt A</div>
+<div class="flex-child">Inhalt B</div>
+</section>
+\end{lstlisting}
+\tcblower
+\prevsm{\faColumns~Erzeugt nebeneinanderliegende, per Ziehen skalierbare Bereiche.\\[2pt]
+Jeder Bereich braucht \texttt{class="flex-child"}; auf kleinen Displays stapeln sie sich.}
+\end{schulcard}
+
+\begin{schulcard}{Inhalte nach Ansicht}{lia-board-mode/main/README.md}
+\begin{lstlisting}[language=lia]
+<div data-lia-only="slides">
+Nur auf Folien
+</div>
+
+<div data-lia-only="presentation">
+Nur in der Präsentation
+</div>
+
+<div data-lia-only="textbook">
+Nur im Lehrbuch
+</div>
+\end{lstlisting}
+\tcblower
+\prevsm{\faEye~\texttt{data-lia-only} zeigt einen Block ausschließlich in der angegebenen Ansicht.\\[2pt]
+Unterstützt werden \texttt{slides}, \texttt{presentation} und \texttt{textbook}.\\[2pt]
+{\footnotesize Das Template erweitert außerdem Folien und Präsentation auf nahezu volle Breite.}}
+\end{schulcard}
+
+\begin{schulcard}{Rechtschreibung \& Diktat}{lia-orthography/main/README.md}
+\begin{lstlisting}[language=lia]
+@orthography(
+ `<!-- data-solution-button="2" -->`,
+ `Feler im Saz.`,
+ `Fehler im Satz.`)
+
+@diktat(Schmetterling)
+\end{lstlisting}
+\tcblower
+\prevsm{\faSpellCheck~Fehler im Ausgangstext finden und verbessern.\\[2pt]
+\faVolumeUp~\texttt{@diktat} spricht Wort oder Satz vor; die Eingabe wird geprüft.\\[2pt]
+{\footnotesize Reihenfolge: Quiz-Kommentar, fehlerhafter Text, korrekte Lösung.}}
+\end{schulcard}
+
+\begin{schulcard}{Semantischer Selbstcheck}{lia-llm/main/README.md}
+\begin{lstlisting}[language=lia]
+```text @LLMQuiz(0.66;
+  solution=1;feedback=1;
+  operator=erklaeren)
+Photosynthese wandelt ...
+```
+\end{lstlisting}
+\tcblower
+\prevsm{\faComments~Vergleicht eine freie Antwort semantisch mit der Musterlösung.\\[2pt]
+Schwellwert \texttt{0.66}; Lösung und Feedback sind aktiviert.\\[2pt]
+{\footnotesize Makro steht am Musterlösungsblock.}}
+\end{schulcard}
+
+\begin{schulcard}{Zeitgesteuerte Lösung}{lia-timer/main/README.md}
+\begin{lstlisting}[language=lia]
+<!-- data-solution-timer="15s"
+     data-solution-timer-start=
+     "oncheck"
+     data-solution-timer-badge=
+     "off" -->
+7 + 8 = [[15]]
+\end{lstlisting}
+\tcblower
+\prevsm{\faHourglassHalf~Lösung erst nach 15 Sekunden freigeben.\\[2pt]
+Start: \texttt{immediate}, \texttt{oncheck} oder \texttt{onclick}.}
+\end{schulcard}
+
+\begin{schulcard}{Globale Quizregeln}{lia-globalquiz/main/README.md}
+\begin{lstlisting}[language=lia]
+@global(data-solution-button=3
+        data-hint-button=2)
+
+@globalforced(
+  data-hint-button=4)
+\end{lstlisting}
+\tcblower
+\prevsm{\faSlidersH~Vorgaben für alle folgenden Quizze setzen.\\[2pt]
+\texttt{@global}: lokale Werte dürfen abweichen.\\
+\texttt{@globalforced}: lokale Werte überschreiben.}
+\end{schulcard}
+
+\begin{schulcard}{Quiz einzeln zurücksetzen}{lia-resetter/main/README.md}
+\begin{lstlisting}[language=lia]
+7 + 8 = [[15]]
+
+@resetter
+\end{lstlisting}
+\tcblower
+\prevsm{\faUndo~Direkt nach dem Quiz einfügen.\\[2pt]
+Setzt nur dieses Quiz einschließlich Eingabe und Prüfzustand vollständig zurück.}
+\end{schulcard}
+
+\begin{schulcard}{Handschrift \& OCR}{lia-canvas-ocr/main/README.md}
+\begin{lstlisting}[language=lia]
+Berechne:
+$3x + 2 = 11$
+[[x = 3]]
+@canvas
+\end{lstlisting}
+\tcblower
+\prevsm{\faPen~\texttt{@canvas} öffnet direkt am Antwortfeld eine Schreibfläche.\\[2pt]
+Der markierte handschriftliche Bereich wird erkannt und als LaTeX in das Eingabefeld übertragen.}
+\end{schulcard}
+
+\begin{schulcard}{Annotationen}{lia-annotation/main/README.md}
+\begin{lstlisting}[language=lia]
+# Tafelbild
+
+Skizze und Rechnung
+\end{lstlisting}
+\tcblower
+\prevsm{\faPen~Zeichenleiste auch über JSXGraph-/\texttt{lia-coordinate}-Inhalten: DGS-Konstruktionen bearbeiten und Koordinatensysteme skizzieren.\\[2pt]
+{\footnotesize Benötigt beide Imports; OCR ist enthalten.}}
+\end{schulcard}
+
+\end{multicols}
+
+\sheetfooter
+
+\newpage
+
+% =====================================================================
+% SEITE 4 — SCHULLIA: FÄCHER & VISUALISIERUNG
+% =====================================================================
+\noindent\begin{tcolorbox}[
+  enhanced, frame hidden, sharp corners,
+  colback=schulred, coltext=white,
+  left=12pt, right=8pt, top=4pt, bottom=4pt,
+  before skip=0pt, after skip=4pt,
+  width=\linewidth,
+  borderline west={4pt}{-4pt}{schulred!55}
+]
+\begin{minipage}[c]{0.66\linewidth}
+  {\sffamily\fontsize{26}{28}\selectfont\bfseries SchulLia}\hspace{0.4em}%
+  {\sffamily\large\color{white!75} — Fächer \& Visualisierung}\\[2pt]
+  {\sffamily\footnotesize\itshape\color{white!90} Bruchteile, Koordinatensysteme, Funktionen und dynamische Geometrie.}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.20\linewidth}\raggedright
+  {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
+  {\sffamily\bfseries\normalsize Seite 4\,/\,4}\\[1pt]
+  {\sffamily\scriptsize\color{white!75} Mathematik + Templates}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.10\linewidth}\centering
+  {\color{black}\colorbox{white}{\hspace{1pt}\qrcode[height=1.55cm,nolinks]{https://wochenaufgaben.gsg-freiberg.de/}\hspace{1pt}}}\\[1pt]
+  {\sffamily\scriptsize\color{white!90}\faTasks~Wochenaufgaben}
+\end{minipage}
+\end{tcolorbox}
+
+\begin{multicols}{3}
+
+\begin{schulcard}{Bruchteile markieren}{lia-Mathe/main/README.md}
+\begin{lstlisting}[language=lia]
+@circleQuiz(3/8)
+
+@rectQuiz(1/3)
+
+@circleQuizC(3/8,
+ `<!-- data-hint-button="2" -->`)
+\end{lstlisting}
+\tcblower
+\prevsm{\faCircleNotch~Drei von acht Kreissektoren auswählen.\\[2pt]
+\faThLarge~Ein Drittel eines Rechtecks markieren.\\[2pt]
+{\footnotesize \texttt{...C} übernimmt Quiz-Kommentare.}}
+\end{schulcard}
+
+\begin{schulcard}{Gleichungslücke}{lia-Mathe/Proposals/README.md}
+\begin{lstlisting}[language=lia]
+$\frac{\liaquiz}{3}
+ = \frac{5}{15}$
+@liaQuiz(1)
+
+$x + \liaquiz = 7$
+@liaQuizC(3,`<!-- ... -->`)
+\end{lstlisting}
+\tcblower
+\prevsm{\faFlask~\texttt{\textbackslash liaquiz} setzt ein Eingabefeld direkt in eine Gleichung.\\[2pt]
+Das folgende Makro liefert die Lösung.}
+\end{schulcard}
+
+\begin{schulcard}{Koordinatensystem}{lia-coordinate/main/README.md}
+\begin{lstlisting}[language=lia]
+@Koordinatensystem(`xmin=-5;
+  xmax=5;ymin=-4;ymax=4;
+  width=800;id=B`)
+
+@AchsenBeschriftung(`id=B;
+  xlabel=$x$;ylabel=$y$`)
+\end{lstlisting}
+\tcblower
+\prevsm{\faBorderAll~System \texttt{B} mit Wertebereich und Breite anlegen.\\[2pt]
+\faProjectDiagram~Achsen anschließend beschriften.\\[2pt]
+{\footnotesize Zuerst JSXGraph, danach \texttt{lia-coordinate} separat importieren.}}
+\end{schulcard}
+
+\begin{schulcard}{DGS: bauen \& exportieren}{lia-coordinate/main/README.md}
+\begin{lstlisting}[language=lia]
+@DGS(`B;tools=[200;310;700];
+  restrictions=[200;300]`)
+
+@Zirkel(`B`)
+
+@Geodreieck(`B`)
+\end{lstlisting}
+\tcblower
+\prevsm{\faDraftingCompass~\textbf{1. Bauen:} Im DGS Punkte, Geraden, Funktionen und Konstruktionen anlegen.\\[2pt]
+\faDownload~\textbf{2. Exportieren:} Objektliste öffnen und den erzeugten Makroblock kopieren.\\[2pt]
+\faEdit~\textbf{3. Einfügen:} Makroblock im LiveEditor einsetzen und weiterbearbeiten.}
+\end{schulcard}
+
+\begin{schulcard}{Flächen, Winkel \& Kreise}{lia-coordinate/main/README.md}
+\begin{lstlisting}[language=lia]
+@Flaeche(`B;[A;P;C];#e9c46a;
+  0.25;inhalt=1;umfang=1`)
+
+@Winkel(`B;alpha;[A;P;C];
+  #e76f51;0.8;Wert=1`)
+
+@Kreis(`B;k;M;#264653;0.2;
+  radius=P;inhalt=1`)
+
+@Kreissektor(`B;[M;P;Q];#e9c46a;
+  0.25;s;inhalt=1;umfang=1`)
+\end{lstlisting}
+\tcblower
+\prevsm{\faShapes~Polygonfläche, Winkel, Kreis und Kreisbogen aus benannten Punkten erzeugen.\\[2pt]
+\texttt{@Kreissektor} verwendet Mittelpunkt, Radiuspunkt und zweiten Schenkelpunkt; \texttt{@Kreissegment} ist ein Alias.}
+\end{schulcard}
+
+\begin{schulcard}{Analysepunkte}{lia-coordinate/main/README.md}
+\begin{lstlisting}[language=lia]
+@Nullstellen(`B;f;blue;N;wert=1`)
+
+@Extrempunkte(`B;f;green;E;wert=1`)
+
+@Wendepunkte(`B;f;magenta;W;wert=1`)
+
+@Schnittpunkt(`B;f;g;orange;S;wert=1`)
+\end{lstlisting}
+\tcblower
+\prevsm{\faMapMarker~Nullstellen, Extrem- und Wendepunkte einer benannten Funktion dynamisch bestimmen.\\[2pt]
+\texttt{@Schnittpunkt} markiert Schnittpunkte zweier Funktionen, Geraden oder Kreise.}
+\end{schulcard}
+
+\begin{schulcard}{Funktionen \& Werkzeuge}{lia-coordinate/main/README.md}
+\begin{lstlisting}[language=lia]
+@PlotFunktion(`B;f;0.5*x^2-2;red`)
+
+@Tangente(`B;f;[2;0];magenta;t;T`)
+
+@Tabelle(`n=3;x;f;P;id=B`)
+
+@Regression(`B`)
+
+@Rekonstruktion(`B;2x-1;0.1`)
+\end{lstlisting}
+\tcblower
+\prevsm{\faChartLine~Funktion zeichnen, Tangente im Berührpunkt anlegen und eine Wertetabelle ergänzen.\\[2pt]
+\texttt{@Regression} öffnet Zeichen- und Ausgleichswerkzeuge; \texttt{@Rekonstruktion} prüft den Zielterm mit Toleranz.}
+\end{schulcard}
+
+\begin{schulcard}{Punkte \& Geraden}{lia-coordinate/main/README.md}
+\begin{lstlisting}[language=lia]
+@Punkt(`B;A;2;3;#e63946;1;fix`)
+
+@ErzeugePunkt(`B;P;1;2`,`<!-- -->`)
+
+@Gerade(`B;[A;P];#457b9d;g`)
+
+@Vektor(`B;[A;P];#2a9d8f;v`)
+\end{lstlisting}
+\tcblower
+\prevsm{\faMapMarker~Punkte anzeigen oder interaktiv erzeugen lassen.\\[2pt]
+\faProjectDiagram~Geraden und Vektoren referenzieren vorhandene Punkte über ihre Namen.}
+\end{schulcard}
+
+\begin{schulcard}{Geometriequizze}{lia-coordinate/main/README.md}
+\begin{lstlisting}[language=lia]
+@UmfangQuiz(`B;3;12;0.05`,
+ `<!-- data-solution-button="5" -->`)
+
+@FlaecheQuiz(`B;3;6;0.05`,
+ `<!-- -->`)
+
+@KonstruktionQuiz(
+ `B;3;fest;S4,W90,S3`,
+ `<!-- data-solution-button="5" -->`)
+\end{lstlisting}
+\tcblower
+\prevsm{\faRulerCombined~Prüft ein selbst konstruiertes Polygon mit Eckenzahl, Zielwert und absoluter Toleranz.\\[2pt]
+\texttt{@UmfangQuiz}: Umfang 12; \texttt{@FlaecheQuiz}: Fläche 6.\\[2pt]
+\texttt{@KonstruktionQuiz} prüft Seiten und Winkel in fester oder offener Anordnung.}
+\end{schulcard}
+
+\begin{schulcard}{Erklärhinweis \& Tooltip}{lia-mathpath/master/README.md}
+\begin{lstlisting}[language=lia]
+[[?]] @Explain
+
+<div class="notip">
+Ohne Glossar-Tooltip
+</div>
+\end{lstlisting}
+\tcblower
+\prevsm{\faLightbulb~\texttt{@Explain} erzeugt einen gestuften Lösungshinweis.\\[2pt]
+Die Themen stammen aus \texttt{@ADetails(...)} beim Quiz; passende Erklärlinks werden in \texttt{Explain.md} zugeordnet.\\[2pt]
+\texttt{notip} unterdrückt automatische Glossar-Tooltips im umschlossenen Bereich.}
+\end{schulcard}
+
+\end{multicols}
+
+\noindent
+\begin{schulinfo}{\faDownload~~Template-Imports}
+\footnotesize
+\begin{minipage}[t]{0.51\linewidth}
+\textbf{Basis-URL:}  \texttt{https://raw.githubusercontent.com/MINT-the-GAP/} \\[1em]
+Den Pfad oben rechts anfügen und die vollständige URL im LiaScript-Kopf unter \texttt{import:} eintragen.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\faInfoCircle~\textbf{Coordinate:} zuerst \texttt{https://raw.githubusercontent.com/liaTemplates/JSXGraph/main/README.md} importieren.\\[1pt]
+\faClock~\texttt{lia-resetter/main/README.md}: Veröffentlichung folgt. 
+\end{minipage}
+\end{schulinfo}
+
+\sheetfooter
+
+\end{document}
