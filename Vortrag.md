@@ -6,11 +6,14 @@ narrator: Deutsch Female
 
 tags: Präsentation, Fortbildung, LiaScript, OER
 
-comment:  Fortbildung 2026 — LiaScript und seine Integration in OPAL.
+comment:  Fortbildung 2026 — LiaScript in der Schule.
           Martin Lommatzsch (Geschwister-Scholl-Gymnasium Freiberg).
 
-author:   Sebastian Zug, Martin Lommatzsch
+author:  Martin Lommatzsch
 
+persistent: true
+
+edit: true
 
 
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-DynFlex/refs/heads/main/README.md
@@ -42,9 +45,6 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-persistent: true
-
-edit: true
 
 
 -->
@@ -53,12 +53,27 @@ edit: true
 
 @autoscrolling(off)
 
+<div style="display: grid; grid-template-columns: 5fr 1fr; gap: 1rem; width: 100%;">
+
+<div>
+
 <h2> R08025: Digitale Unterrichtsmaterialien mit Rückmeldung für Lernende </h2>
 <h2> LiaScript - Digitale OER Arbeitsblätter nutzen und gestalten </h2>
-<h2> Schwerpunkt Mathematik </h2>
+
+> Fortbildung, November 2026, Freiberg <p align="right"> <h3> `tinyurl.com/Lia26FoBi`</h3>  </p>
+
+</div>
+<div>
+
+<!-- style="max-width:550px" -->
+![QR-Code](QRCode.png)
 
 
-> Fortbildung, November 2026, Freiberg
+</div>
+
+</div>
+
+
 
 
 ---
@@ -66,7 +81,7 @@ edit: true
 ---
 
 
-<section class="dynFlex" data-basis="32.5">
+<section class="dynFlex">
 
 <div class="flex-child">
 
@@ -81,7 +96,7 @@ edit: true
 ![logo](lrLia.png)
 
 
-<big><h3> Martin Lommatzsch</h3></big>
+<big><h2> Martin Lommatzsch</h2></big>
 <small><small> Geschwister-Scholl-Gymnasium Freiberg </small></small>
 
 
@@ -94,6 +109,7 @@ edit: true
 <div class="flex-child">
 
 
+<!-- style="max-width:600px" -->
 ![partner_map](https://github.com/LiaPlayground/Saechsischer_Schulinformatik_Tag_2026/blob/main/pic/LiaScript_Meets_OER.png?raw=true "OER-Logo - Quelle: Jonathasmello - Eigenes Werk, CC BY 3.0, [https://commons.wikimedia.org/w/index.php?curid=18460156](https://commons.wikimedia.org/w/index.php?curid=18460156) erweitert um LiaScript Logo")
 </div>
 
@@ -141,7 +157,11 @@ edit: true
 
 ---
 
-> Kurze Pause
+> Kurze Pause  - ca. 30 Minuten
+
+---
+
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  <big><big><b>Erste gemeinsame Schritte - Hallo Welt! - ca. 45 Minuten</b></big></big>
 
 ---
 
@@ -150,21 +170,17 @@ edit: true
 
 ---
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  <big><big><b>Erste gemeinsame Schritte - Hallo Welt! - ca. 45 Minuten</b></big></big>
-
----
-
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40">  <big><big><b>Anpassen von Kursen - ca. 15 Minuten </b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40">  <big><big><b>Anpassen von Kursen - ca. 20 Minuten </b></big></big>
 
 ---
 
 
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40">  <big><big><b>Eigene komplexere Kurse erstellen - ca. 20 Minuten </b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40">  <big><big><b>Eigene komplexere Kurse erstellen - ca. 30 Minuten </b></big></big>
 
 ---
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40">  <big><big><b>Reflexion - ca. 10 Minuten </b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40">  <big><big><b>Reflexion - ca. 15 Minuten </b></big></big>
 
 
 
@@ -952,7 +968,9 @@ edit: true
 
 <h3> Hospitation </h3> 
 
-- <h4> Wa </h4> 
+- <h4> Wie selbstständig und fachlich zielgerichtet bearbeiten die Schülerinnen und Schüler die Aufgaben, und welche Lösungsstrategien werden dabei sichtbar?</h4>
+- <h4> Wie beeinflussen die gamifizierenden Elemente Motivation, Ausdauer, Sorgfalt und die inhaltliche Auseinandersetzung der Schülerinnen und Schüler?</h4>
+- <h4> Welche fachlichen, organisatorischen oder technischen Unterstützungsbedarfe treten auf, und welche Rolle übernimmt die Aufsichtskraft dabei?</h4>
 
 </div>
 
@@ -961,7 +979,9 @@ edit: true
 
 <h3> Erkundung </h3> 
 
-- <h4> Welche </h4> 
+- <h4> Wie intuitiv lässt sich der Kurs bedienen, und welche digitalen Vorkenntnisse sind für eine selbstständige Nutzung erforderlich?</h4>
+- <h4> Wie beeinflussen die gamifizierenden Elemente Ihr eigenes Nutzungsverhalten, Ihre Motivation und Ihre Auseinandersetzung mit den Aufgaben?</h4>
+- <h4> Welche konkreten Einsatzmöglichkeiten und noch unerschlossenen Potenziale erkennen Sie für Ihren eigenen Unterricht?</h4>
 
 </div>
 
@@ -969,33 +989,196 @@ edit: true
 
 
 
-Kurs bereitstellen
+---
+
+---
 
 
-??[Erkundungskurs](https://liascript.github.io/course/?Erkunden.md)
+{{1}}
+<h3> Öffnen Sie bitte folgende URL: `tinyurl.com/LiaFoBi26` </h3>
 
 
-
-
-
-# <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40"> Erstellung und Bereitstellen von Kursen 
-
-uns teilen und diskutieren
-
+??[Erkundungskurs](https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md)
 
 
 
 
-# <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40"> Erste gemeinsame eigene Schritte
 
-Cheatsheets und rumprobieren
+
+
+
+
+
+
+
+
+# <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40"> Erste gemeinsame eigene Schritte
+
+
+
+<h3> Öffnen Sie bitte folgende URL: `liascript.github.io` </h3>
+
+
+??[Parserseite](https://liascript.github.io)
+
+
+---
+
+- <h3> Unter "Courses" können Sie bereits besuchte Kurse anschauen. (Je nach Versionierung sind auch die Bearbeitungen lokal im Cache gespeichert.)</h3>
+- <h3> Unter "LiveEditor" finden Sie alle Kurse, die Sie schonmal bearbeitet haben.</h3>
+
+
+
+---
+
+---
+
+
+
+
+> <h3>Jede LiaScript-Datei kann einen Header `<!-- -->` vor der ersten Überschrift `# Überschrift` haben, um zusätzliche Einstellungen und Informationen bereit zu stellen. Der Header ist im Gegensatz zu einer einzigen Überschrift nicht zwingend erforderlich, aber sehr empfehlenswert.</h3>
+
+
+```
+<!-- 
+version:  0.0.1
+language: de
+narrator: Deutsch Female
+persistent: true
+author:  Ein Name Ihrer Wahl
+
+edit: true
+
+tags: Fortbildung, Erste Schritte
+comment: Dies ist Ihr "Hallo Welt!"-Kurs.
+-->
+
+# Überschrift
+```
+
+
+> <h3> **_Aufgabe 1:_** Erstellen Sie einen ersten Kurs für diese Fortbildung. Nutzen Sie dazu die Cheatsheets. Im Anschluss wollen wir Ihre Erfahrungen im Plenum besprechen. </h3>
+
+
+
+
+
+
+
+
+
+
+
+# <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40"> Erstellung und Bereitstellen von Kursen 
+
+
+<h3>  </h3>
+
+
+<section class="dynFlex" data-basis="49">
+
+<div class="flex-child">
+
+??[LiveEditor](https://liascript.github.io/LiveEditor/?/show/code/H4sIAAAAAAAAAz2OMU4DMRBFe0u+w09o8Sq0FqJKIhASDUXqye6wtuS10Xic0+Q2XAybgnb+++/P8845WHNjqbFkDxymw/RkTaK8NlrZY2FrMomQFvE4ctM6B5x5o9ST71Gsylk9VFq/UNMwSJxixgdtjLcgLLhQSNZYw0v8Z61RWqvHuYheY1paXh9xku7D5xwkqnZoLtv25z9GruhjQ4j9K6VUcOGku717b1Ina5x7GdIH/Nyv/bGh+NJfkcajAuMAAAA=)
+
+</div>
+
+<div class="flex-child">
+
+ <h3> So teilen Sie Ihre Kurse:  </h3>
+
+---
+
+- <h3> `Menü` $\;\;\Rightarrow\;\;$  `Editor` $\;\;\Rightarrow\;\;$ `Snapshot-URL` $\;\;\Rightarrow\;\;$ URL zum aktuellen Stand des LiveEditors versenden.  </h3>
+
+---
+
+- <h3> `Menü` $\;\;\Rightarrow\;\;$  `Publizieren` $\;\;\Rightarrow\;\;$ `Daten-URL` $\;\;\Rightarrow\;\;$ URL zum aktuellen Stand als Kurs versenden.  </h3>
+
+---
+
+> - <h3> **_Aufgabe 1:_** Bitte senden Sie Ihren Kurs an die folgende Mailadresse: </h3>
+[[___]]
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 # <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40"> Anpassen von Kursen
 
-LiveEditor - Aufgabensammlung
+
+
+<h3> Öffnen Sie bitte folgende URL: `mint-the-gap.github.io/Aufgabensammlung` </h3> 
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+??[Aufgabensammlung](https://mint-the-gap.github.io/Aufgabensammlung/)
+
+</div>
+
+</section>
+
+
+
+---
+
+
+---
+
+> <h3> **_Aufgabe 1:_** Lassen Sie sich einen Kurs erzeugen und passen Sie diesen für Ihre Zielklasse oder Ihren Wünschen an. </h3> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1003,10 +1186,31 @@ LiveEditor - Aufgabensammlung
 # <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40"> Eigene komplexere Kurse erstellen
 
 
-SchulLia-Skill
+
+- <h3> LiaScript basiert auf Markdown als Scriptsprache. Large-Language-Modelle geben ihre Antworten in Markdown aus. </h3> 
 
 
 
+{{1}}
+- <h3> Sie können also LLM-Antworten direkt in den LiveEditor kopieren. (Tipp: Teilen Sie Ihrer LLM mit, dass Sie die Antwort gerne in einem Codeblock ausgegeben haben wollen, sodass das Kopieren leichter fällt.) </h3> 
+
+
+
+{{2}}
+- <h3> Um die Qualität der Erzeugnisse stark zu erhöhen, können Sie mit dem LLM-Agenten (auch Skill genannt) das LLM Ihrer Wahl mit konkreten Informationen von LiaScript in der Schule versehen. </h3> 
+
+
+
+
+---
+
+---
+
+
+{{2}}
+```
+https://github.com/MINT-the-GAP/skill-schullia
+```
 
 
 
@@ -1030,6 +1234,89 @@ SchulLia-Skill
 # <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40"> Reflexion
 
 
-Formular einsendbar
 
+<section class="dynFlex">
+
+<div class="flex-child">
+
+
+??[Reflexion](https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Reflexion.md)
+
+</div>
+
+<div class="flex-child">
+
+
+> - <h3> **_Aufgabe 1:_** Bitte senden Sie Ihren Freezelink an die folgende Mailadresse: </h3>
+[[___]]
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+# <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40"> Abschluss
+
+<h2> Alle Unterlagen zu dieser Fortbildung finden Sie unter: [Link zum Material](https://github.com/MLomma/Fortbildung26) </h2>
+
+---
+
+---
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+![logo](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/Zeug/Logo.png)
+
+</div>
+<div class="flex-child">
+
+<center>
+
+<!-- style="max-width:250px" -->
+![logo](lrLia.png)
+
+
+<big><h2> Vielen Dank für Ihre Aufmerksamkeit</h2></big>
+
+
+</center>
+
+</div>
+<div class="flex-child">
+
+
+<!-- style="max-width:600px" -->
+![partner_map](https://github.com/LiaPlayground/Saechsischer_Schulinformatik_Tag_2026/blob/main/pic/LiaScript_Meets_OER.png?raw=true "OER-Logo - Quelle: Jonathasmello - Eigenes Werk, CC BY 3.0, [https://commons.wikimedia.org/w/index.php?curid=18460156](https://commons.wikimedia.org/w/index.php?curid=18460156) erweitert um LiaScript Logo")
+</div>
+
+</section>
+
+<center>
+
+---
+
+---
+
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/0.png" width="80" height="80">  $\;\qquad\;$
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="80" height="80">  $\;\qquad\;$
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="80" height="80">  $\;\qquad\;$
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="80" height="80">  $\;\qquad\;$
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="80" height="80">  $\;\qquad\;$
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="80" height="80"> 
+
+</center>
+
+
+
+---
+
+---
 

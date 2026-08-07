@@ -29,30 +29,39 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-freeze-v2/main/README
 import: https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/main/imports/RedirecterREADME.md
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md
 
+import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/README.md
 
-tags: Wochenaufgabe, Mathematik, Klasse 5
 
-comment: Dies sind die Wochenaufgaben zum Einstieg für die 5. Klasse. 
+import: https://raw.githubusercontent.com/liaTemplates/ABCjs/main/README.md
+
+import: https://raw.githubusercontent.com/liaTemplates/Speech-Recognition-Quiz/refs/heads/main/README.md
+
+
+
+tags: Erkundungskurs, Fortbildung, LiaScript, OER
+
+comment:  Fortbildung 2026 — LiaScript in der Schule.
+          Martin Lommatzsch (Geschwister-Scholl-Gymnasium Freiberg).
 
 author: Martin Lommatzsch
 
 -->
 
-# LiaScript-Aufgaben für das "Digitale Lernen" zum Beginn der 5. Klasse - Mathematik
+# Erkundungskurs für die LiaScript-Fortbildung
 
 
-@Ressourcen(50, 50, 150)
+@Ressourcen(50, 50, 250)
 @achievements
 @Highscore(10000, 100, 250, 20, 500)
-@Schatztruhe(toc)
-@Diamanttruhe(info)
-@Energiekiste(mode)
+
+
+
+
+
+
 
 > [!NOTE]
-> Willkommen in der 5. Klasse! In diesen Einstiegsaufgaben wiederholst du wichtige Grundlagen aus der Grundschule und lernst typische Aufgabenformen für den Mathematikunterricht kennen. Arbeite sorgfältig und möglichst ohne Taschenrechner. Nutze für Nebenrechnungen ein Blatt Papier oder nutzt die Schrifterkennung. Kontrolliere deine Eingaben, bevor du sie überprüfst. Viel Erfolg! <p align="right">– Martin Lommatzsch</p>
-
-> [!IMPORTANT]
-> <h3>Diese Wochenaufgabe kann abgegeben werden, richte dich nach deiner Lehrkraft. Am Ende des Kurses kannst du den Kurs einfrieren. Dabei entsteht ein Link, den du über LernSax an deine Lehrerin oder deinen Lehrer sendest.</h3>
+> Willkommen im Erkundungskurs. Auf dieser Folie finden Sie eine kurze Übersicht über alle üblichen Bedienungsoptionen, die von mir für die Schülerinnen und Schüler auch bei dem Erstkontakt bereitgestellt werden. <p align="right">– Martin Lommatzsch</p>
 
 
 ---
@@ -60,53 +69,6 @@ author: Martin Lommatzsch
 ---
 
 
-
-
-
-> [!CAUTION]
-> <h2>Gamifizierung</h2>
-
-
-<section class="dynFlex">
-
-<div class="flex-child">
-
-Du hast Ressourcen: 
-- `Energie` um den Prüfenbutton benutzen zu können
-- `Münzen` um den Hinweisbutton benutzen zu können
-- `Diamanten` um den Auflösenbutton benutzen zu können
-
-Außerdem kannst du `Truhen` finden mit den Ressourcen. Machne Inhalte sind aber verschlossen und du musst zuvor den `Schlüssel` finden. Andere Inhalte sind `versteckt`, dafür brauchst du die Lupe. Mache versteckte Inhalte kannst du schon erahnen anderen nicht. Und mit den Portalen kannst du in andere Folien wechseln. 
-
-Schau dich gut um, denn überall könnte etwas versteckt sein. Du bekommst Erfolge, wenn du besonders viel gefunden oder die Aufgaben besonders gut gemacht hast.
-
-</div>
-
-<div class="flex-child">
-
-<center>
-<div style="display: block; max-width:500px; margin-block-end: -2rem; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
-
-<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
-![Inhaltsverzeichnis](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/game.gif)
-
-</div>
-</center>
-$\,$
-
-
-
-
-</div>
-
-</section>
-
-
-
-
----
-
----
 
 
 
@@ -519,56 +481,176 @@ $\,$
 
 
 
-## Aufgabe 1: Stellenwert und Zahlwörter
 
-**Gib** die Zahl als Ziffernfolge **an**.
+
+
+
+
+
+> [!CAUTION]
+> <h2>Gamifizierung</h2>
+
 
 <section class="dynFlex">
 
 <div class="flex-child">
 
-<!-- data-solution-timer="90s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$a)\;\;$__ dreitausendzweihundertachtzehn  \
-[[ 3218     ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
+Du hast Ressourcen: 
+- `Energie` um den Prüfenbutton benutzen zu können
+- `Münzen` um den Hinweisbutton benutzen zu können
+- `Diamanten` um den Auflösenbutton benutzen zu können
 
-@ADetails(BE=1;Zahlwörter)
+Außerdem kannst du `Truhen` finden mit den Ressourcen. Machne Inhalte sind aber verschlossen und du musst zuvor den `Schlüssel` finden. Andere Inhalte sind `versteckt`, dafür brauchst du die Lupe. Mache versteckte Inhalte kannst du schon erahnen anderen nicht. Und mit den Portalen kannst du in andere Folien wechseln. 
+
+Schau dich gut um, denn überall könnte etwas versteckt sein. Du bekommst Erfolge, wenn du besonders viel gefunden oder die Aufgaben besonders gut gemacht hast.
 
 </div>
 
 <div class="flex-child">
 
-<!-- data-solution-timer="90s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$b)\;\;$__ fünfundvierzigtausendsieben  \
-[[ 45007     ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
+<center>
+<div style="display: block; max-width:500px; margin-block-end: -2rem; outline: 5px solid rgb(var(--color-highlight)); outline-offset: -3px; border-radius: 8px; display: inline-block;">
 
-@ADetails(BE=1;Zahlwörter)
+<!-- style="display: block; margin-block-end: -2rem; border: 0px solid rgb(var(--color-highlight)); border-radius: 8px; max-width=500px" -->
+![Inhaltsverzeichnis](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/pic/game.gif)
+
+</div>
+</center>
+$\,$
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+---
+
+---
+
+
+
+
+
+
+
+
+
+
+## <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40"> Einfache Quizarten
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+
+**_Aufgabe 1:_** **Kreuze an**, wie viel $\dfrac{1}{10}$ von $2\,$m$^2$ sind.
+
+- [( )] $0,02\,$m$^2$
+- [( )] $0,1\,$m$^2$
+- [( )] $1,9\,$m$^2$
+- [( )] $2\,$dm$^2$
+- [(X)] $20\,$dm$^2$
 
 </div>
 
 <div class="flex-child">
 
-<!-- data-solution-timer="90s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$c)\;\;$__ zweihundertsechstausendvierzig  \
-[[ 206040     ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
 
-@ADetails(BE=1;Zahlwörter)
+**_Aufgabe 2:_** **Kreuze** den Wert des Terms $6 : \dfrac{3}{2} - \dfrac{1}{2}$ **an**.
+
+<!-- horizontal-quiz  data-solution-timer="15s" 
+data-solution-timer-start="oncheck" 
+data-solution-timer-badge="on" -->
+- [( )] $-\dfrac{1}{4}$
+- [( )] $\dfrac{1}{2}$
+- [(X)] $\dfrac{7}{2}$
+- [( )] $6$
+- [( )] $\dfrac{17}{2}$
+
+
 
 </div>
+
+<div class="flex-child">
+
+**_Aufgabe 3:_** **Kreuze an**, welche Terme äquivalenz zu $a^{\frac{2}{3}}$ sind.
+
+- [[ ]] $\sqrt[2]{a^3}$
+- [[X]] $\sqrt[3]{a^2}$
+- [[ ]] $\frac{2}{3}a$
+- [[ ]] $\frac{3}{2}a$
+- [[X]] $\sqrt[6]{a}^4$
+
+</div>
+
+
+</section>
+
+
+---
+
+---
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+**_Aufgabe 4:_** **Entscheide**, ob es sich bei dem Term um einen Vektor, ein Skalar oder einen nicht definierten Ausdruck handelt.
+
+
+
+<!-- data-solution-timer="5s" 
+data-solution-timer-start="oncheck" 
+data-solution-timer-badge="off" 
+data-solution-button="5" 
+data-hint-button="3"  -->
+- [[Vektor]       (Skalar)    [nicht definiert]]
+- [    [X]           [ ]             [ ]     ]  $ \vec{r} \cdot \left( \vec{n} \circ \vec{s}\right) $
+- [    ( )           (X)             ( )     ]  $ \lambda{\vec{d}}^{\,2} \cdot \left|\vec{k}\right| $
+- [    [ ]           [ ]             [X]     ]  $ \left|\vec{a}\right| \times s \cdot \vec{b} $
+- [    ( )           (X)             ( )     ]  $ \left( \vec{z} \times \lambda\vec{x}\right) \circ \vec{c} $
+- [    [ ]           [ ]             [X]     ]  $ \dfrac{\vec{u}-\mu \vec{v}}{\vec{u}+\vec{v}} $
+
+</div>
+
+<div class="flex-child">
+
+**_Aufgabe 5:_**  **Wähle** die Rechenoperatoren **aus**, sodass die Gleichung eine wahre Aussage widerspiegelt.
+
+
+<!-- data-solution-timer="5s" 
+data-solution-timer-start="oncheck" 
+data-solution-timer-badge="off" 
+data-solution-button="5" 
+data-hint-button="3"  -->
+$8$ [[$+$|($-$)|$\cdot$|$:$]] $2$ [[$+$|$-$|($\cdot$)|$:$]] $3 = 2$
+
+</div>
+
+<div class="flex-child">
+
+
+**_Aufgabe 6:_**  **Sortiere** das die Kacheln nach Größe und **ordne** sie der passenden Größe zu.
+
+
+
+
+<!-- data-solution-timer="5s" 
+data-solution-timer-start="oncheck" 
+data-solution-timer-badge="off" 
+data-solution-button="5" 
+data-hint-button="3" 
+data-randomize="true"  -->
+Zeit:  [->[($250$ min)]]$>$ [->[($4,1$ h)]] $>$ [->[($14640$ s)]]  $>$ [->[($120^2$ s)]]  \
+
+</div>
+
 
 </section>
 
@@ -578,378 +660,630 @@ __$c)\;\;$__ zweihundertsechstausendvierzig  \
 ---
 
 
-__$d)\;\;$__ Die Zahl $583\,274$ besteht aus verschiedenen Stellenwerten. **Gib** die Stellen **an**.
-
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution 
-data-type="none" 
-data-sortable="false" 
-style="max-width:800px;"-->
-| Stelle | Hunderttausender | Zehntausender | Tausender | Hunderter | Zehner | Einer |
-|:------:|:----------------:|:-------------:|:---------:|:---------:|:------:|:------:|
-| Ziffer | [[ 5 ]] | [[ 8 ]] | [[ 3 ]] | [[ 2 ]] | [[ 7 ]] | [[ 4 ]] |
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=6;Stellenwerttafel)
 
 
 
----
-
----
 
 
 
-__$e)\;\;$__ **Ergänze** die Stellenwertzerlegung.
+## <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40"> Erweiterte Quizarten
 
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution -->
-$ 407\,035 = 4\cdot$ [[100000]]$ + 7\cdot $[[ 1000 ]]$ + 3\cdot $[[  10  ]]$ + 5\cdot $[[   1  ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=4;Stellenwerttafel)
-
-
-## Aufgabe 2: Vergleichen und Ordnen
-
-
-**Wähle** jeweils das richtige Zeichen aus.
 
 <section class="dynFlex">
 
 <div class="flex-child">
 
-
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$a)\;\;$__ $4\,508$ [[ ($<$) | $=$ | $>$ ]] $4\,580$ 
-[[?]] @Explain 
-*****************
-@Energiekiste
-@Energiekiste
-*****************
+**_Aufgabe 1:_**  **Berechne** den Wert des Terms.
 
 
-</div>
-<div class="flex-child">
 
-
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$b)\;\;$__ $32\,090$ [[ $<$ | $=$ | ($>$) ]] $32\,009$  
+<!-- data-solution-timer="15s" 
+data-solution-timer-start="oncheck" 
+data-solution-timer-badge="on"   -->
+$16428 : 6=$ [[ 2738 ]] @canvas
 [[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-
-</div>
-<div class="flex-child">
-
-
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$c)\;\;$__ $76\,500$ [[ $<$ | ($=$) | $>$ ]] $76\,500$  
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-
-</div>
-<div class="flex-child">
-
-
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$d)\;\;$__ $9\,999$ [[ ($<$) | $=$ | $>$ ]] $10\,000$  
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-
-</div>
-<div class="flex-child">
-
-
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$e)\;\;$__ $105\,040$ [[ $<$ | $=$ | ($>$) ]] $105\,004$
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-</div>
-
-</section>
-
-@ADetails(BE=5;Zahlenverständnis)
-
----
-
----
-
-
-
-__$f)\;\;$__ **Sortiere** die Zahlen von klein nach groß.
-
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution 
-data-randomize="true" -->
-[->[(3 045)]] [->[(3 054)]] [->[(3 405)]] [->[(3 450)]] [->[(3 540)]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=5;Zahlenverständnis)
-
-## Aufgabe 3: Runden
-
-**Gib** gerundet den Wert wie angegeben **an**.
-
-<section class="dynFlex">
-
-<div class="flex-child">
-
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$a)\;\;$__ Runde $347$ auf Zehner.  
-[[ 350 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=1;Runden)
-
-</div>
-
-<div class="flex-child">
-
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$b)\;\;$__ Runde $2\,849$ auf Hunderter.  
-[[ 2800 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=1;Runden)
-
-</div>
-
-<div class="flex-child">
-
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$c)\;\;$__ Runde $16\,501$ auf Tausender.  
-[[ 17000 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=1;Runden)
-
-</div>
-
-<div class="flex-child">
-
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$d)\;\;$__ Runde $74\,499$ auf Tausender.  
-[[ 74000 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=1;Runden)
-
-</div>
-
-<div class="flex-child">
-
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$e)\;\;$__ Runde $385\,270$ auf Zehntausender.  
-[[ 390000 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=1;Runden)
-
-</div>
-
-<div class="flex-child">
-
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$f)\;\;$__ Runde $949$ auf Hunderter.  
-[[ 900 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=1;Runden)
-
-</div>
-
-</section>
-
-## Aufgabe 4: Addition und Subtraktion
-
-**Berechne**. Nutze bei Bedarf dein Blatt für die schriftliche Rechnung.
-
-<section class="dynFlex">
-
-<div class="flex-child">
-
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$a)\;\;$__ $438+257=$ [[ 695 ]] @canvas
-[[?]] @Explain
-*****************
+****************
 $$
-\begin{array}{r}
-  438\\
-+ 257\\
-\hline
-  695
-\end{array}
+\begin{align*}
+ 16428:6 &= 2738 \\
+ \underline{-\textcolor{blue}{12}}\hspace{0.5em}\hspace{0.5em}\hspace{0.85em}\hspace{0.5em} \hspace{0.5em}& \\
+ 44\hspace{0.5em}\hspace{0.85em}\hspace{0.5em} \hspace{0.5em} & \\
+ \underline{-\textcolor{green}{42}}\hspace{0.85em}\hspace{0.5em}\hspace{0.5em} \hspace{0.5em}  & \\
+ 22\hspace{0.85em}\hspace{0.5em} \hspace{0.5em} & \\
+ \underline{-\textcolor{orange}{18}}\hspace{0.85em}\hspace{0.5em} \hspace{0.5em} & \\
+ 48\hspace{0.85em}\hspace{0.5em}   & \\
+ \underline{-\textcolor{red}{48}}\hspace{0.85em}\hspace{0.5em} & \\
+ 0\hspace{0.85em}\hspace{0.5em} & \\
+\end{align*}
 $$
-@Lupe
+****************
+
+</div>
+
+<div class="flex-child">
+
+
+
+**_Aufgabe 2:_** **Gib** den ungefähren Wert der abgebildeten Objekte **an**.
+
+
+![Kandiszuckerstückchen](https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/circa11.jpg)
+
+
+<!-- data-solution-timer="5s" 
+data-solution-timer-start="oncheck" 
+data-solution-timer-badge="off" 
+data-solution-button="5" 
+data-hint-button="3"  -->
+[[ 200  ]] @canvas Kandiszuckerstückchen
+@Algebrite.check_margin(175,250)
+
+
+</div>
+
+<div class="flex-child">
+
+**_Aufgabe 3:_** **Gib** den Term $(x-2)^2-1$ in einer beliegen Form **an**.
+
+[[    (x-2)^2-1    ]] @canvas
+@Algebrite.check(`x ^ 2 - 4 * x + 3`)
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+## <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40"> Aufwendigeres
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+**_Aufgabe 1:_** **Stelle** die passende Teilung der Fläche **ein** und **markiere** den passenden Anteil, sodass der Bruch dargestellt wird.
+
+$\dfrac{7}{8}$
+
+@circleQuiz(7/8, <!-- data-solution-timer="5s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-solution-button="5" 
+data-hint-button="3" -->)
+
+</div>
+
+<div class="flex-child">
+
+**_Aufgabe 2:_** **Stelle** die passende Teilung der Fläche **ein** und **markiere** den passenden Anteil, sodass der Bruch dargestellt wird.
+
+$\dfrac{7}{10}$
+
+@rectQuiz(7/10, <!-- data-solution-timer="5s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-solution-button="5" 
+data-hint-button="3" -->)
+
+</div>
+
+<div class="flex-child">
+
+
+**_Aufgabe 3:_** **Ziehe** den Punkt $A$ auf die Koordinaten $(2 | 3)$.
+
+
+@CoordinateSystem(`xmin=-5;xmax=5;ymin=-4;ymax=4;width=800;id=ex_point_ez`)
+
+@AxisLabel(`id=ex_point_ez;xlabel=$x$;ylabel=$y$`)
+
+@CreatePoint(`ex_point_ez;A;2;3`,` `)
+
+</div>
+
+</section>
+
+---
+
+---
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+**_Aufgabe 4:_** **Miss** die markierten Strecken mit dem Geodreieck und **gib** die Länge in LE **an**.
+
+@CoordinateSystem(`xmin=-1;xmax=12;ymin=-4;ymax=4;width=600;id=GL0012a;0;0;1`)
+@SetSquare(`GL0012a`)
+
+@Point(`GL0012a;A;1;0;#ff00ff;1;fix`)
+@Point(`GL0012a;B;5;0;#ff00ff;1;fix`)
+@Strecke(`GL0012a;[A;B];#ff00ff;s=0`)
+
+<!-- data-solution-timer="5s"
+data-solution-timer-start="oncheck"
+data-solution-timer-badge="off"
+data-solution-button="5"
+data-hint-button="3"  -->
+$|\overline{AB}| =$ [[ 4 ]] LE
+@Algebrite.check(4)
+[[?]] @Explain
+
+
+</div>
+
+<div class="flex-child">
+
+**_Aufgabe 5:_** **Miss** die markierten Winkel mit dem Geodreieck und **gib** das Winkelmaß in Grad **an**.
+
+
+
+@CoordinateSystem(`xmin=-3.4;xmax=3.8;ymin=-2.8;ymax=3.8;width=600;id=WA0015a;0;0;1`)
+@DGS(`WA0015a;tools=[0];restrictions=[100;300;400]`)
+
+@Punkt(`WA0015a;Z;0;0;#e63946;0;fix`)
+@Punkt(`WA0015a;A;3;0;#e63946;0;fix`)
+@Punkt(`WA0015a;B;2.26;1.97;#e63946;0;fix`)
+
+@Strecke(`WA0015a;[Z;A];#ff00ff;`)
+@Strecke(`WA0015a;[Z;B];#ff00ff;`)
+@Winkel(`WA0015a;\alpha;[A;Z;B];#00ffff;0.78;0`)
+
+<!-- data-solution-timer="5s"
+data-solution-timer-start="oncheck"
+data-solution-timer-badge="off"
+data-solution-button="5"
+data-hint-button="3"  -->
+$\alpha =$ [[ 41 ]]$^\circ$
+@Algebrite.check2(41,0.5)
+
+</div>
+
+<div class="flex-child">
+
+**Aufgabe 6:** Zeichne den Graphen zur Funktion $f(x) = 2x - 1$.
+
+@CoordinateSystem(`xmin=-7;xmax=7;ymin=-5;ymax=5;width=800;id=FoBi26recon`)
+
+@AxisLabel(`id=FoBi26recon;xlabel=$x$;ylabel=$y$`)
+
+@Reconstruction(`FoBi26recon;2x-1;0.1`)
+
+
+</div>
+
+</section>
+
+
+
+
+
+Graph
+
+
+
+
+
+
+## <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40"> Komplexeres
+
+
+
+<section class="dynFlex">
+
+<div class="flex-child">
+
+**_Aufgabe 1:_** **Konstruiere** das Dreieck $ABC$ mit den Winkeln $\alpha=40^\circ$ und $\beta=80^\circ$ sowie der Seitenlänge $a=4\,\mathrm{cm}$.
+
+@Koordinatensystem(`xmin=-1;xmax=9;ymin=-1;ymax=8;width=600;id=D6501`)
+@AchsenBeschriftung(`id=D6501;xlabel=$x$;ylabel=$y$`)
+@DGS(`D6501;tools=[200;510;920]`)
+
+@KonstruktionQuiz(`D6501;3;fest;W40,W80,S4;streckentoleranz=0.05;winkeltoleranz=1`,`<!-- data-solution-button="5" -->`)
+
+</div>
+
+<div class="flex-child">
+
+**_Aufgabe 2:_** **Konstruiere** ein Rechteck mit $A=20\,FE$ und $u=18\,LE$.
+
+@CoordinateSystem(`xmin=-1;xmax=9;ymin=-1;ymax=9;width=500;id=RA0047a;1;1;1`)
+@AxisLabel(`id=RA0047a;xlabel=$x$;ylabel=$y$`)
+@DGS(`RA0047a;tools=[200;510;920]`)
+
+@GeometrieQuiz(`RA0047a;4;Konstruktion(offen;W90,W90,W90,W90;winkeltoleranz=1);Flaeche(20;0.05);Umfang(18;0.05)`,`<!-- data-solution-timer="5s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-solution-button="5" data-hint-button="3" -->`)
+
+</div>
+
+<div class="flex-child">
+
+
+**_Aufgabe 3:_** **Decke** mit dem gegebenen Polynomio eine Summe von 140 **ab**.
+
+@PentominoQuiz(140,`name=FoBi-I5;type=I5;numbers=[1,2,3,4,5]`,`<!-- data-solution-button="off" -->`)
+
+</div>
+
+</section>
+
+---
+
+---
+
+
+<section class="dynFlex">
+
+
+
+<div class="flex-child">
+
+
+**_Aufgabe 4:_** **Decke** mit dem gegebenen Polynomio eine Summe von -35 **ab**.
+
+@PentominoQuizN(-35,`name=FoBi-I2;type=I2;numbers=[2,3]`,`<!-- data-solution-button="off" -->`)
+
+</div>
+
+
+
+<div class="flex-child">
+
+**_Aufgabe 5:_** **Decke** mit einem oder mehreren der gegebenen Polynomios eine Summe von 108 **ab**.
+
+@PentominoDockQuizAuswahl(108,`T4,L4,S4`,`<!-- data-solution-button="off" -->`)
+
+</div>
+
+</section>
+
+
+
+
+## <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40"> Über den Tellerrand
+
+
+
+
+<section class=dynFlex>
+
+<div class=flex-child>
+
+**_Aufgabe 1:_** **Markiere** @markedred(das Subjekt in Rot), @markedblue(das Prädikat in Blau) und @markedgreen(das Objekt in Grün). \
+
+$\;$ \
+
+
+<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+<div class=markerquiz>
+@markred(Die neugierige Schülerin) @markblue(entdeckt) @markgreen(eine alte Schachtel).
+
+@TextmarkerQuiz
+</div>
+
+</div>
+
+<div class=flex-child>
+
+**_Aufgabe 2:_** **Hör** dir den Satz gut **an** und **schreibe** ihn korrekt nieder.
+
+
+<!-- data-solution-timer="600s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+@diktat(`Der Hund rennt heute schnell durch den Garten.`)
+
+
+</div>
+
+<div class=flex-child>
+
+**_Aufgabe 3:_** **Korrigiere** alle Rechtschreibfehler.
+
+
+@orthography(`<!-- data-solution-timer="90s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->`,`Im Sumer spielen wir oft auf dem Schulhof Fangen.`,`Im Sommer spielen wir oft auf dem Schulhof Fangen.`)
+
+</div>
+
+</section>
+
+
+---
+
+---
+
+
+<section class=dynFlex>
+
+<div class=flex-child>
+
+**_Aufgabe 4:_** Say 'Good morning' in English.
+
+<!-- data-solution-button="off" -->
+[[!]]
+@SpeechRecognition(en-US,`Good morning`)
+
+</div>
+
+<div class=flex-child>
+
+
+**_Aufgabe 5:_** Klicke auf die beiden Noten und gib die Kadenz an.
+
+``` abc  @ABCJS.render
+X: 1
+L: 1/2
+K: C
+[|\
+G  C:|
+```
+
+Kadenz: [[  Quinte  ]]
+
+
+</div>
+
+<div class=flex-child>
+
+**_Aufgabe 6:_** Korrigiere den Fehler im Code und lass dir die Anzahl der Buchstaben der Nachricht ausgeben. Drück dazu mal unten links dieses </> Symbol.
+
+``` js
+var message = "Dies ist die Nachricht"
+console.log(message)
+message.leangth
+```
+<script>@input </script>
+
+
+</div>
+
+</section>
+
+
+---
+
+---
+
+> Alle darstellten Quizze sind miteinander kombinierbar.
+
+
+
+<section class=dynFlex>
+
+<div class=flex-child>
+
+**_Aufgabe 7:_** **Ordne** jedem Baum seine Blätter **zu**, indem du die Kacheln in das passende Feld ziehst.
+
+
+<!-- data-randomize="true" data-show-partial-solution="true" data-solution-timer="300s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+<div>Ahorn: [->[(![](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/5/pic/Ahorn.png))|![](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/5/pic/Rotbuche.png)]]  $\;\qquad\,$
+Birke: [->[(![](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/5/pic/Birke.png))]] $\;\qquad\;\;\;$
+Eiche: [->[(![](https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/5/pic/Eiche.png))]] $\;\quad\;$ </div> 
+
+</div>
+
+<div class=flex-child>
+
+
+**_Aufgabe 8:_** 
+**Ordne** die Tonspuren der Vogelart **zu**.
+
+<!-- data-show-partial-solution="true" data-randomize="true"  data-solution-timer="600s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
+<div>Blaumeise: [->[(?[](https://upload.wikimedia.org/wikipedia/commons/4/42/Cyanistes_caeruleus_-_Eurasian_Blue_Tit_XC131316.ogg))]]   $\;\qquad\,$
+Amsel: [->[(?[](https://upload.wikimedia.org/wikipedia/commons/7/7c/Turdus_merula_2.ogg))|?[](https://upload.wikimedia.org/wikipedia/commons/b/b6/Pica_pica.ogg)]]</div>
+
+
+
+<small><small><small><small><small>
+
+Quellen: \
+
+- „Cyanistes caeruleus - Eurasian Blue Tit XC131316.ogg“ von Dan Stowell, Quelle: Wikimedia Commons / Xeno-Canto, Lizenz: CC BY-SA 3.0 \
+- „Turdus merula 2.ogg“ von Oona Räisänen (Mysid), Quelle: Wikimedia Commons, gemeinfrei / Public Domain \
+- „Pica pica.ogg“ von Oona Räisänen (Mysid), Quelle: Wikimedia Commons, gemeinfrei / Public Domain
+
+</small></small></small></small></small>
+
+
+</div>
+
+</section>
+
+
+
+---
+
+---
+
+> Andere Inhalte können auch eingebettet werden.
+
+
+
+<section class=dynFlex>
+
+<div class=flex-child>
+
+**_Beispiel 1:_** Auch Experimente an Robotern aus der Ferne mit den Remote-Laboren durch `edrys` sind möglich. (Hier durch ein Video vorgestellt und eingebunden.)
+
+!?[](https://www.youtube.com/watch?v=6ZjGHorc2ds)
+
+</div>
+
+<div class=flex-child>
+
+**_Beispiel 2:_** PhET-Simulationen sind einfach einzubinden.
+
+??[](https://phet.colorado.edu/sims/html/sound-waves/latest/sound-waves_all.html)
+
+
+</div>
+
+<div class=flex-child>
+
+**_Beispiel 3:_** Eigene Inhalte von anderen Servern.
+
+??[](https://wochenaufgaben.gsg-freiberg.de/viervieren/index.html)
+
+
+</div>
+
+</section>
+
+
+---
+
+---
+
+> Auch nicht eineindeutige Aufgabenstellen mit den Operatoren "Beschreibe", "Erkläre", "Begründe" sowie alle anderen sind möglich, wurden hier in diesem Erkundungskurs ausgespart, da beim erst Kontakt ein 2,5 GB großer Download in den Cache abgelegt werden müsste.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40"> Gamifizierungsoptionen
+
+
+
+
+Die Kisten können überall vesteckt sein. 
+
+**_Aufgabe 1:_** Durchsuchen Sie bitte alle Menüs bis Sie ein Achievment bekommen, dass Sie alle Diamanttruhen gefunden haben. (Hinweis: Die Truhen sind nur zu sehen, solange Sie sich auf dieser Folie befinden.)
+
+
+@Diamanttruhe(info; anker)
+@Diamanttruhe(mode; anker)
+@Diamanttruhe(translator; anker)
+
+
+---
+
+---
+
+
+Mit der Lupe @Lupe können Sie alle unsichtbaren Inhalte sichtbar machen, wie diesen: @Schatztruhe(zauberstaub) oder diesen: @Schatztruhe(unsichtbar). Mit der Schaufel @Schaufel können Sie etwas aus der Erde ausgraben und mit der Gießkanne @Giesskanne die Pflanzen zum Blühen bringen und anschließend pflücken.
+
+@Erdhaufen
 @Schatztruhe
-@Schluessel(rot)
-@Portal(1)
-@Schloss(portal, rot)
-*****************
+@EndeErdhaufen
 
-@ADetails(BE=1;Grundrechenarten, Addition)
+@Pflanze
+@Schatztruhe
+@EndePflanze
 
-</div>
 
-<div class="flex-child">
+**_Aufgabe 2:_** Suchen Sie alle unsichtbaren Schatztruhen bis Sie ein Achievement für die Schatztruhen bekommen.
 
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$b)\;\;$__ $2\,706+1\,895=$ [[ 4601 ]] @canvas
-[[?]] @Explain
-*****************
-$$
-\begin{array}{r}
-  2\,706\\
-+ 1\,895\\
-\hline
-  4\,601
-\end{array}
-$$
-@Diamanttruhe
-*****************
 
-@ADetails(BE=1;Grundrechenarten, Addition)
 
-</div>
+---
 
-<div class="flex-child">
+---
 
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$c)\;\;$__ $13\,479+8\,536=$ [[ 22015 ]] @canvas
-[[?]] @Explain
-*****************
-$$
-\begin{array}{r}
-  13\,479\\
-+  8\,536\\
-\hline
-  22\,015
-\end{array}
-$$
-@Energiekiste(zauberstaub)
-@Schluessel(blau; zauberstaub)
-@Portal(1)
-@Schloss(portal, blau)
-*****************
+Mit Schlüsseln kann man ganze Bereiche abschließen und den Schlüssel dabei auch noch verstecken.
 
-@ADetails(BE=1;Grundrechenarten, Addition)
+**_Aufgabe 3:_** Graben Sie den Schlüssel aus und schalten Sie den unteren Bereich frei. Lesen Sie anschließend die unsichtbare Anweisung und führen Sie diese aus.
+
+@Erdhaufen(zauberstaub)
+@Pflanze(zauberstaub)
+@Schluessel(gruen; anker)
+@EndePflanze
+@EndeErdhaufen
+
+<section class=dynFlex>
+
+<div class=flex-child>
+
+@Unsichtbar(`Es gibt auch geheime Folien, Geben Sie in der Navigationssuche "Geheimnis" ein und klicken Sie auf diese nun erscheinende Folie.`)
 
 </div>
 
-<div class="flex-child">
+</section>
 
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$d)\;\;$__ $905-468=$ [[ 437 ]] @canvas
-[[?]] @Explain
-*****************
-$$
-\begin{array}{r}
-  905\\
-- 468\\
-\hline
-  437
-\end{array}
-$$
-@Schatztruhe(zauberstaub)
-@Schluessel(gelb)
-*****************
+@Schloss(dynflex, gruen)
 
-@ADetails(BE=1;Grundrechenarten, Subtraktion)
+
+
+
+
+
+## Geheimnis
+
+
+@Geheimfolie
+
+
+
+Auch gibt es Puzzleteile 
+@Puzzleteil(blau; 1) 
+@Puzzleteil(blau; 2) 
+@Puzzleteil(blau; 3) 
+@Puzzleteil(blau; 4) 
+@Puzzleteil(blau; 5) 
+@Puzzleteil(blau; 6)
+, die Sie einsammeln können. Anschließend können Sie die Puzzleteile in das Tor einfügen, um dieses zu öffnen.
+
+@Schloss(Seitenwechsel; blue; anker)
+@Schloss(TOC; blue; anker)
+
+**_Aufgabe 4:_** Öffnen Sie das Tor. Der folgende Term gibt Aufschluss darüber, wie die Puzzleteile angeordnet werden müssen. 
+
+$$
+\begin{align*}
+\left(\begin{array}{c} 3 \\ 1 \\ 6  \end{array}\right) \circ \left(\begin{array}{c} 5 \\ 4 \\ 2  \end{array}\right)
+\end{align*}
+$$
+
+
+@Puzzletor(blau; [[3;5];[1;4];[6;2]]; anker)
+
+
+Mittels Portalen können Sie die Schülerinnen und Schüler auch auf bestimmte Folien lenken, wenn Sie `TOC` und `Seitenwechsel` sperren. Mit diesem Portal kommen Sie wieder zurück zur vorherigen Folie und dort erscheint ein Portal, um wieder hierher zurück zu kehren.
+
+@Portal(7)
+
+
+
+
+
+
+## <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/0.png" width="40" height="40"> Verbindlichkeit und Bewertbarkeit
+
+
+Es ist möglich den Schülerinnen und Schüler eine Bearbeitungszeit vorzugeben und dann den aktuellen Zustand einzufrieren und versendbar zu machen. Dies geschiet durch die Generierung einer URL, in der alle Bearbeitungsinformationen codiert sind.
+
+
+Wenn Sie einen Freezelink erhalten, können Sie natürlich noch händisch in die Bewertung eingreifen und die Eingaben der Einsender einsehen.
+
+<section class=dynFlex>
+
+<div class=flex-child>
+
+![Abgabe](abgabe.png)
 
 </div>
 
-<div class="flex-child">
+<div class=flex-child>
 
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$e)\;\;$__ $6\,000-2\,748=$ [[ 3252 ]] @canvas
-[[?]] @Explain
-*****************
-$$
-\begin{array}{r}
-  6\,000\\
-- 2\,748\\
-\hline
-  3\,252
-\end{array}
-$$
-@Diamanttruhe
-@Portal(1)
-@Schloss(portal, gelb)
-*****************
-
-@ADetails(BE=1;Grundrechenarten, Subtraktion)
-
-</div>
-
-<div class="flex-child">
-
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$f)\;\;$__ $20\,304-7\,859=$ [[ 12445 ]] @canvas
-[[?]] @Explain
-*****************
-$$
-\begin{array}{r}
-  20\,304\\
--  7\,859\\
-\hline
-  12\,445
-\end{array}
-$$
-@Energiekiste(zauberstaub)
-@Schluessel(lila; unsichtbar)
-@Portal(1)
-@Schloss(portal, lila)
-*****************
-
-@ADetails(BE=1;Grundrechenarten, Subtraktion)
+![Auswertung](frozen.png)
 
 </div>
 
@@ -957,244 +1291,23 @@ $$
 
 
 
----
 
----
 
 
-## Aufgabe 5: Multiplikation und Division
 
-**Berechne** ohne Taschenrechner.
 
-<section class="dynFlex">
 
-<div class="flex-child">
 
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$a)\;\;$__ $7\cdot 8=$ [[ 56 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
 
-@ADetails(BE=1;Grundrechenarten, Multiplikation)
 
-</div>
+## <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40"> Propädeutik
 
-<div class="flex-child">
 
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$b)\;\;$__ $9\cdot 6=$ [[ 54 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
 
-@ADetails(BE=1;Grundrechenarten, Multiplikation)
 
-</div>
+**_Aufgabe 1:_** Skizzieren Sie mit der Annotationsmöglichkeit ein Koordinatensystem und platzieren Sie dieses auf diese Folie. Erkunden Sie das DGS.
 
-<div class="flex-child">
 
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$c)\;\;$__ $40\cdot 7=$ [[ 280 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
 
-@ADetails(BE=1;Grundrechenarten, Multiplikation)
 
-</div>
 
-<div class="flex-child">
-
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$d)\;\;$__ $63:9=$ [[ 7 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=1;Grundrechenarten, Division)
-
-</div>
-
-<div class="flex-child">
-
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$e)\;\;$__ $560:8=$ [[ 70 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=1;Grundrechenarten, Division)
-
-</div>
-
-<div class="flex-child">
-
-<!-- data-solution-timer="120s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$f)\;\;$__ $720:9=$ [[ 80 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=1;Grundrechenarten, Division)
-
-</div>
-
-</section>
-
-
-
----
-
----
-
-
-**Berechne** den Wert des Terms.
-
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution -->
-__$a)\;\;$__ $6+4\cdot 5=$ [[ 26 ]]  \
-__$b)\;\;$__ $(6+4)\cdot 5=$ [[ 50 ]]  \
-__$c)\;\;$__ $72:8+17=$ [[ 26 ]]  \
-__$d)\;\;$__ $45-(18+7)=$ [[ 20 ]]
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=4;Terme, Vorrangregeln)
-
-## Aufgabe 6: Größen im Alltag
-
-
-**Wähle** die sinnvolle Einheit aus.
-
-<!-- data-solution-timer="180s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" -->
-__$a)\;\;$__ Ein Bleistift ist ungefähr $15$ [[ mm | (cm) | m | km ]] lang.  \
-__$b)\;\;$__ Eine volle normalgroße Wasserflasche enthält ungefähr $1$ [[ ml | (l) | kg | h ]].  \
-__$c)\;\;$__ Ein Schulweg kann etwa $2$ [[ cm | m | (km) | g ]] lang sein.  \
-__$d)\;\;$__ Ein Apfel wiegt ungefähr $200$ [[ (g) | kg | t | l ]].  \
-__$e)\;\;$__ Eine Unterrichtsstunde dauert meist $45$ [[ s | (min) | h | d ]].
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=5;Größen, Einheiten)
-
-
-
----
-
----
-
-
-<!-- data-solution-timer="240s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution
-data-type="none" 
-data-sortable="false" 
-style="max-width:800px;" -->
-| Aufgabe | Ergebnis |
-|:-------:|:--------:|
-| $3\,\text{m}=\;$ | [[ 300 ]] $\,\text{cm}$ |
-| $450\,\text{cm}=\;$ | [[ 4 ]] $\,\text{m}$ [[ 50 ]] $\,\text{cm}$ |
-| $2\,\text{kg}=\;$ | [[ 2000 ]] $\,\text{g}$ |
-| $3\,\text{h}=\;$ | [[ 180 ]] $\,\text{min}$ |
-| $5\,\text{l}=\;$ | [[ 5000 ]] $\,\text{ml}$ |
-[[?]] @Explain
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=6;Größen, Einheiten)
-
-## Aufgabe 7: Sachaufgabe – Ausflug in den Tierpark
-
-Die Klasse 5a besucht mit ihrer Lehrerin und ihrem Lehrer einen Tierpark. In der Klasse sind $24$ Kinder. Eine Kinderkarte kostet $7\,€$, eine Erwachsenenkarte $12\,€$. Für die Busfahrt bezahlt die Klasse insgesamt $95\,€$.
-
-
-
-
-__$a)\;\;$__ **Berechne**, wie viel Euro die Eintrittskarten für alle Kinder zusammen kosten.
-
-
-<!-- data-solution-timer="240s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution -->
-Ergebnis: [[ 168 ]] $\,€$
-[[?]] @Explain
-@Algebrite.check(168)
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=2;Sachaufgaben, Multiplikation)
-
-
-
-__$b)\;\;$__ **Berechne** die Gesamtkosten für Kinder, Erwachsene und Busfahrt.
-
-
-
-
-<!-- data-solution-timer="300s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution -->
-Ergebnis: [[ 287 ]] $\,€$
-[[?]] @Explain
-@Algebrite.check(287)
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=3;Sachaufgaben, Grundrechenarten)
-
-
-
-__$c)\;\;$__ Die Lehrerin bezahlt mit drei $100$-Euro-Scheinen. **Berechne**, wie viel Rückgeld sie erhält.
-
-
-<!-- data-solution-timer="240s" data-solution-timer-start="oncheck" data-solution-timer-badge="off" data-show-partial-solution -->
-Antwort: Sie erhält [[ 13 ]] $\,€$ zurück.
-[[?]] @Explain
-@Algebrite.check(13)
-*****************
-@Energiekiste
-@Energiekiste
-*****************
-
-@ADetails(BE=2;Sachaufgaben, Subtraktion)
-
-## Abschluss: Selbsteinschätzung
-
-
-Wie sicher fühlst du dich bei der Bediehnung von LiaScript nach diesen Wochenaufgaben?
-
-[[ sehr sicher | meistens sicher | teilweise sicher | noch unsicher ]]
-
-
-Wie war der Anspruch der Mathematikaufgaben in diesen Wochenaufgaben für dich?
-
-[[ einfach | einige Schwierigkeiten | schwer ]]
-
-
-> Wenn du noch unsicher bist, notiere dir das Thema, bei dem du Hilfe brauchst. Fehler sind Hinweise darauf, was du als Nächstes üben kannst.
-
-# Abgabe
-
-> <h3>Kontrolliere noch einmal, ob du alle Aufgaben bearbeitet hast. Friere dann den Kurs ein und sende den entstandenen Link über LernSax an deine Lehrkraft.</h3>
-
-@Abgabe
-
-@Auswertung(F12;Tab;Time)
