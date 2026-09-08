@@ -27,6 +27,8 @@
 \definecolor{liagreenLt}{HTML}{E8F0E9}
 \definecolor{schulred}{HTML}{A61E2D}
 \definecolor{schulredLt}{HTML}{F7E9EB}
+\definecolor{lootteal}{HTML}{007F84}
+\definecolor{loottealLt}{HTML}{E5F4F4}
 \definecolor{codebg}{HTML}{F6F6F4}
 \definecolor{rulegray}{HTML}{D0D0D0}
 \definecolor{muted}{HTML}{606060}
@@ -88,6 +90,7 @@
 
 \newtcolorbox{mdcard}[1]{cheatbase, colframe=mdblue!75,  colbacktitle=mdblue,   title={#1}}
 \newtcolorbox{liacard}[1]{cheatbase, colframe=liagreen!75, colbacktitle=liagreen, title={#1}}
+\newtcolorbox{lootcard}[1]{cheatbase, colframe=lootteal!75, colbacktitle=lootteal, title={#1}}
 \newtcolorbox{schulcard}[2]{
   cheatbase,
   colframe=schulred!75,
@@ -129,6 +132,7 @@
 % Kleine Hilfsmacros für die "Wirkung"-Spalte
 \newcommand{\prevtxt}[1]{{\small #1}}
 \newcommand{\prevsm}[1]{{\footnotesize\color{muted} #1}}
+\newcommand{\lootval}[1]{{\ttfamily\bfseries\color{lootteal}#1}}
 \newcommand{\sheetfooter}{%
   \vfill
   {\sffamily\scriptsize\color{muted}
@@ -158,7 +162,7 @@
 \end{minipage}\hfill
 \begin{minipage}[c]{0.20\linewidth}\raggedright
   {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
-  {\sffamily\bfseries\normalsize Seite 1\,/\,4}\\[1pt]
+  {\sffamily\bfseries\normalsize Seite 1\,/\,5}\\[1pt]
   {\sffamily\scriptsize\color{white!75} Markdown-Grundlagen}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.10\linewidth}\centering
@@ -485,7 +489,7 @@ Wichtig[^1] zum Lernen.
 \end{minipage}\hfill
 \begin{minipage}[c]{0.20\linewidth}\raggedright
   {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
-  {\sffamily\bfseries\normalsize Seite 2\,/\,4}\\[1pt]
+  {\sffamily\bfseries\normalsize Seite 2\,/\,5}\\[1pt]
   {\sffamily\scriptsize\color{white!75} Erweiterungen \& Interaktion}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.10\linewidth}\centering
@@ -746,7 +750,7 @@ Generisches \texttt{[[!]]}-Quiz + Makro.
 \end{minipage}\hfill
 \begin{minipage}[c]{0.20\linewidth}\raggedright
   {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
-  {\sffamily\bfseries\normalsize Seite 3\,/\,4}\\[1pt]
+  {\sffamily\bfseries\normalsize Seite 3\,/\,5}\\[1pt]
   {\sffamily\scriptsize\color{white!75} stabile Makros + Hinweise}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.10\linewidth}\centering
@@ -863,18 +867,19 @@ Unterstützt werden \texttt{slides}, \texttt{presentation} und \texttt{textbook}
 {\footnotesize Reihenfolge: Quiz-Kommentar, fehlerhafter Text, korrekte Lösung.}}
 \end{schulcard}
 
-\begin{schulcard}{Semantischer Selbstcheck}{lia-llm/main/README.md}
+\begin{schulcard}{Bruchteile markieren}{lia-Mathe/main/README.md}
 \begin{lstlisting}[language=lia]
-```text @LLMQuiz(0.66;
-  solution=1;feedback=1;
-  operator=erklaeren)
-Photosynthese wandelt ...
-```
+@circleQuiz(3/8)
+
+@rectQuiz(1/3)
+
+@circleQuizC(3/8,
+ `<!-- data-hint-button="2" -->`)
 \end{lstlisting}
 \tcblower
-\prevsm{\faComments~Vergleicht eine freie Antwort semantisch mit der Musterlösung.\\[2pt]
-Schwellwert \texttt{0.66}; Lösung und Feedback sind aktiviert.\\[2pt]
-{\footnotesize Makro steht am Musterlösungsblock.}}
+\prevsm{\faCircleNotch~Drei von acht Kreissektoren auswählen.\\[2pt]
+\faThLarge~Ein Drittel eines Rechtecks markieren.\\[2pt]
+{\footnotesize \texttt{...C} übernimmt Quiz-Kommentare.}}
 \end{schulcard}
 
 \begin{schulcard}{Zeitgesteuerte Lösung}{lia-timer/main/README.md}
@@ -959,11 +964,11 @@ Skizze und Rechnung
 \begin{minipage}[c]{0.66\linewidth}
   {\sffamily\fontsize{26}{28}\selectfont\bfseries SchulLia}\hspace{0.4em}%
   {\sffamily\large\color{white!75} — Fächer \& Visualisierung}\\[2pt]
-  {\sffamily\footnotesize\itshape\color{white!90} Bruchteile, Koordinatensysteme, Funktionen und dynamische Geometrie.}
+  {\sffamily\footnotesize\itshape\color{white!90} Freie Antworten mit KI, Koordinatensysteme, Funktionen und dynamische Geometrie.}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.20\linewidth}\raggedright
   {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
-  {\sffamily\bfseries\normalsize Seite 4\,/\,4}\\[1pt]
+  {\sffamily\bfseries\normalsize Seite 4\,/\,5}\\[1pt]
   {\sffamily\scriptsize\color{white!75} Mathematik + Templates}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.10\linewidth}\centering
@@ -972,21 +977,57 @@ Skizze und Rechnung
 \end{minipage}
 \end{tcolorbox}
 
+\begingroup
+\setlength{\multicolsep}{2pt}
+\tcbset{cheatbase/.append style={top=1pt,bottom=1pt,before skip=2pt,after skip=2pt,fontlower=\footnotesize}}
 \begin{multicols}{3}
 
-\begin{schulcard}{Bruchteile markieren}{lia-Mathe/main/README.md}
-\begin{lstlisting}[language=lia]
-@circleQuiz(3/8)
+\begin{schulcard}{LLM-Quiz: freie Antworten}{lia-llm/main/README.md}
+{\sffamily\scriptsize\bfseries A: Vollständige Lösungsalternativen}\par\vspace{2pt}
+\begin{lstlisting}[language=lia,breakatwhitespace=false,breakautoindent=false]
+Erkläre die Fotosynthese.
 
-@rectQuiz(1/3)
+<!-- data-solution-button="off"
+     data-llm-textarea="3" -->
+[[Antwort]]
+```text @LLMQuiz(0.66;assessmentengine=quality;operator=erklaeren;solution=1;feedback=1;Rechtschreibung=1;Satzbau=1;maxthinkingtime=15s;maxthinkingtokens=medium,`Erkläre die Fotosynthese.`)
+Pflanzen bilden mit Licht aus
+Wasser und Kohlenstoffdioxid
+Glucose. Dabei entsteht Sauerstoff.
+<!-- lia-llm:alternative -->
+Mit Lichtenergie bauen Pflanzen
+aus Wasser und CO2 Traubenzucker
+auf und geben Sauerstoff ab.
+```
+\end{lstlisting}
 
-@circleQuizC(3/8,
- `<!-- data-hint-button="2" -->`)
+\par\vspace{5pt}
+{\sffamily\scriptsize\bfseries B: Einzelne Kriterien}\par\vspace{2pt}
+\begin{lstlisting}[language=lia,breakatwhitespace=false,breakautoindent=false]
+Nenne beide Ausgangsstoffe
+der Fotosynthese.
+
+<!-- data-solution-button="off" -->
+[[Antwort]]
+```text @LLMQuiz(0.55;coverage=1;solution=1;feedback=1,`Nenne beide Ausgangsstoffe der Fotosynthese.`)
+<!-- lia-llm:criterion -->
+Wasser ist ein Ausgangsstoff.
+<!-- lia-llm:criterion -->
+CO2 ist ein Ausgangsstoff.
+<!-- lia-llm:solution -->
+Die Ausgangsstoffe sind Wasser
+und Kohlenstoffdioxid.
+```
 \end{lstlisting}
 \tcblower
-\prevsm{\faCircleNotch~Drei von acht Kreissektoren auswählen.\\[2pt]
-\faThLarge~Ein Drittel eines Rechtecks markieren.\\[2pt]
-{\footnotesize \texttt{...C} übernimmt Quiz-Kommentare.}}
+\prevsm{\faComments~\textbf{A:} \texttt{alternative} trennt vollständige Musterlösungen: Eine davon muss sinngemäß erfüllt sein.\\[3pt]
+\texttt{quality} prüft gründlicher; \texttt{operator=erklaeren} verlangt eine Erklärung.\\[3pt]
+\texttt{Rechtschreibung=1} und \texttt{Satzbau=1}: nach der Inhaltsprüfung auf \textbf{Sprache prüfen} klicken.\\[3pt]
+\texttt{15s} und \texttt{medium} (512 Tokens) begrenzen zusätzliches Denken.\\[3pt]
+\faTasks~\textbf{B:} Jeder \texttt{criterion}-Marker beginnt eine Anforderung. \texttt{coverage=1} verlangt beide; \texttt{solution} leitet die Musterlösung ein.\\[3pt]
+\texttt{0.66}/\texttt{0.55}: Prüfschwelle. \texttt{solution=1}: Lösung nach richtiger Antwort. \texttt{feedback=1}: Rückmeldung.\\[3pt]
+\textbf{A und B getrennt verwenden:} Kriterien nicht mit \texttt{alternative} oder \texttt{operator} mischen.\\[3pt]
+Jeweils den gesamten Makroaufruf in einer Quelltextzeile schreiben; zweiter Parameter ist die vollständige Frage.}
 \end{schulcard}
 
 \begin{schulcard}{Gleichungslücke}{lia-Mathe/Proposals/README.md}
@@ -1132,6 +1173,7 @@ Die Themen stammen aus \texttt{@ADetails(...)} beim Quiz; passende Erklärlinks 
 \end{schulcard}
 
 \end{multicols}
+\endgroup
 
 \noindent
 \begin{schulinfo}{\faDownload~~Template-Imports}
@@ -1145,6 +1187,228 @@ Den Pfad oben rechts anfügen und die vollständige URL im LiaScript-Kopf unter 
 \faClock~\texttt{lia-resetter/main/README.md}: Veröffentlichung folgt. 
 \end{minipage}
 \end{schulinfo}
+
+\sheetfooter
+
+\newpage
+
+% =====================================================================
+% SEITE 5 — GAMIFICATION MIT LIA-LOOT
+% =====================================================================
+\noindent\begin{tcolorbox}[
+  enhanced, frame hidden, sharp corners,
+  colback=lootteal, coltext=white,
+  left=12pt, right=8pt, top=4pt, bottom=4pt,
+  before skip=0pt, after skip=4pt,
+  width=\linewidth,
+  borderline west={4pt}{-4pt}{lootteal!55}
+]
+\begin{minipage}[c]{0.66\linewidth}
+  {\sffamily\fontsize{26}{28}\selectfont\bfseries Gamification}\hspace{0.4em}%
+  {\sffamily\large\color{white!75} — mit lia-loot}\\[2pt]
+  {\sffamily\footnotesize\itshape\color{white!90} Ressourcen, Funde, Werkzeuge, Tore und Geheimnisse — die vollständige öffentliche Makrooberfläche.}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.20\linewidth}\raggedright
+  {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
+  {\sffamily\bfseries\normalsize Seite 5\,/\,5}\\[1pt]
+  {\sffamily\scriptsize\color{white!75} alle öffentlichen Makros}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.10\linewidth}\centering
+  {\color{black}\colorbox{white}{\hspace{1pt}\qrcode[height=1.55cm,nolinks]{https://github.com/MINT-the-GAP/lia-loot}\hspace{1pt}}}\\[1pt]
+  {\sffamily\scriptsize\color{white!90}\faGithub~lia-loot}
+\end{minipage}
+\end{tcolorbox}
+
+\begingroup
+\setlength{\multicolsep}{2pt}
+\tcbset{cheatbase/.append style={top=1pt,bottom=1pt,before skip=2pt,after skip=2pt}}
+\begin{multicols}{3}
+
+\begin{lootcard}{Start: Ressourcen, Highscore, Erfolge}
+\begin{lstlisting}[language=lia]
+@Ressourcen(10, 3, 5)
+
+@Highscore(100, 10, 5,
+           15, 2)
+
+@achievements
+\end{lstlisting}
+\tcblower
+\prevsm{\faSlidersH~\textbf{Ressourcen:} \lootval{10} Gold · \lootval{3} Diamanten · \lootval{5} Energie.\\[2pt]
+\faChartLine~\textbf{Highscore:} \lootval{100} Maximum · \lootval{10} Abzug je Fehlprüfung · \lootval{5} je geöffnetem Hinweis · \lootval{15} Freiminuten · danach \lootval{2}/Min. (sekundengenau).\\[2pt]
+\faCheck~Aktiviert zwölf feste Erfolge. Aliasse: \texttt{@Achievements}, \texttt{@Erfolge}.}
+\end{lootcard}
+
+\begin{lootcard}{Gold, Diamanten \,\& Energie}
+\begin{lstlisting}[language=lia]
+@Schatztruhe(3; toc; menu)
+
+@Diamanttruhe(2; anker)
+
+@Energiekiste(3; mode)
+\end{lstlisting}
+\tcblower
+\prevsm{\textbf{Gold:} \lootval{3} je in \texttt{toc} und \texttt{menu}.\\[1.5pt]
+\textbf{Diamanten:} \lootval{2} inline; \texttt{anker} bindet den Fund an die Folie.\\[1.5pt]
+\textbf{Energie:} \lootval{3} in \texttt{mode} (dritter Ressourcenwert nötig). Erster Wert = Menge; jedes Ziel erhält sie vollständig.}
+\end{lootcard}
+
+\begin{lootcard}{Schlüssel \,\& Schlösser}
+\begin{lstlisting}[language=lia]
+@Schluessel(blau; menu)
+
+@Schloss(check, blau)
+
+@Schloss(toc, rot; anker)
+\end{lstlisting}
+\tcblower
+\prevsm{\faKey~\texttt{blau} = Schlüsselfarbe; \texttt{menu} = Fundort.\\[2pt]
+\faPuzzlePiece~Beim Schloss steht erst das Ziel (\texttt{check}/\texttt{toc}), dann die nötige Farbe. Öffnen verbraucht einen passenden Schlüssel.\\[2pt]
+{\footnotesize \texttt{anker} bindet ein sonst globales Schloss an seine Folie.}}
+\end{lootcard}
+
+\begin{lootcard}{Gemeinsame Fundoptionen}
+\begin{lstlisting}[language=lia]
+anker; 12s
+theme=rot
+farbmodus=dunkel
+annotationen=aus
+unsichtbar
+erde; pflanze-zauberstaub
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{anker} = Folienbindung; \lootval{12s} = zwölf Sekunden Wartezeit. Weitere Optionen steuern Theme, Farbmodus, Annotationen und Verbergung.\\[2pt]
+Direkte Schichten \texttt{erde}/\texttt{pflanze} laufen von außen nach innen; Suffixe: \texttt{-unsichtbar}, \texttt{-zauberstaub}.}
+\end{lootcard}
+
+\columnbreak
+
+\begin{lootcard}{Lupe \,\& Verbergung}
+\begin{lstlisting}[language=lia]
+@Lupe
+
+@Unsichtbar(Geheimer Text)
+
+@Zauberstaub(Hier funkelt etwas)
+\end{lstlisting}
+\tcblower
+\prevsm{\faSearch~Lupe einsammeln und in der Leiste aktivieren.\\[2pt]
+\texttt{@Unsichtbar} verdeckt vollständig, \texttt{@Zauberstaub} hinterlässt ein schwaches Funkeln.\\[2pt]
+{\footnotesize Einzeiliger Inhalt; Spieleffekt, kein Zugriffsschutz.}}
+\end{lootcard}
+
+\begin{lootcard}{Aktionswerkzeuge}
+\begin{lstlisting}[language=lia]
+@Schaufel
+
+@Giesskanne
+\end{lstlisting}
+\tcblower
+\prevsm{\faPuzzlePiece~Schaufel öffnet Erde, Gießkanne bringt Pflanzen zum Blühen.\\[2pt]
+Werkzeug immer vor der ersten Pflichtschicht erreichbar machen. Nur ein Aktionswerkzeug ist aktiv; die Lupe kann parallel laufen.}
+\end{lootcard}
+
+\begin{lootcard}{Erde: Block \,\& Inline}
+\begin{lstlisting}[language=lia]
+@Erdhaufen(unsichtbar)
+Vergrabener Inhalt
+@EndeErdhaufen
+
+Text @Erdhaufen.inline(Hinweis)
+\end{lstlisting}
+\tcblower
+\prevsm{\faEye~Blockform umschließt beliebigen LiaScript-Inhalt; Start und Ende stehen allein auf derselben Folie.\\[2pt]
+\texttt{.inline} gibt einzeiligen Inhalt frei und benötigt kein Endmakro.}
+\end{lootcard}
+
+\begin{lootcard}{Pflanze: Block \,\& Inline}
+\begin{lstlisting}[language=lia]
+@Pflanze(zauberstaub)
+Verborgener Inhalt
+@EndePflanze
+
+Text @Pflanze.inline(Hinweis)
+\end{lstlisting}
+\tcblower
+\prevsm{Erst gießen, dann die Blüte anklicken: Danach wird der Inhalt sichtbar.\\[2pt]
+Aliasse: \texttt{@Blume}, \texttt{@EndeBlume} und \texttt{@Blume.inline}.}
+\end{lootcard}
+
+\columnbreak
+
+\begin{lootcard}{Puzzleteile \,\& Puzzletore}
+\begin{lstlisting}[language=lia]
+@Puzzleteil(rot; 1)
+@Puzzleteil(rot; 2)
+@Puzzletor(rot; [[2;1]])
+
+@Puzzleteil(blau; 1)
+@Puzzletor(blau; [[1]]; anker)
+\end{lstlisting}
+\tcblower
+\prevsm{\faPuzzlePiece~\lootval{1}/\lootval{2} = Teilnummern; \texttt{[[2;1]]} = Teil 2 links, Teil 1 rechts. Alle Teile stehen davor; maximal 16.\\[2pt]
+Ohne \texttt{anker}: Navigationstor. Mit \texttt{anker}: Inhalt bis zur nächsten \texttt{\#}-Überschrift.}
+\end{lootcard}
+
+\begin{lootcard}{Zweiweg- \,\& Einwegportale}
+\begin{lstlisting}[language=lia]
+@Portal(5)
+@Portal(5; einweg)
+
+@Einwegportal(5)
+@Einbahnportal(5)
+\end{lstlisting}
+\tcblower
+\prevsm{\faUndo~\lootval{5} = Ziel ist die fünfte Kursfolie (1-basiert). \texttt{@Portal} ist standardmäßig ein Zweiwegportal mit Rückweg.\\[2pt]
+Die letzten drei Formen sind einweg; \texttt{@Einbahnportal} ist ein Alias.}
+\end{lootcard}
+
+\begin{lootcard}{Bedingte Bereiche}
+\begin{lstlisting}[language=lia]
+@lootif(Gold >= 5; spawn)
+Dieser Inhalt erscheint dauerhaft.
+@Endelootif
+\end{lstlisting}
+\tcblower
+\prevsm{\faEye~\lootval{5} = Schwelle: Der Bereich erscheint ab fünf Gold dauerhaft. Einzig gültige Aktion: \texttt{spawn}.\\[2pt]
+End-Aliasse: \texttt{@EndeLootif}, \texttt{@endlootif}, \texttt{@EndLootIf}.\\[2pt]
+{\footnotesize Start und Ende allein, foliengleich und korrekt verschachtelt.}}
+\end{lootcard}
+
+\begin{lootcard}{Geheimfolie}
+\begin{lstlisting}[language=lia]
+## Das geheime Labor
+
+@Geheimfolie
+\end{lstlisting}
+\tcblower
+\prevsm{\faSearch~Verbirgt die Folie vor ToC und normaler Navigation. Erreichbar per exakter Titelsuche oder gezieltem Portal.\\[2pt]
+{\footnotesize Kein Schutz für vertrauliche Inhalte: Quelle und Seitennummer bleiben prinzipiell einsehbar.}}
+\end{lootcard}
+
+\end{multicols}
+\endgroup
+
+\noindent
+\begin{tcolorbox}[
+  enhanced, colback=loottealLt, colframe=lootteal!75,
+  boxrule=0.3pt, arc=2pt,
+  left=5pt,right=5pt,top=1pt,bottom=1pt,
+  before skip=1pt, after skip=0pt
+]
+\tiny
+\begin{minipage}[t]{0.54\linewidth}
+\textbf{\color{lootteal}\faDownload~~Import:}
+\url{https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md}\\[-1pt]
+Nur öffentliche Makros verwenden — niemals interne \texttt{@Loot...\_}-Aufrufe.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.45\linewidth}
+\textbf{Kosten:} Hinweis 1 Gold · Auflösen 1 Diamant · Prüfen 1 Energie.\quad
+\textbf{Ziele:} \texttt{toc}, \texttt{menu}, \texttt{classroom}, \texttt{info}, \texttt{translator}, \texttt{mode}.\\[-1pt]
+\textbf{Schloss zusätzlich:} \texttt{seitenwechsel}, \texttt{check}, \texttt{resolve}, \texttt{hint}, \texttt{portal}.\quad
+\textbf{Trigger:} Aufgaben, Ressourcen/Kisten, Schloss/Puzzle, Geheimfolie/Lupe/Marker.
+\end{minipage}
+\end{tcolorbox}
 
 \sheetfooter
 
