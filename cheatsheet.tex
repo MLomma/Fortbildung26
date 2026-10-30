@@ -29,6 +29,8 @@
 \definecolor{schulredLt}{HTML}{F7E9EB}
 \definecolor{lootteal}{HTML}{007F84}
 \definecolor{loottealLt}{HTML}{E5F4F4}
+\definecolor{extraorange}{HTML}{B95000}
+\definecolor{extraorangeLt}{HTML}{FFF0DF}
 \definecolor{codebg}{HTML}{F6F6F4}
 \definecolor{rulegray}{HTML}{D0D0D0}
 \definecolor{muted}{HTML}{606060}
@@ -91,6 +93,7 @@
 \newtcolorbox{mdcard}[1]{cheatbase, colframe=mdblue!75,  colbacktitle=mdblue,   title={#1}}
 \newtcolorbox{liacard}[1]{cheatbase, colframe=liagreen!75, colbacktitle=liagreen, title={#1}}
 \newtcolorbox{lootcard}[1]{cheatbase, colframe=lootteal!75, colbacktitle=lootteal, title={#1}}
+\newtcolorbox{extracard}[1]{cheatbase, colframe=extraorange!75, colbacktitle=extraorange, title={#1}}
 \newtcolorbox{schulcard}[2]{
   cheatbase,
   colframe=schulred!75,
@@ -162,7 +165,7 @@
 \end{minipage}\hfill
 \begin{minipage}[c]{0.20\linewidth}\raggedright
   {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
-  {\sffamily\bfseries\normalsize Seite 1\,/\,5}\\[1pt]
+  {\sffamily\bfseries\normalsize Seite 1\,/\,7}\\[1pt]
   {\sffamily\scriptsize\color{white!75} Markdown-Grundlagen}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.10\linewidth}\centering
@@ -489,7 +492,7 @@ Wichtig[^1] zum Lernen.
 \end{minipage}\hfill
 \begin{minipage}[c]{0.20\linewidth}\raggedright
   {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
-  {\sffamily\bfseries\normalsize Seite 2\,/\,5}\\[1pt]
+  {\sffamily\bfseries\normalsize Seite 2\,/\,7}\\[1pt]
   {\sffamily\scriptsize\color{white!75} Erweiterungen \& Interaktion}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.10\linewidth}\centering
@@ -750,7 +753,7 @@ Generisches \texttt{[[!]]}-Quiz + Makro.
 \end{minipage}\hfill
 \begin{minipage}[c]{0.20\linewidth}\raggedright
   {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
-  {\sffamily\bfseries\normalsize Seite 3\,/\,5}\\[1pt]
+  {\sffamily\bfseries\normalsize Seite 3\,/\,7}\\[1pt]
   {\sffamily\scriptsize\color{white!75} stabile Makros + Hinweise}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.10\linewidth}\centering
@@ -769,7 +772,7 @@ Generisches \texttt{[[!]]}-Quiz + Makro.
 \end{lstlisting}
 \tcblower
 \prevsm{\faShareSquare~Erzeugt den Abgabelink.\\[2pt]
-\faChartBar~Auswertung mit Formular-ID, Tabellenblatt und Zeitspalte.}
+\faChartBar~\texttt{F12}: technische Entwicklertoolsignale; \texttt{Tab}: Tab-/Fensterwechsel; \texttt{Time}: Zeit je Folie. Keine Beweise für Täuschung.}
 \end{schulcard}
 
 \begin{schulcard}{Prüfung \& Bewertung}{lia-freeze-v2/main/README.md}
@@ -968,7 +971,7 @@ Skizze und Rechnung
 \end{minipage}\hfill
 \begin{minipage}[c]{0.20\linewidth}\raggedright
   {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
-  {\sffamily\bfseries\normalsize Seite 4\,/\,5}\\[1pt]
+  {\sffamily\bfseries\normalsize Seite 4\,/\,7}\\[1pt]
   {\sffamily\scriptsize\color{white!75} Mathematik + Templates}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.10\linewidth}\centering
@@ -1030,7 +1033,7 @@ und Kohlenstoffdioxid.
 Jeweils den gesamten Makroaufruf in einer Quelltextzeile schreiben; zweiter Parameter ist die vollständige Frage.}
 \end{schulcard}
 
-\begin{schulcard}{Gleichungslücke}{lia-Mathe/Proposals/README.md}
+\begin{schulcard}{Gleichungslücke}{lia-Mathe/main/README.md}
 \begin{lstlisting}[language=lia]
 $\frac{\liaquiz}{3}
  = \frac{5}{15}$
@@ -1184,7 +1187,7 @@ Den Pfad oben rechts anfügen und die vollständige URL im LiaScript-Kopf unter 
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\linewidth}
 \faInfoCircle~\textbf{Coordinate:} zuerst \texttt{https://raw.githubusercontent.com/liaTemplates/JSXGraph/main/README.md} importieren.\\[1pt]
-\faClock~\texttt{lia-resetter/main/README.md}: Veröffentlichung folgt. 
+\faUndo~\texttt{lia-resetter/main/README.md}: direkt importieren; Hinweise zum Einzelreset auf Seite 7.
 \end{minipage}
 \end{schulinfo}
 
@@ -1206,12 +1209,12 @@ Den Pfad oben rechts anfügen und die vollständige URL im LiaScript-Kopf unter 
 \begin{minipage}[c]{0.66\linewidth}
   {\sffamily\fontsize{26}{28}\selectfont\bfseries Gamification}\hspace{0.4em}%
   {\sffamily\large\color{white!75} — mit lia-loot}\\[2pt]
-  {\sffamily\footnotesize\itshape\color{white!90} Ressourcen, Funde, Werkzeuge, Tore und Geheimnisse — die vollständige öffentliche Makrooberfläche.}
+  {\sffamily\footnotesize\itshape\color{white!90} Ressourcen, Funde, Werkzeuge, Tore und Geheimnisse — Grundlagen; Erweiterungen auf Seite 6.}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.20\linewidth}\raggedright
   {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
-  {\sffamily\bfseries\normalsize Seite 5\,/\,5}\\[1pt]
-  {\sffamily\scriptsize\color{white!75} alle öffentlichen Makros}
+  {\sffamily\bfseries\normalsize Seite 5\,/\,7}\\[1pt]
+  {\sffamily\scriptsize\color{white!75} Grundlagen und Spielpfade}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.10\linewidth}\centering
   {\color{black}\colorbox{white}{\hspace{1pt}\qrcode[height=1.55cm,nolinks]{https://github.com/MINT-the-GAP/lia-loot}\hspace{1pt}}}\\[1pt]
@@ -1235,7 +1238,7 @@ Den Pfad oben rechts anfügen und die vollständige URL im LiaScript-Kopf unter 
 \end{lstlisting}
 \tcblower
 \prevsm{\faSlidersH~\textbf{Ressourcen:} \lootval{10} Gold · \lootval{3} Diamanten · \lootval{5} Energie.\\[2pt]
-\faChartLine~\textbf{Highscore:} \lootval{100} Maximum · \lootval{10} Abzug je Fehlprüfung · \lootval{5} je geöffnetem Hinweis · \lootval{15} Freiminuten · danach \lootval{2}/Min. (sekundengenau).\\[2pt]
+\faChartLine~\textbf{Highscore:} \lootval{100} Basispunkte · \lootval{10} Abzug je Fehlprüfung · \lootval{5} je geöffnetem Hinweis · \lootval{15} Freiminuten · danach \lootval{2}/Min. (sekundengenau).\\[2pt]
 \faCheck~Aktiviert zwölf feste Erfolge. Aliasse: \texttt{@Achievements}, \texttt{@Erfolge}.}
 \end{lootcard}
 
@@ -1410,6 +1413,419 @@ Nur öffentliche Makros verwenden — niemals interne \texttt{@Loot...\_}-Aufruf
 \end{minipage}
 \end{tcolorbox}
 
+\sheetfooter
+
+\newpage
+
+% =====================================================================
+% SEITE 6 — GAMIFICATION: ERWEITERUNGEN
+% Quelle: MINT-the-GAP/lia-loot, README.md, 5e5255cfa94c494fee1fd67b1b66f77baaad918c
+% =====================================================================
+\noindent\begin{tcolorbox}[
+  enhanced, frame hidden, sharp corners,
+  colback=lootteal, coltext=white,
+  left=12pt, right=8pt, top=4pt, bottom=4pt,
+  before skip=0pt, after skip=4pt,
+  width=\linewidth, borderline west={4pt}{-4pt}{lootteal!55}
+]
+\begin{minipage}[c]{0.66\linewidth}
+  {\sffamily\fontsize{26}{28}\selectfont\bfseries Gamification}\hspace{0.4em}%
+  {\sffamily\large\color{white!75} — weitere Möglichkeiten}\\[2pt]
+  {\sffamily\footnotesize\itshape\color{white!90} Nebel, Werkzeuge, Shop, Begleiter und Energiereserve — Erweiterungen zu Seite 5.}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.20\linewidth}\raggedright
+  {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
+  {\sffamily\bfseries\normalsize Seite 6\,/\,7}\\[1pt]
+  {\sffamily\scriptsize\color{white!75} lia-loot erweitern}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.10\linewidth}\centering
+  {\color{black}\colorbox{white}{\hspace{1pt}\qrcode[height=1.55cm,nolinks]{https://github.com/MINT-the-GAP/lia-loot}\hspace{1pt}}}\\[1pt]
+  {\sffamily\scriptsize\color{white!90}\faGithub~lia-loot}
+\end{minipage}
+\end{tcolorbox}
+
+\begingroup
+\setlength{\multicolsep}{2pt}
+\tcbset{cheatbase/.append style={top=1pt,bottom=1pt,before skip=2pt,after skip=2pt,lefthand width=0.39\linewidth,before lower=\raggedright}}
+\lstset{breakatwhitespace=false,breakautoindent=false}
+\begin{multicols}{3}
+
+\begin{lootcard}{Taschenlampe \& Nebel}
+\begin{lstlisting}[language=lia]
+@Taschenlampe
+
+@Nebel(Verborgener Hinweis)
+
+@Schatztruhe(nebel)
+\end{lstlisting}
+\tcblower
+\prevsm{Taschenlampe einsammeln und in der Leiste aktivieren. Im Lichtkegel werden vernebelte Inhalte les- und bedienbar.\\[2pt]
+\texttt{nebel} ist eine Fundoption; \texttt{farbmodus=dunkel} prüft dagegen den gewählten Farbmodus.}
+\end{lootcard}
+
+\begin{lootcard}{Ganze Bereiche vernebeln}
+\begin{lstlisting}[language=lia]
+@NebelStart
+Dieser Absatz ist verdeckt.
+
+@Diamanttruhe
+@NebelEnd
+\end{lstlisting}
+\tcblower
+\prevsm{Umschließt auch Listen, Bilder, Quizze und Makros. Start und Ende stehen allein auf derselben Folie.\\[2pt]
+Die Taschenlampe muss vorher erreichbar sein. Nebel ist mit Erde, Pflanzen und Lupenverstecken kombinierbar.}
+\end{lootcard}
+
+\begin{lootcard}{Axt \& Holzkisten}
+\begin{lstlisting}[language=lia]
+@Axt
+
+@Kiste(@Schatztruhe)
+
+@Perk(eisenaxt)
+@Perk(goldaxt)
+@Perk(diamantaxt)
+\end{lstlisting}
+\tcblower
+\prevsm{Axt einsammeln, aktivieren und die Kiste aufbrechen. Sie enthält genau ein Item.\\[2pt]
+\textbf{Hiebe je Kiste:} Stein 8, Eisen 4, Gold 2, Diamant 1. Es gilt die beste Stufe; die Axt bleibt erhalten.}
+\end{lootcard}
+
+\begin{lootcard}{Geschenke \& verschachtelte Items}
+\begin{lstlisting}[language=lia]
+@Geschenk(@Katze)
+
+@Geschenk(`@Schluessel(blau)`)
+
+@Kiste(`@Katze(grau)`)
+\end{lstlisting}
+\tcblower
+\prevsm{Ein Geschenk öffnet sich per Klick; sein Inhalt entsteht erst danach.\\[2pt]
+Hat das innere Item eigene Klammerparameter, seinen \textbf{vollständigen Aufruf in Backticks} setzen. Gilt auch für Kiste und Futter.}
+\end{lootcard}
+
+\columnbreak
+
+\begin{lootcard}{Shop: Angebote \& Preise}
+\begin{lstlisting}[language=lia]
+@Shop(schaufel=3gold; energie-5=2gold)
+
+@Shop(lupe=2diamanten; giesskanne=3gold+1diamant)
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{artikel=preis}; Angebote mit Semikolon trennen. Ressourcenartikel tragen die Menge im Namen.\\[2pt]
+Benötigt \texttt{@Ressourcen}; Energieangebote zusätzlich dessen dritten Wert. Jedes konkrete Angebot ist einmal kaufbar.}
+\end{lootcard}
+
+\begin{lootcard}{Atlaskarte: Fortschritt sichtbar machen}
+\begin{lstlisting}[language=lia]
+@Atlaskarte
+
+@Perk(atlas-kurszahlen)
+
+@Perk(atlas-folieninfo)
+\end{lstlisting}
+\tcblower
+\prevsm{Die Karte öffnet die Übersicht der zwölf festen Erfolge.\\[2pt]
+\texttt{atlas-kurszahlen} ergänzt genaue Bestände und Fortschritt; \texttt{atlas-folieninfo} die noch offenen Funde auf der aktuellen Folie.}
+\end{lootcard}
+
+\begin{lootcard}{Perks: dauerhafte Verbesserungen}
+\begin{lstlisting}[language=lia]
+@Perk(energiekistenbonus-10)
+
+@Perk(lupenradius-15)
+
+@Perk(taschenlampenradius-20)
+\end{lstlisting}
+\tcblower
+\prevsm{Mehr Energie aus Energiekisten oder größerer Suchradius. Zahl = Prozentwert (1--500); Prozent-Perks addieren sich.\\[2pt]
+Nichtganzzahlige Zusatzenergie wird ausgewürfelt. Dieselben Artikel sind auch im Shop erhältlich.}
+\end{lootcard}
+
+\begin{lootcard}{Katze, Futter \& Halsbänder}
+\begin{lstlisting}[language=lia]
+@Katze(grau)
+
+@Futter(@Energiekiste)
+
+@Perk(katzenhalsband-blau)
+\end{lstlisting}
+\tcblower
+\prevsm{Begleiter reagiert auf Funde und richtige Antworten. Fell: orange, grau, schwarz, weiß oder dreifarbig.\\[2pt]
+Futter einsammeln, aktivieren und Katze anklicken: Das enthaltene Item wird automatisch eingesammelt. Halsbänder wechseln die Farbe.}
+\end{lootcard}
+
+\columnbreak
+
+\begin{lootcard}{Reservefolie: neue Energie verdienen}
+\begin{lstlisting}[language=lia]
+## Energiereserve
+
+@Reservefolie(2)
+
+Berechne die Summe.
+
+3 + 3 = [[6]]
+\end{lstlisting}
+\tcblower
+\prevsm{Genau eine Reservefolie je Kurs; Energie in \texttt{@Ressourcen} aktivieren. Beim Übergang von positivem Bestand auf 0 öffnet sie automatisch.\\[2pt]
+Prüfen ist hier kostenlos. Jedes erstmals korrekt gelöste Quiz gibt 2 Energie; danach automatisch zurück. Weitere Reservequizze ermöglichen spätere Notfälle.}
+\end{lootcard}
+
+\begin{lootcard}{Ressourcenbonus \& Timerkosten}
+\begin{lstlisting}[language=lia]
+@Ressourcen(10, 3, 5, goldwert=100, diamantwert=250)
+
+@Ressourcen(10, 3)
+\end{lstlisting}
+\tcblower
+\prevsm{Am Kursende geben übriges Gold und Diamanten zusätzliche Highscorepunkte; Standard: 100 bzw. 250 je Einheit. Energie gibt keinen Bonus.\\[2pt]
+Ohne dritten Zahlenwert kein Energielimit. Mit Energie kostet auch ein erfolgreicher manueller Timerstart (\texttt{onclick}) 1 Energie.}
+\end{lootcard}
+
+\begin{lootcard}{Funde \& Schlösser in anderen Templates}
+\begin{lstlisting}[language=lia]
+@Schatztruhe(canvasocr)
+
+@Schloss(dynflex, blau)
+
+@Diamanttruhe(coordinate; anker)
+\end{lstlisting}
+\tcblower
+\prevsm{Das Zieltemplate \textbf{direkt im Kurskopf importieren}; bei lokalen Zielen dessen Komponente auf derselben Folie anlegen.\\[2pt]
+Weitere Ziele: \texttt{timer}, \texttt{boardmode}, \texttt{marker}, \texttt{markerquiz}, \texttt{annotation}, \texttt{kachel}, \texttt{llm}, \texttt{freeze}, \texttt{mathpath}.}
+\end{lootcard}
+
+\end{multicols}
+\endgroup
+
+\noindent\begin{tcolorbox}[
+  enhanced, colback=loottealLt, colframe=lootteal!75,
+  boxrule=0.3pt, arc=2pt, left=5pt,right=5pt,top=2pt,bottom=2pt,
+  before skip=2pt,after skip=0pt
+]
+\scriptsize
+\textbf{\color{lootteal}\faDownload~~Import:}
+\url{https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md}\\[2pt]
+\textbf{Spielpfad planen:} Werkzeuge vor ihren Verstecken erreichbar machen; Shoppreise und Pflichtkosten mit Fehlerreserve abdecken.
+Die Reservefolie löst keinen Sprung aus, wenn der Kurs bereits mit 0 Energie startet. \hfill Stand: Oktober 2026
+\end{tcolorbox}
+\sheetfooter
+
+\newpage
+
+% =====================================================================
+% SEITE 7 — WEITERE BAUSTEINE (ORANGE)
+% Quellen: lia-canvas-ocr 167982ed0804e57b12316c5b54ec9d97807d629e;
+% Algebrite b5a675525d0be71e3cc37476a7fba065e9590f62;
+% lia-coordinate 21cf2af84e057a33f56d3a1881d8f9c054e60a34;
+% lia-pentominos 33d7df37fdf3e2b0ee3d7a4543f3584ef0be025c;
+% lia-freeze-v2 3b95abcae8aa74dbc21d4e137eead6f3d0112abc;
+% lia-resetter 15cd02359cccd42aa8e48c232332be9c076115ce.
+% =====================================================================
+\noindent\begin{tcolorbox}[
+  enhanced, frame hidden, sharp corners,
+  colback=extraorange, coltext=white,
+  left=12pt, right=8pt, top=4pt, bottom=4pt,
+  before skip=0pt, after skip=4pt,
+  width=\linewidth, borderline west={4pt}{-4pt}{extraorange!55}
+]
+\begin{minipage}[c]{0.66\linewidth}
+  {\sffamily\fontsize{26}{28}\selectfont\bfseries Weitere Bausteine}\\[2pt]
+  {\sffamily\footnotesize\itshape\color{white!90} Rechenwege, Einheiten, Geometrie und Quizsteuerung — Ergänzungen zu den Seiten 2 bis 4.}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.20\linewidth}\raggedright
+  {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
+  {\sffamily\bfseries\normalsize Seite 7\,/\,7}\\[1pt]
+  {\sffamily\scriptsize\color{white!75} zusätzliche Aufgabenformen}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.10\linewidth}\centering
+  {\color{black}\colorbox{white}{\hspace{1pt}\qrcode[height=1.55cm,nolinks]{https://github.com/MINT-the-GAP}\hspace{1pt}}}\\[1pt]
+  {\sffamily\scriptsize\color{white!90}\faGithub~MINT-the-GAP}
+\end{minipage}
+\end{tcolorbox}
+
+\begingroup
+\setlength{\multicolsep}{2pt}
+\tcbset{cheatbase/.append style={top=1pt,bottom=1pt,before skip=2pt,after skip=2pt,lefthand width=0.39\linewidth,before lower=\raggedright}}
+\lstset{breakatwhitespace=false,breakautoindent=false}
+\begin{multicols}{3}
+
+\begin{extracard}{OCR: vollständige Rechenwege}
+\begin{lstlisting}[language=lia]
+Löse die Gleichung.
+
+@BerechneOCR(`3*x+2=11`,1)
+[[?]] Ziehe zuerst 2 ab.
+
+@BerechneOCR(`347+185`)
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{lia-canvas-ocr}: erzeugt Quiz, Zeichenfläche und Rechenwegprüfung. Zweites Argument \texttt{1}/\texttt{0}: Zeilenrückmeldung an/aus.\\[2pt]
+Reine ganzzahlige Grundrechenaufgaben wählen automatisch das passende schriftliche Verfahren. Algebrite direkt mitimportieren.}
+\end{extracard}
+
+\begin{extracard}{OCR: Ableitung, Integral \& mehr}
+\begin{lstlisting}[language=lia]
+@BerechneOCR(`f(x)=x^3`,`aufgabe=ableitung;ordnung=1;zeilenrueckmeldung=1`)
+
+@BerechneOCR(`f(x)=x^2`,`aufgabe=integral;von=0;bis=2`)
+\end{lstlisting}
+\tcblower
+\prevsm{Benannte Optionen gemeinsam in \textbf{ein} Backtick-Argument schreiben.\\[2pt]
+Weitere Aufgaben: Nullstellen, Extrempunkte, Tangente und Kurvendiskussion. Je nach Typ \texttt{stelle}, \texttt{intervall} oder \texttt{teile} ergänzen; mathematische Abdeckung in der README prüfen.}
+\end{extracard}
+
+\begin{extracard}{Algebrite: Einheiten mitprüfen}
+\begin{lstlisting}[language=lia]
+Länge: [[1.5km]]
+@Algebrite.check(1.5km,units=1)
+
+Länge: [[1.5km]]
+@Algebrite.check2(1.5km,20m)
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{1500m} und \texttt{1.5km} sind gleichwertig. Fehlende oder falsche Einheit wird abgelehnt.\\[2pt]
+\texttt{check} und \texttt{check\_expression}: Einheiten per \texttt{units=1} aktivieren. Bei \texttt{check2} und \texttt{check\_margin} bereits an; \texttt{units=0} schaltet sie aus.}
+\end{extracard}
+
+\begin{extracard}{Algebrite: Gleichungen \& mehrere Felder}
+\begin{lstlisting}[language=lia]
+[[x^2-1=2x]]
+@Algebrite.check_expression(`x^2-2*x-1=0`)
+
+$a=$ [[1/3]], $b=$ [[2/3]]
+@Algebrite.check2([1/3;2/3],0.01)
+\end{lstlisting}
+\tcblower
+\prevsm{Gleichungsprüfung vergleicht links minus rechts; kein allgemeiner Vergleich von Lösungsmengen.\\[2pt]
+Mehrere Sollwerte als Semikolonliste in Feldreihenfolge. Eine Toleranz gilt für alle; alternativ eine Liste je Feld angeben.}
+\end{extracard}
+
+\columnbreak
+
+\begin{extracard}{Geometrie: mehrere Bedingungen zugleich}
+\begin{lstlisting}[language=lia]
+@GeometrieQuiz(`B;4;Form(Rechteck;exklusiv=Quadrat);Flaeche(20;0.05);Umfang(18;0.05)`,`<!-- -->`)
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{lia-coordinate}: auf einem interaktiven Board \texttt{B} mit DGS. Alle Bedingungen gelten für \textbf{dasselbe} selbst konstruierte Polygon.\\[2pt]
+Hier: Rechteck, kein Quadrat, Fläche 20 und Umfang 18. Weitere Bedingung: \texttt{Konstruktion(...)}. Alias: \texttt{@KoordQuiz}.}
+\end{extracard}
+
+\begin{extracard}{Koordinaten als statisches SVG}
+\begin{lstlisting}[language=lia]
+@Koordinatensystem(`xmin=-3;xmax=3;ymin=-2;ymax=4;id=S;static=1`)
+
+@Punkt(`S;A;1;2;red;1;fix`)
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{static=1} bzw. \texttt{statisch=1} rendert unterstützte feste Objekte als skalierbares SVG.\\[2pt]
+Für Abbildungen; keine DGS-Interaktion und keine interaktiven Quizze. \texttt{border=0} allein aktiviert diesen Modus nicht.}
+\end{extracard}
+
+\begin{extracard}{Funktionsscharen \& Regler}
+\begin{lstlisting}[language=lia]
+@Schar(`f;x;mx+n;B;term=1;blue`)
+
+@Regler(`B;a;-3;3;0.1;1;red`)
+@PlotFunktion(`B;g;a*x^2;red`)
+\end{lstlisting}
+\tcblower
+\prevsm{Zuerst ein interaktives \texttt{lia-coordinate}-Board \texttt{B} anlegen (Seite 4).\\[2pt]
+\texttt{@Schar} erzeugt die Parameterregler zur Funktionsschar. Ein eigener \texttt{@Regler} steuert hier \texttt{a} von $-3$ bis $3$ in 0,1-Schritten, Startwert 1.}
+\end{extracard}
+
+\begin{extracard}{Polyominos: eine Zielsumme legen}
+\begin{lstlisting}[language=lia]
+@PentominoQuiz(45,`name=P;type=I2;numbers=[1,2]`,`<!-- data-solution-button="off" -->`)
+
+@PentominoDockQuizAuswahl(65,`I2,L3,O4`,`<!-- data-solution-button="off" -->`)
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{lia-pentominos}: einen Stein verschieben und drehen oder aus dem Dock wählen.\\[2pt]
+\textbf{Ein einzelner Stein} muss die Zielsumme erreichen; Steinsummen werden nicht addiert. Suffix \texttt{N}: Feld von $50$ bis $-49$. Importfolge: JSXGraph, Coordinate, Pentominos.}
+\end{extracard}
+
+\columnbreak
+
+\begin{extracard}{Hinweise zeitgesteuert freigeben}
+\begin{lstlisting}[language=lia]
+<!-- data-hint-timer="20s"
+ data-hint-timer-start="oncheck"
+ data-hint-badge="off" -->
+7 + 8 = [[15]]
+[[?]] Ergänze zuerst auf 10.
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{lia-timer}: Hinweis nach 20 Sekunden ab dem ersten Prüfen. Unabhängig vom Lösungstimer.\\[2pt]
+Start auch \texttt{immediate} oder \texttt{onclick}. Badge heißt hier genau \texttt{data-hint-badge}; Starttext über \texttt{data-hint-timer-start-label}.}
+\end{extracard}
+
+\begin{extracard}{Freeze: Bewertung erst bei Abgabe}
+\begin{lstlisting}[language=lia]
+@Abgabe
+
+@Auswertung(F12;Tab;Time;Send)
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{Send} hält Prüfen während der Bearbeitung neutral; Korrektheitsfeedback und Lösung bleiben verborgen. Bewertet wird beim Erstellen des Freeze-Links.\\[2pt]
+\texttt{F12}: technische Entwicklertoolsignale; \texttt{Tab}: Fokuswechsel; \texttt{Time}: Minuten je Folie. Die Signale belegen keine Täuschung.}
+\end{extracard}
+
+\begin{extracard}{Native Auswahl \& Matrixquiz}
+\begin{lstlisting}[language=lia]
+Der Himmel ist
+[[rot|(blau)|grün]].
+
+Ordne die Zahlen zu.
+
+[[ gerade ] [ ungerade ]]
+[   (X)         ( )    ] 2
+[   ( )         (X)    ] 3
+\end{lstlisting}
+\tcblower
+\prevsm{Kein Import nötig. Bei der Auswahl steht die richtige Antwort in runden Klammern.\\[2pt]
+Matrix: gemeinsame Spaltenüberschriften, eine Auswahl je Zeile. Eckige Marker \texttt{[X]} statt \texttt{(X)} erlauben mehrere richtige Antworten je Zeile.}
+\end{extracard}
+
+\begin{extracard}{Textkorrektur \& Strichlisten}
+\begin{lstlisting}[language=lia]
+@orthographytext(`<!-- data-solution-button="2" -->`,`Der Hnd rennt.`,`Der Hund rennt.`)
+
+@Strichliste(12)
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{lia-orthography}: mehrzeiliges Eingabefeld zur Textkorrektur, Argumentfolge wie bei \texttt{@orthography}.\\[2pt]
+\texttt{lia-Mathe}: Strichliste mit Fünferbündelung; auch inline oder in Tabellen verwendbar.}
+\end{extracard}
+
+\end{multicols}
+\endgroup
+
+\noindent\begin{tcolorbox}[
+  enhanced, colback=extraorangeLt, colframe=extraorange!75,
+  boxrule=0.3pt, arc=2pt, left=5pt,right=5pt,top=2pt,bottom=2pt,
+  before skip=2pt,after skip=0pt
+]
+\scriptsize
+\begin{minipage}[t]{0.33\linewidth}
+\textbf{\color{extraorange}\faDownload~~Direkte Imports}\par
+Für jedes genannte SchulLia-Template im Kopf:\\
+\texttt{import: https://raw.githubusercontent.com/}\\
+\texttt{MINT-the-GAP/<Repo>/main/README.md}\\
+\textit{<Repo> ersetzen; URLs und Makroaufrufe ohne Druckumbrüche übernehmen.} Algebrite/JSXGraph: Import-URLs auf Seite 2.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\textbf{\color{extraorange}\faUndo~~Einzelreset}\par
+\texttt{@resetter} nach dem Quiz. Pro Abschnitt nur ein zurücksetzbares Coordinate-Quiz je Board-ID. Kachelquizze und andere Quiztypen für verlässlichen Einzelreset im unveränderten LiaScript-Core auf getrennte Abschnitte legen.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\textbf{\color{extraorange}\faList~~Navigation \& globale Regeln}\par
+\texttt{lia-navigation} direkt importieren: aufklappbares Inhaltsverzeichnis mit Lesezeichen; kein zusätzlicher Makroaufruf. \texttt{data-randomize}, \texttt{data-score} und \texttt{data-max-trials} weiterhin lokal am Quiz setzen.
+\end{minipage}
+\end{tcolorbox}
 \sheetfooter
 
 \end{document}

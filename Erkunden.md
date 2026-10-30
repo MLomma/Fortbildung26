@@ -26,7 +26,6 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-resetter/main/README.
 
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-coordinate/refs/heads/main/README.md
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-freeze-v2/main/README.md
-import: https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/main/imports/RedirecterREADME.md
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md
 
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/README.md
@@ -142,7 +141,7 @@ data-solution-timer-badge="on" -->
 
 <div class="flex-child">
 
-**_Aufgabe 3:_** **Kreuze an**, welche Terme äquivalenz zu $a^{\frac{2}{3}}$ sind.
+**_Aufgabe 3:_** **Kreuze an**, welche Terme äquivalent zu $a^{\frac{2}{3}}$ sind.
 
 - [[ ]] $\sqrt[2]{a^3}$
 - [[X]] $\sqrt[3]{a^2}$
@@ -164,7 +163,7 @@ data-solution-timer-badge="on" -->
 
 <div class="flex-child">
 
-**_Aufgabe 4:_** **Entscheide**, ob es sich bei dem Term um einen Vektor, ein Skalar oder einen nicht definierten Ausdruck handelt.
+**_Aufgabe 4:_** **Entscheide**, ob es sich bei dem Term um einen Vektor, einen Skalar oder einen nicht definierten Ausdruck handelt.
 
 
 
@@ -199,7 +198,7 @@ $8$ [[$+$|($-$)|$\cdot$|$:$]] $2$ [[$+$|$-$|($\cdot$)|$:$]] $3 = 2$
 <div class="flex-child">
 
 
-**_Aufgabe 6:_**  **Sortiere** das die Kacheln nach Größe und **ordne** sie der passenden Größe zu.
+**_Aufgabe 6:_**  **Sortiere** die Kacheln nach Größe und **ordne** sie der passenden Größe zu.
 
 
 
@@ -271,7 +270,7 @@ $$
 
 **_Aufgabe 2:_** **Gib** den ungefähren Wert der abgebildeten Objekte **an**. 
 
-> Durch ein Makro können diese Aufgaben neugestartet werden.
+> Durch ein Makro können diese Aufgaben neu gestartet werden.
 
 
 ![Kandiszuckerstückchen](https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/circa11.jpg)
@@ -292,7 +291,7 @@ data-hint-button="3"  -->
 
 <div class="flex-child">
 
-**_Aufgabe 3:_** **Gib** den Term $(x-2)^2-1$ in einer beliegen Form **an**.
+**_Aufgabe 3:_** **Gib** den Term $(x-2)^2-1$ in einer beliebigen Form **an**.
 
 [[    (x-2)^2-1    ]] @canvas
 @Algebrite.check(`x ^ 2 - 4 * x + 3`)
@@ -468,7 +467,7 @@ $\alpha =$ [[ 41 ]]$^\circ$
 <div class="flex-child">
 
 
-**_Aufgabe 3:_** **Decke** mit dem gegebenen Polynomio eine Summe von 140 **ab**.
+**_Aufgabe 3:_** **Decke** mit dem gegebenen Polyomino eine Summe von 140 **ab**.
 
 @PentominoQuiz(140,`name=FoBi-I5;type=I5;numbers=[1,2,3,4,5]`,`<!-- data-solution-button="off" -->`)
 
@@ -488,7 +487,7 @@ $\alpha =$ [[ 41 ]]$^\circ$
 <div class="flex-child">
 
 
-**_Aufgabe 4:_** **Decke** mit dem gegebenen Polynomio eine Summe von -35 **ab**.
+**_Aufgabe 4:_** **Decke** mit dem gegebenen Polyomino eine Summe von -35 **ab**.
 
 @PentominoQuizN(-35,`name=FoBi-I2;type=I2;numbers=[2,3]`,`<!-- data-solution-button="off" -->`)
 
@@ -498,7 +497,7 @@ $\alpha =$ [[ 41 ]]$^\circ$
 
 <div class="flex-child">
 
-**_Aufgabe 5:_** **Decke** mit einem oder mehreren der gegebenen Polynomios eine Summe von 108 **ab**.
+**_Aufgabe 5:_** **Decke** mit einem oder mehreren der gegebenen Polyominos eine Summe von 108 **ab**.
 
 @PentominoDockQuizAuswahl(108,`T4,L4,S4`,`<!-- data-solution-button="off" -->`)
 
@@ -612,12 +611,12 @@ Kadenz: [[  Quinte  ]]
 
 <div class=flex-child>
 
-**_Aufgabe 6:_** Korrigiere den Fehler im Code und lass dir die Anzahl der Buchstaben der Nachricht ausgeben. Drück dazu mal unten links dieses </> Symbol.
+**_Aufgabe 6:_** Korrigiere den Fehler im Code und lass dir die Anzahl der Buchstaben der Nachricht ausgeben. Drück dazu mal unten links dieses `</>`-Symbol.
 
 ``` js
 var message = "Dies ist die Nachricht"
 console.log(message)
-message.leangth
+message.length
 ```
 <script>@input </script>
 
@@ -631,7 +630,7 @@ message.leangth
 
 ---
 
-> Alle darstellten Quizze sind miteinander kombinierbar.
+> Alle dargestellten Quizze sind miteinander kombinierbar.
 
 
 
@@ -755,9 +754,9 @@ Quellen: \
 
 
 
-Die Kisten können überall vesteckt sein. 
+Die Kisten können überall versteckt sein.
 
-**_Aufgabe 1:_** Durchsuchen Sie bitte alle Menüs bis Sie ein Achievment bekommen, dass Sie alle Diamanttruhen gefunden haben. (Hinweis: Die Truhen sind nur zu sehen, solange Sie sich auf dieser Folie befinden.)
+**_Aufgabe 1:_** Durchsuchen Sie bitte alle Menüs, bis Sie ein Achievement erhalten, das bestätigt, dass Sie alle Diamanttruhen gefunden haben. (Hinweis: Die Truhen sind nur zu sehen, solange Sie sich auf dieser Folie befinden.)
 
 
 @Diamanttruhe(info; anker)
@@ -781,7 +780,7 @@ Mit der Lupe @Lupe können Sie alle unsichtbaren Inhalte sichtbar machen, wie di
 @EndePflanze
 
 
-**_Aufgabe 2:_** Suchen Sie alle unsichtbaren Schatztruhen bis Sie ein Achievement für die Schatztruhen bekommen.
+**_Aufgabe 2:_** Suchen Sie alle unsichtbaren Schatztruhen, bis Sie ein Achievement für die Schatztruhen bekommen.
 
 
 
@@ -803,7 +802,7 @@ Mit Schlüsseln kann man ganze Bereiche abschließen und den Schlüssel dabei au
 
 <div class=flex-child>
 
-@Unsichtbar(`Es gibt auch geheime Folien, Geben Sie in der Navigationssuche "Geheimnis" ein und klicken Sie auf diese nun erscheinende Folie.`)
+@Unsichtbar(`Es gibt auch geheime Folien. Geben Sie in der Navigationssuche "Geheimnis" ein und klicken Sie auf diese nun erscheinende Folie.`)
 
 </div>
 
@@ -847,7 +846,7 @@ $$
 @Puzzletor(blau; [[3;5];[1;4];[6;2]]; anker)
 
 
-Mittels Portalen können Sie die Schülerinnen und Schüler auch auf bestimmte Folien lenken, wenn Sie `TOC` und `Seitenwechsel` sperren. Mit diesem Portal kommen Sie wieder zurück zur vorherigen Folie und dort erscheint ein Portal, um wieder hierher zurück zu kehren.
+Mittels Portalen können Sie die Schülerinnen und Schüler auch auf bestimmte Folien lenken, wenn Sie `TOC` und `Seitenwechsel` sperren. Mit diesem Portal kommen Sie wieder zurück zur vorherigen Folie und dort erscheint ein Portal, um wieder hierher zurückzukehren.
 
 @Portal(7)
 
@@ -859,7 +858,7 @@ Mittels Portalen können Sie die Schülerinnen und Schüler auch auf bestimmte F
 ## <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/0.png" width="40" height="40"> Verbindlichkeit und Bewertbarkeit
 
 
-Es ist möglich den Schülerinnen und Schüler eine Bearbeitungszeit vorzugeben und dann den aktuellen Zustand einzufrieren und versendbar zu machen. Dies geschiet durch die Generierung einer URL, in der alle Bearbeitungsinformationen codiert sind.
+Es ist möglich, den Schülerinnen und Schülern eine Bearbeitungszeit vorzugeben und dann den aktuellen Zustand einzufrieren und versendbar zu machen. Dies geschieht durch die Generierung einer URL, in der alle Bearbeitungsinformationen codiert sind.
 
 
 Wenn Sie einen Freezelink erhalten, können Sie natürlich noch händisch in die Bewertung eingreifen und die Eingaben der Einsender einsehen.

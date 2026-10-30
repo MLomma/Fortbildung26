@@ -37,7 +37,6 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-resetter/main/README.
 
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-coordinate/refs/heads/main/README.md
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-freeze-v2/main/README.md
-import: https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/main/imports/RedirecterREADME.md
 
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md
 
@@ -49,7 +48,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 -->
 
-# SchulLia - LiaScript in der Schule 
+# SchulLia – LiaScript in der Schule
 
 @autoscrolling(off)
 
@@ -58,7 +57,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 <div>
 
 <h2> R08025: Digitale Unterrichtsmaterialien mit Rückmeldung für Lernende </h2>
-<h2> LiaScript - Digitale OER Arbeitsblätter nutzen und gestalten </h2>
+<h2> LiaScript – Digitale OER-Arbeitsblätter nutzen und gestalten </h2>
 
 > Fortbildung, November 2026, Freiberg <p align="right"> <h3> `tinyurl.com/Lia26FoBi`</h3>  </p>
 
@@ -110,7 +109,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 <!-- style="max-width:600px" -->
-![partner_map](https://github.com/LiaPlayground/Saechsischer_Schulinformatik_Tag_2026/blob/main/pic/LiaScript_Meets_OER.png?raw=true "OER-Logo - Quelle: Jonathasmello - Eigenes Werk, CC BY 3.0, [https://commons.wikimedia.org/w/index.php?curid=18460156](https://commons.wikimedia.org/w/index.php?curid=18460156) erweitert um LiaScript Logo")
+![partner_map](https://github.com/LiaPlayground/Saechsischer_Schulinformatik_Tag_2026/blob/main/pic/LiaScript_Meets_OER.png?raw=true "OER-Logo – Quelle: Jonathasmello – Eigenes Werk, CC BY 3.0, [https://commons.wikimedia.org/w/index.php?curid=18460156](https://commons.wikimedia.org/w/index.php?curid=18460156) erweitert um LiaScript-Logo")
 </div>
 
 </section>
@@ -141,46 +140,46 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40">  <big><big><b>Motivation und Einführung - ca. 30 Minuten</b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40">  <big><big><b>Motivation und Einführung – ca. 30 Minuten</b></big></big>
 
 ---
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40">  <big><big><b>Erkundung der Möglichkeiten - ca. 45 Minuten</b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40">  <big><big><b>Erkundung der Möglichkeiten – ca. 45 Minuten</b></big></big>
 
 ---
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40">  <big><big><b>Hospitation - ca. 45 Minuten</b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40">  <big><big><b>Hospitation – ca. 45 Minuten</b></big></big>
 
 ---
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40">  <big><big><b>Zwischenstandsbesprechung - ca. 20 Minuten</b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40">  <big><big><b>Zwischenstandsbesprechung – ca. 20 Minuten</b></big></big>
 
 ---
 
-> Kurze Pause  - ca. 30 Minuten
+> Kurze Pause – ca. 30 Minuten
 
 ---
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  <big><big><b>Erste gemeinsame Schritte - Hallo Welt! - ca. 45 Minuten</b></big></big>
-
----
-
-
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  <big><big><b>Erstellen und Bereitstellen von Kursen - ca. 20 Minuten </b></big></big>
-
----
-
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40">  <big><big><b>Anpassen von Kursen - ca. 20 Minuten </b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  <big><big><b>Erste gemeinsame Schritte – Hallo Welt! – ca. 45 Minuten</b></big></big>
 
 ---
 
 
-
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40">  <big><big><b>Eigene komplexere Kurse erstellen - ca. 30 Minuten </b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  <big><big><b>Erstellen und Bereitstellen von Kursen – ca. 20 Minuten </b></big></big>
 
 ---
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40">  <big><big><b>Reflexion - ca. 15 Minuten </b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40">  <big><big><b>Anpassen von Kursen – ca. 20 Minuten </b></big></big>
+
+---
+
+
+
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40">  <big><big><b>Eigene komplexere Kurse erstellen – ca. 30 Minuten </b></big></big>
+
+---
+
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40">  <big><big><b>Reflexion – ca. 15 Minuten </b></big></big>
 
 
 
@@ -203,7 +202,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 <h2> Beobachtungen als Lehrkraft </h2> 
 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 
 <div class="flex-child">
@@ -211,8 +210,8 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 {{1}}
-- <h3> Schülerinnen und Schülern fällt es mit zunehmenden Alter oftmals kontinuierlich schwerer neue Inhalte zu bearbeiten. </h3>
-- <h3> Schülerinnen und Schüler verlieren das fachliche Selbstvertrauen und das explizit in MINT-Fächern. </h3>
+- <h3> Schülerinnen und Schülern fällt es mit zunehmendem Alter oftmals schwerer, neue Inhalte zu bearbeiten. </h3>
+- <h3> Schülerinnen und Schüler verlieren das fachliche Selbstvertrauen, und das explizit in MINT-Fächern. </h3>
 
 
 
@@ -220,7 +219,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 > <h3>Wie kann man das begründen?</h3> 
 
 {{2}}
-<h3>Neben vielen allgemeineren Aspekten dieses multifaktoriellen Problems wie _erhöhtes Ablenkungspotential_, _Frage der Sinnhaftigkeit des Gelernten_, _stark angestiegender Vergleichsdruck_, _Zukunftsängste_, und vielen weiteren Gründen, gibt es auch klar fachliche Beobachtungen: </h3> 
+<h3>Neben vielen allgemeineren Aspekten dieses multifaktoriellen Problems wie _einem erhöhten Ablenkungspotential_, _der Frage nach der Sinnhaftigkeit des Gelernten_, _einem stark angestiegenen Vergleichsdruck_, _Zukunftsängsten_ und vielen weiteren Gründen gibt es auch klar fachliche Beobachtungen: </h3>
 
 
 {{3}}
@@ -284,7 +283,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 
 <div class="flex-child">
@@ -309,7 +308,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 ---
 
 
-<h3> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40"> Sie können alle Materialien nutzen und verändern, wie es Ihnen beliegt. Sollten Ihnen Fehler auffallen, würde ich mich über eine Kontaktaufnahme freuen, sodass die Fehler behoben werden können. </h3> 
+<h3> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40"> Sie können alle Materialien nutzen und verändern, wie es Ihnen beliebt. Sollten Ihnen Fehler auffallen, würde ich mich über eine Kontaktaufnahme freuen, sodass die Fehler behoben werden können. </h3>
 
 ***********************
 
@@ -353,7 +352,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 
 <div class="flex-child">
@@ -368,7 +367,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 <h3> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/0.png" width="40" height="40"> Die Lernenden erhalten keine Rückmeldung zu ihren Problemen, selbst wenn man die Musterlösung später bereitstellt.</h3> 
 
 {{3}}
-<h3> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/0.png" width="40" height="40"> Lehrkräfte erhalten auch keine Rückmeldung und können den Unterricht nicht auf die Lerngruppe zielgerichteter anpassen. </h3> 
+<h3> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/0.png" width="40" height="40"> Lehrkräfte erhalten auch keine Rückmeldung und können den Unterricht nicht zielgerichteter an die Lerngruppe anpassen. </h3>
 
 
 {{4}}
@@ -430,12 +429,12 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-### <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40"> Angebotsanalyse - bekannte Anbieterprobleme
+### <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40"> Angebotsanalyse – bekannte Anbieterprobleme
 
 
 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 <div class="flex-child">
 
@@ -461,7 +460,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 <div class="flex-child">
 
@@ -474,7 +473,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 {{4}}
-<h3> $\Rightarrow\;$ <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/0.png" width="40" height="40"> Rechenwege, Erklärungen, Zeichnungen, Vernetzungen, und vieles mehr offenbaren erst das Verständnis - Es bedarf mehr als die reine eineindeutige Lösungseingabe einer Übung </h3> 
+<h3> $\Rightarrow\;$ <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/0.png" width="40" height="40"> Rechenwege, Erklärungen, Zeichnungen, Vernetzungen und vieles mehr offenbaren erst das Verständnis. Es bedarf mehr als der reinen eineindeutigen Lösungseingabe einer Übung. </h3>
 
 </div>
 
@@ -492,7 +491,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 <div class="flex-child">
 
@@ -520,7 +519,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 <div class="flex-child">
 
@@ -534,7 +533,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 {{8}}
-<h3> $\Rightarrow\;$ <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/0.png" width="40" height="40"> Schülerinnen und Schüler lernen die Lösungseingaben auswendig anstatt kognitiv aktiviert zu werden </h3> 
+<h3> $\Rightarrow\;$ <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/0.png" width="40" height="40"> Schülerinnen und Schüler lernen die Lösungseingaben auswendig, anstatt kognitiv aktiviert zu werden </h3>
 
 
 </div>
@@ -548,7 +547,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 <div class="flex-child">
 
@@ -575,13 +574,13 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 <div class="flex-child">
 
 
 {{11}}
-<h3> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40">  Oftmals ist setzt das Angebot auf das Flipped-Classroom-Prinzip </h3> 
+<h3> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40">  Oftmals setzt das Angebot auf das Flipped-Classroom-Prinzip </h3>
 
 
 
@@ -678,145 +677,35 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 ### <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40"> Bedarfe in der Schule
 
-<h3>Ein Angebot muss... </h3> 
+<h4>Ein Angebot ... </h4>
 
 {{1}}
 **************
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex" >
 
 <div class="flex-child">
 
-<h4> ... kostenlos und freizugänglich sein. </h4> 
+<h4> ... kostenlos und frei zugänglich sein. {2}{<span style="color: green;"><big><big><b>✓</b></big></big></span>}   </h4>
 
 </div>
 
 <div class="flex-child">
 
-<h4> ... sollte nicht proprietär sein. </h4> 
-
-</div>
-
-<div class="flex-child">
-
-
-<h4> ... sollte DSGVO-konform sein. </h4> 
-
-
-</div>
-
-</section>
-
-
-
-
----
-
-**************
-
-
-
-{{2}}
-**************
-
-<section class="dynFlex" data-basis="49">
-
-<div class="flex-child">
-
-<h4> ... sollte ohne jegliche Vorabinstallation auskommen. </h4> 
-
-</div>
-
-<div class="flex-child">
-
-<h4> ... sollte keine zusätzliche Infrastruktur benötigen. </h4> 
+<h4> ... nicht proprietär sein.  {3}{<span style="color: green;"><big><big><b>✓</b></big></big></span>} </h4> 
 
 </div>
 
 <div class="flex-child">
 
 
-<h4> ... sollte Bring-Your-Own-Device tauglich sein. </h4> 
+<h4> ... DSGVO-konform sein. {4}{<span style="color: green;"><big><big><b>✓</b></big></big></span>} </h4> 
 
 
 </div>
 
 </section>
 
-
-
-
-
-
----
-
-**************
-
-
-
-
-
-{{3}}
-**************
-
-<section class="dynFlex" data-basis="49">
-
-<div class="flex-child">
-
-<h4> ... sollte dezentral organisiert sein. </h4> 
-
-</div>
-
-<div class="flex-child">
-
-<h4> ... sollte auch offline weiter bearbeitbar sein. </h4> 
-
-</div>
-
-<div class="flex-child">
-
-
-<h4> ... sollte ohne Syntaxschulung benutzbar sein. </h4> 
-
-
-</div>
-
-</section>
-
-
-
-
----
-
-**************
-
-
-{{4}}
-**************
-
-<section class="dynFlex" data-basis="49">
-
-<div class="flex-child">
-
-<h4> ... sollte eine mathematische Schrifterkennung beinhalten.  </h4> 
-
-</div>
-
-<div class="flex-child">
-
-<h4> ... sollte ein Computer-Algebra-System beinhalten. </h4> 
-
-</div>
-
-<div class="flex-child">
-
-
-<h4> ... sollte ein Dynamisches-Geometrie-System beinhalten.  </h4> 
-
-
-</div>
-
-</section>
 
 
 
@@ -829,58 +718,24 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 {{5}}
 **************
 
-
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex" >
 
 <div class="flex-child">
 
-<h4> ... sollte direkte Rückmeldungen für die Lernenden geben können.  </h4> 
+<h4> ... ohne jegliche Vorabinstallation auskommen. {6}{<span style="color: green;"><big><big><b>✓</b></big></big></span>} </h4> 
 
 </div>
 
 <div class="flex-child">
 
-<h4> ... sollte automatisierte Korrekturen mit händischer Nachkontrolle ermöglchen. </h4> 
-
-</div>
-
-<div class="flex-child">
-
-
-<h4> ... sollte individuelle Lernpfade ermöglichen.  </h4> 
-
-
-</div>
-
-</section>
-
-
----
-
-**************
-
-
-{{6}}
-**************
-
-<section class="dynFlex" data-basis="49">
-
-<div class="flex-child">
-
-<h4> ... sollte statistische Auswertungen und Analysen zur Lerngruppe der Lehrkraft bereitstellen können.  </h4> 
-
-</div>
-
-<div class="flex-child">
-
-<h4> ... sollte hochwertige und individualisierbare Aufgaben bereitstellen können. </h4> 
+<h4> ... keine zusätzliche Infrastruktur benötigen. {7}{<span style="color: green;"><big><big><b>✓</b></big></big></span>} </h4> 
 
 </div>
 
 <div class="flex-child">
 
 
-<h4> ... sollte auch für die Lehrkraft ohne Syntaxschulung auskommen.  </h4> 
+<h4> ... Bring-Your-Own-Device-tauglich sein. {8}{<span style="color: green;"><big><big><b>✓</b></big></big></span>} </h4>
 
 
 </div>
@@ -889,24 +744,198 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
----
 
+
+
+---
 
 **************
 
-{{7}}
-<h4> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40"> LiaScript bietet die Basis für genau alle diese Bedarfe, jedoch ist das Potential von LiaScript nocht nicht vollständig erschlossen.  </h4> 
 
-{{8}}
-<h3> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40"> Ziel: Der Bildschirm muss wie ein Blattpapier beschreibbar sein, daraus müssen Aufgaben hochwertig generiert und diese an die Schülerinnen und Schüler übermittelt werden können.  </h3> 
+
 
 
 {{9}}
-<h3> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40"> Aufgabensammlung ist in der Entstehung: <a href="https://mint-the-gap.github.io/Aufgabensammlung/"> mint-the-gap.github.io/Aufgabensammlung/ </a> </h3> 
+**************
+
+
+
+<section class="dynFlex" >
+
+<div class="flex-child">
+
+<h4> ... dezentral organisiert sein. {10}{<span style="color: green;"><big><big><b>✓</b></big></big></span>} </h4> 
+
+</div>
+
+<div class="flex-child">
+
+<h4> ... auch offline weiter bearbeitbar sein. {11}{<span style="color: green;"><big><big><b>✓</b></big></big></span>} </h4> 
+
+</div>
+
+<div class="flex-child">
+
+
+<h4> ... ohne Syntaxschulung benutzbar sein. {12}{<span style="color: green;">  <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40">  </span>} </h4> 
+
+
+</div>
+
+</section>
 
 
 
 
+---
+
+**************
+
+
+{{13}}
+**************
+
+<section class="dynFlex" >
+
+<div class="flex-child">
+
+<h4> ... eine mathematische Schrifterkennung beinhalten.  {14}{<span style="color: green;">  <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  </span>} </h4> 
+
+</div>
+
+<div class="flex-child">
+
+<h4> ... ein Computer-Algebra-System beinhalten. {15}{<span style="color: green;">  <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40">  </span>} </h4> 
+
+</div>
+
+<div class="flex-child">
+
+
+<h4> ... ein dynamisches Geometriesystem beinhalten.  {16}{<span style="color: green;">  <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/4.png" width="40" height="40">  </span>} </h4>
+
+
+</div>
+
+</section>
+
+
+
+---
+
+**************
+
+
+
+{{17}}
+**************
+
+
+<section class="dynFlex" >
+
+<div class="flex-child">
+
+<h4> ... direkte Rückmeldungen für die Lernenden geben können. {18}{<span style="color: green;"><big><big><b>✓</b></big></big></span>} </h4> 
+
+</div>
+
+<div class="flex-child">
+
+<h4> ... automatisierte Korrekturen mit händischer Nachkontrolle ermöglichen.  {19}{<span style="color: green;">  <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  </span>} </h4>
+
+</div>
+
+<div class="flex-child">
+
+
+<h4> ... individuelle Lernpfade ermöglichen.  {20}{<span style="color: green;">  <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40">  </span>}  </h4> 
+
+
+</div>
+
+</section>
+
+
+
+---
+
+**************
+
+
+{{21}}
+**************
+
+<section class="dynFlex" >
+
+<div class="flex-child">
+
+<h4> ... der Lehrkraft statistische Auswertungen und Analysen zu ihrer Lerngruppe bereitstellen können.   {22}{<span style="color: green;">  <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  </span>} </h4>
+
+</div>
+
+<div class="flex-child">
+
+<h4> ... hochwertige und individualisierbare Aufgaben bereitstellen können.  {23}{<span style="color: green;">  <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  </span>} </h4> 
+
+</div>
+
+<div class="flex-child">
+
+
+<h4> ... auch für die Lehrkraft ohne Syntaxschulung nutzbar sein.   {24}{<span style="color: green;">  <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  </span>} </h4>
+
+
+</div>
+
+</section>
+
+
+
+---
+
+
+**************
+
+
+{{25}}
+*****************
+
+<section class="dynFlex" >
+
+<div class="flex-child">
+<h4>LiaScript-Inhalte sind in Lernmanagementsysteme (LMS) wie OPAL oder Moodle integrierbar.</h4>
+</div>
+
+<div class="flex-child">
+<h4>LiaScript-Inhalte bleiben nutzbar, auch wenn Plattformen oder Lizenzmodelle wechseln. </h4>
+
+</div>
+
+</section>
+<section class="dynFlex" >
+
+<div class="flex-child">
+<h4>LiaScript-Inhalte können automatisch in jede Sprache übersetzt werden. </h4>
+</div>
+
+<div class="flex-child">
+<h4>LiaScript kann in jedem Schulfach benutzt werden, z. B. um die Aussprache zu überprüfen, Musiknoten direkt abzuspielen oder Programmiercode auszuführen.</h4>
+</div>
+
+</section>
+
+*****************
+
+
+{{26}}
+<h4> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40"> LiaScript bietet die Basis für genau alle diese Bedarfe, jedoch ist das Potential von LiaScript noch nicht vollständig erschlossen.  </h4>
+
+{{27}}
+<h4> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40"> Ziel: Der Bildschirm muss wie ein Blatt Papier beschreibbar sein, daraus müssen Aufgaben hochwertig generiert und diese an die Schülerinnen und Schüler übermittelt werden können.  </h4>
+
+
+{{28}}
+<h4> <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40"> Aufgabensammlung ist in der Entstehung: <a href="https://mint-the-gap.github.io/Aufgabensammlung/"> mint-the-gap.github.io/Aufgabensammlung/ </a> </h4> 
 
 
 
@@ -953,13 +982,13 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 # <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40"> Erkundung des Potentials von LiaScript
 
 
-<h3> Um das Potential von LiaScript zu erkunden, wird es für Sie in den nächsten 90 Minuten möglich sein, dass Sie in einer Teilgruppe eine Übungsstunde mit LiaScript hospitieren oder die Möglichkeiten von LiaScript anhand von Beispielen erkunden. </h3> 
+<h3> In den nächsten 90 Minuten können Sie in einer Teilgruppe in einer Übungsstunde mit LiaScript hospitieren oder die Möglichkeiten von LiaScript anhand von Beispielen erkunden. </h3>
 
 ---
 
 <h3>Beobachtungsaufträge </h3> 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 
 
@@ -995,12 +1024,14 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 {{1}}
+***************
 <h3> Öffnen Sie bitte folgende URL: `tinyurl.com/LiaFoBi26` </h3>
 
 
 ??[Erkundungskurs](https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md)
 
 
+***************
 
 
 
@@ -1025,7 +1056,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 ---
 
 - <h3> Unter "Courses" können Sie bereits besuchte Kurse anschauen. (Je nach Versionierung sind auch die Bearbeitungen lokal im Cache gespeichert.)</h3>
-- <h3> Unter "LiveEditor" finden Sie alle Kurse, die Sie schonmal bearbeitet haben.</h3>
+- <h3> Unter "LiveEditor" finden Sie alle Kurse, die Sie schon mal bearbeitet haben.</h3>
 
 
 
@@ -1036,7 +1067,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 
 
-> <h3>Jede LiaScript-Datei kann einen Header `<!-- -->` vor der ersten Überschrift `# Überschrift` haben, um zusätzliche Einstellungen und Informationen bereit zu stellen. Der Header ist im Gegensatz zu einer einzigen Überschrift nicht zwingend erforderlich, aber sehr empfehlenswert.</h3>
+> <h3>Jede LiaScript-Datei kann einen Header `<!-- -->` vor der ersten Überschrift `# Überschrift` haben, um zusätzliche Einstellungen und Informationen bereitzustellen. Der Header ist im Gegensatz zu einer einzigen Überschrift nicht zwingend erforderlich, aber sehr empfehlenswert.</h3>
 
 
 ```
@@ -1075,7 +1106,7 @@ comment: Dies ist Ihr "Hallo Welt!"-Kurs.
 <h3>  </h3>
 
 
-<section class="dynFlex" data-basis="49">
+<section class="dynFlex">
 
 <div class="flex-child">
 
@@ -1146,7 +1177,7 @@ comment: Dies ist Ihr "Hallo Welt!"-Kurs.
 
 ---
 
-> <h3> **_Aufgabe 1:_** Lassen Sie sich einen Kurs erzeugen und passen Sie diesen für Ihre Zielklasse oder Ihren Wünschen an. </h3> 
+> <h3> **_Aufgabe 1:_** Lassen Sie sich einen Kurs erzeugen und passen Sie diesen an Ihre Zielklasse oder Ihre Wünsche an. </h3>
 
 
 
@@ -1187,12 +1218,12 @@ comment: Dies ist Ihr "Hallo Welt!"-Kurs.
 
 
 
-- <h3> LiaScript basiert auf Markdown als Scriptsprache. Large-Language-Modelle geben ihre Antworten in Markdown aus. </h3> 
+- <h3> LiaScript basiert auf Markdown als Skriptsprache. Large-Language-Modelle geben ihre Antworten in Markdown aus. </h3>
 
 
 
 {{1}}
-- <h3> Sie können also LLM-Antworten direkt in den LiveEditor kopieren. (Tipp: Teilen Sie Ihrer LLM mit, dass Sie die Antwort gerne in einem Codeblock ausgegeben haben wollen, sodass das Kopieren leichter fällt.) </h3> 
+- <h3> Sie können also LLM-Antworten direkt in den LiveEditor kopieren. (Tipp: Teilen Sie Ihrem LLM mit, dass Sie die Antwort gerne als Codeblock erhalten möchten, damit sie sich leichter kopieren lässt.) </h3>
 
 
 
@@ -1294,7 +1325,7 @@ https://github.com/MINT-the-GAP/skill-schullia
 
 
 <!-- style="max-width:600px" -->
-![partner_map](https://github.com/LiaPlayground/Saechsischer_Schulinformatik_Tag_2026/blob/main/pic/LiaScript_Meets_OER.png?raw=true "OER-Logo - Quelle: Jonathasmello - Eigenes Werk, CC BY 3.0, [https://commons.wikimedia.org/w/index.php?curid=18460156](https://commons.wikimedia.org/w/index.php?curid=18460156) erweitert um LiaScript Logo")
+![partner_map](https://github.com/LiaPlayground/Saechsischer_Schulinformatik_Tag_2026/blob/main/pic/LiaScript_Meets_OER.png?raw=true "OER-Logo – Quelle: Jonathasmello – Eigenes Werk, CC BY 3.0, [https://commons.wikimedia.org/w/index.php?curid=18460156](https://commons.wikimedia.org/w/index.php?curid=18460156) erweitert um LiaScript-Logo")
 </div>
 
 </section>
