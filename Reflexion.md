@@ -63,6 +63,7 @@ author: Martin Lommatzsch
 
 > Wie bewerten Sie den Aufbau der Fortbildung?
 
+
 <!-- horizontal-quiz -->
 - [( )] Hervorragend
 - [( )] Gut
@@ -76,6 +77,7 @@ author: Martin Lommatzsch
 
 > Wie gut war die Fortbildung auf das Vorwissen der Teilnehmenden abgestimmt?
 
+
 <!-- horizontal-quiz -->
 - [( )] Sehr gut
 - [( )] Gut
@@ -88,6 +90,7 @@ author: Martin Lommatzsch
 
 
 > Wie angemessen war das Tempo der Fortbildung?
+
 
 <!-- horizontal-quiz -->
 - [( )] Viel zu schnell
@@ -103,6 +106,7 @@ author: Martin Lommatzsch
 
 
 > Wie bewerten Sie die einzelnen Abschnitte der Fortbildung?
+
 
 - [(Hervorragend)   (Gut)   (Mittelmäßig)   (Verbesserungsbedürftig)   (Unzureichend)]
 - [ ( )       ( )       ( )       ( )       ( )    ]  Einführung und Motivation
@@ -121,6 +125,7 @@ author: Martin Lommatzsch
 
 > Wie schätzen Sie das Potenzial von LiaScript für den schulischen Einsatz ein?
 
+
 <!-- horizontal-quiz -->
 - [( )] Sehr hoch
 - [( )] Hoch
@@ -135,6 +140,7 @@ author: Martin Lommatzsch
 
 > Wie sicher fühlen Sie sich nach der Fortbildung darin, LiaScript selbstständig zu nutzen?
 
+
 <!-- horizontal-quiz -->
 - [( )] Sehr sicher
 - [( )] Sicher
@@ -146,6 +152,7 @@ author: Martin Lommatzsch
 
 
 > Wie wahrscheinlich ist es, dass Sie LiaScript künftig im schulischen Kontext ausprobieren oder einsetzen werden?
+
 
 <!-- horizontal-quiz -->
 - [( )] Sehr wahrscheinlich
