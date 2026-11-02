@@ -144,11 +144,11 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 ---
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40">  <big><big><b>Erkundung der Möglichkeiten – ca. 45 Minuten</b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/1.png" width="40" height="40">  <big><big><b>Erkundung der Möglichkeiten – ca. 35 Minuten</b></big></big>
 
 ---
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40">  <big><big><b>Hospitation – ca. 45 Minuten</b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/2.png" width="40" height="40">  <big><big><b>Hospitation – ca. 35 Minuten</b></big></big>
 
 ---
 
@@ -156,11 +156,11 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-pentominos/main/READM
 
 ---
 
-> Kurze Pause – ca. 30 Minuten
+> Kurze Pause – ca. 20 Minuten
 
 ---
 
-<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  <big><big><b>Erste gemeinsame Schritte – Hallo Welt! – ca. 45 Minuten</b></big></big>
+<img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/3.png" width="40" height="40">  <big><big><b>Erste gemeinsame Schritte – Hallo Welt! – ca. 50 Minuten</b></big></big>
 
 ---
 
