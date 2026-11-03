@@ -1290,7 +1290,6 @@ https://github.com/MINT-the-GAP/skill-schullia
 
 
 
-
 # <img src="https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/refs/heads/main/pics/grad/5.png" width="40" height="40"> Abschluss
 
 <h2> Alle Unterlagen zu dieser Fortbildung finden Sie unter: [Link zum Material](https://github.com/MLomma/Fortbildung26) </h2>
@@ -1350,4 +1349,8 @@ https://github.com/MINT-the-GAP/skill-schullia
 ---
 
 ---
+
+
+
+Evaluation im Schulportal: [https://umfrage.sachsen.schule/limesurvey/index.php/783948](https://umfrage.sachsen.schule/limesurvey/index.php/783948)
 
