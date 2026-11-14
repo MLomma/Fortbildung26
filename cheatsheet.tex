@@ -827,6 +827,7 @@ Zielwörter als Quiz in der erwarteten Farbe markieren; im Erklärmodus erschein
 \begin{lstlisting}[language=lia]
 <section class="dynFlex">
 <div class="flex-child">Inhalt A</div>
+
 <div class="flex-child">Inhalt B</div>
 </section>
 \end{lstlisting}
@@ -899,18 +900,21 @@ Unterstützt werden \texttt{slides}, \texttt{presentation} und \texttt{textbook}
 Start: \texttt{immediate}, \texttt{oncheck} oder \texttt{onclick}.}
 \end{schulcard}
 
-\begin{schulcard}{Globale Quizregeln}{lia-globalquiz/main/README.md}
+\begin{schulcard}{Quizregeln \& Tutorialbereich}{lia-globalquiz/main/README.md}
 \begin{lstlisting}[language=lia]
-@global(data-solution-button=3
-        data-hint-button=2)
+@global(data-solution-button=3)
 
-@globalforced(
-  data-hint-button=4)
+@TutorialQuizStart
+
+Frage: [[Antwort]]
+
+@TutorialQuizEnd
+
+Danach folgt der Hauptinhalt.
 \end{lstlisting}
 \tcblower
-\prevsm{\faSlidersH~Vorgaben für alle folgenden Quizze setzen.\\[2pt]
-\texttt{@global}: lokale Werte dürfen abweichen.\\
-\texttt{@globalforced}: lokale Werte überschreiben.}
+\prevsm{\faSlidersH~\texttt{@global} setzt Vorgaben für folgende Quizze; \texttt{@globalforced} kann lokale Werte überschreiben.\\[2pt]
+\faTasks~Zwischen den Tutorialmarkern müssen alle Quizze gelöst oder aufgelöst sein, bevor der nachfolgende Inhalt sichtbar wird. Genau ein Bereich pro Folie.}
 \end{schulcard}
 
 \begin{schulcard}{Quiz einzeln zurücksetzen}{lia-resetter/main/README.md}
@@ -1161,18 +1165,26 @@ Das folgende Makro liefert die Lösung.}
 \texttt{@KonstruktionQuiz} prüft Seiten und Winkel in fester oder offener Anordnung.}
 \end{schulcard}
 
-\begin{schulcard}{Erklärhinweis \& Tooltip}{lia-mathpath/master/README.md}
+\begin{schulcard}{Erklärhinweis, Tooltip \& Lernpfad}{lia-mathpath/master/README.md}
 \begin{lstlisting}[language=lia]
+<!--
+lernpfad-level: Einsteiger
+-->
+
 [[?]] @Explain
 
-<div class="notip">
-Ohne Glossar-Tooltip
-</div>
+@tooltip(off)
+Hier keine automatischen Tipps.
+@tooltip(on)
+
+# Dein Lernpfad
+@Lernpfad
 \end{lstlisting}
 \tcblower
 \prevsm{\faLightbulb~\texttt{@Explain} erzeugt einen gestuften Lösungshinweis.\\[2pt]
 Die Themen stammen aus \texttt{@ADetails(...)} beim Quiz; passende Erklärlinks werden in \texttt{Explain.md} zugeordnet.\\[2pt]
-\texttt{notip} unterdrückt automatische Glossar-Tooltips im umschlossenen Bereich.}
+\texttt{@tooltip(off)} und \texttt{@tooltip(on)} schalten automatische Glossarhilfen aus beziehungsweise wieder ein.\\[2pt]
+Die Kopfzeile \texttt{lernpfad-level} setzt \texttt{Einsteiger}, \texttt{Fortgeschritten} oder \texttt{Experte}; \texttt{@Lernpfad} zeigt drei Empfehlungen mit je vier Aufgaben.}
 \end{schulcard}
 
 \end{multicols}
