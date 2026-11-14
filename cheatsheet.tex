@@ -859,16 +859,17 @@ Unterstützt werden \texttt{slides}, \texttt{presentation} und \texttt{textbook}
 \begin{schulcard}{Rechtschreibung \& Diktat}{lia-orthography/main/README.md}
 \begin{lstlisting}[language=lia]
 @orthography(
- `<!-- data-solution-button="2" -->`,
+ `<!-- data-solution-button="2"
+      doublespacehelp="on" -->`,
  `Feler im Saz.`,
  `Fehler im Satz.`)
 
 @diktat(Schmetterling)
 \end{lstlisting}
 \tcblower
-\prevsm{\faSpellCheck~Fehler im Ausgangstext finden und verbessern.\\[2pt]
-\faVolumeUp~\texttt{@diktat} spricht Wort oder Satz vor; die Eingabe wird geprüft.\\[2pt]
-{\footnotesize Reihenfolge: Quiz-Kommentar, fehlerhafter Text, korrekte Lösung.}}
+\prevsm{\faSpellCheck~Fehler im Ausgangstext finden und verbessern; Reihenfolge: Quiz-Kommentar, Ausgangstext, Lösung.\\[2pt]
+Bei \texttt{@orthography} und \texttt{@orthographytext} fasst \texttt{doublespacehelp=\dq on\dq} Leerraumfolgen zusammen; fehlende Wortabstände bleiben Fehler.\\[2pt]
+\faVolumeUp~\texttt{@diktat} spricht Wort oder Satz vor; die Eingabe wird geprüft.}
 \end{schulcard}
 
 \begin{schulcard}{Bruchteile markieren}{lia-Mathe/main/README.md}
@@ -1431,7 +1432,7 @@ Nur öffentliche Makros verwenden — niemals interne \texttt{@Loot...\_}-Aufruf
 
 % =====================================================================
 % SEITE 6 — GAMIFICATION: ERWEITERUNGEN
-% Quelle: MINT-the-GAP/lia-loot, README.md, 5e5255cfa94c494fee1fd67b1b66f77baaad918c
+% Quelle: MINT-the-GAP/lia-loot, README.md, 6432ce64407f9c31162463350df805f2aee86e36
 % =====================================================================
 \noindent\begin{tcolorbox}[
   enhanced, frame hidden, sharp corners,
@@ -1443,7 +1444,7 @@ Nur öffentliche Makros verwenden — niemals interne \texttt{@Loot...\_}-Aufruf
 \begin{minipage}[c]{0.66\linewidth}
   {\sffamily\fontsize{26}{28}\selectfont\bfseries Gamification}\hspace{0.4em}%
   {\sffamily\large\color{white!75} — weitere Möglichkeiten}\\[2pt]
-  {\sffamily\footnotesize\itshape\color{white!90} Nebel, Werkzeuge, Shop, Begleiter und Energiereserve — Erweiterungen zu Seite 5.}
+  {\sffamily\footnotesize\itshape\color{white!90} Nebel, Shop, Begleiter, Highscore-Schild, Startinventar und Energiereserve — Erweiterungen zu Seite 5.}
 \end{minipage}\hfill
 \begin{minipage}[c]{0.20\linewidth}\raggedright
   {\sffamily\scriptsize\color{white!85}\faGraduationCap~~Fortbildung~$\cdot$~Freiberg 2026}\\[2pt]
@@ -1529,17 +1530,18 @@ Hat das innere Item eigene Klammerparameter, seinen \textbf{vollständigen Aufru
 Benötigt \texttt{@Ressourcen}; Energieangebote zusätzlich dessen dritten Wert. Jedes konkrete Angebot ist einmal kaufbar.}
 \end{lootcard}
 
-\begin{lootcard}{Atlaskarte: Fortschritt sichtbar machen}
+\begin{lootcard}{Atlas \& Highscore-Schild}
 \begin{lstlisting}[language=lia]
 @Atlaskarte
-
 @Perk(atlas-kurszahlen)
-
 @Perk(atlas-folieninfo)
+
+@HighscoreInfo
+@Perk(HighscoreWert)
 \end{lstlisting}
 \tcblower
-\prevsm{Die Karte öffnet die Übersicht der zwölf festen Erfolge.\\[2pt]
-\texttt{atlas-kurszahlen} ergänzt genaue Bestände und Fortschritt; \texttt{atlas-folieninfo} die noch offenen Funde auf der aktuellen Folie.}
+\prevsm{Die Karte öffnet die Übersicht der zwölf festen Erfolge; ihre beiden Perks ergänzen Kurszahlen und offene Funde der aktuellen Folie.\\[2pt]
+\texttt{@HighscoreInfo} zeigt den Anteil gelöster oder aufgelöster Quizze. \texttt{HighscoreWert} ergänzt den gerundeten laufenden Punktestand.}
 \end{lootcard}
 
 \begin{lootcard}{Perks: dauerhafte Verbesserungen}
@@ -1569,6 +1571,19 @@ Futter einsammeln, aktivieren und Katze anklicken: Das enthaltene Item wird auto
 \end{lootcard}
 
 \columnbreak
+
+\begin{lootcard}{Items im Startinventar}
+\begin{lstlisting}[language=lia]
+@HighscoreInfo(startinventar)
+@Lupe(startinventar)
+@Schluessel(rot; startinventar)
+@Puzzleteil(blau; 2;
+             startinventar)
+\end{lstlisting}
+\tcblower
+\prevsm{\texttt{startinventar} legt dauerhafte Items still vor dem ersten Rendern ins Inventar; am Makroort erscheint kein Fund.\\[2pt]
+Auch für Atlas, Perks, Taschenlampe, Aktionswerkzeuge, Katze, Schlüssel und Puzzleteile. Nicht mit Fundort, Verzögerung, Sichtbarkeit, Verbergung, Nebel oder Schichten kombinieren; keine Truhen, Shops, Schlösser oder Tore. Aliasse: \texttt{start}, \texttt{von-anfang-an}.}
+\end{lootcard}
 
 \begin{lootcard}{Reservefolie: neue Energie verdienen}
 \begin{lstlisting}[language=lia]
@@ -1621,7 +1636,7 @@ Weitere Ziele: \texttt{timer}, \texttt{boardmode}, \texttt{marker}, \texttt{mark
 \textbf{\color{lootteal}\faDownload~~Import:}
 \url{https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md}\\[2pt]
 \textbf{Spielpfad planen:} Werkzeuge vor ihren Verstecken erreichbar machen; Shoppreise und Pflichtkosten mit Fehlerreserve abdecken.
-Die Reservefolie löst keinen Sprung aus, wenn der Kurs bereits mit 0 Energie startet. \hfill Stand: Oktober 2026
+Die Reservefolie löst keinen Sprung aus, wenn der Kurs bereits mit 0 Energie startet. \hfill Stand: November 2026
 \end{tcolorbox}
 \sheetfooter
 
